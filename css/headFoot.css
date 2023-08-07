@@ -1,0 +1,15 @@
+@import "./reset.css";
+
+header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 11px #a9a9a95c; } 
+header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 6%; font-size: 15px;  } 
+
+header .headLogo { width: 170px;}
+
+
+
+
+
+/* --------------------- footer --------------------------- */
+footer { display:flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px 0; height: 90px; font-size: 13px; font-family: pLight; background: #072c4d;}
+footer img { width: 120px;}
+footer p { margin-top: 10px; color: #ffffff7d;}
