@@ -1,15 +1,32 @@
 @import "./reset.css";
+header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 5px #a9a9a95c; } 
+header .headLogo { width: 170px; margin-right: 30px; } 
+header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; } 
 
-header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 11px #a9a9a95c; } 
-header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 6%; font-size: 15px;  } 
+.gnb { width: 100%; display: flex; justify-content: space-between; align-items: center; } 
+.gnb .gnbTab { display: flex; justify-content: center; align-items: center; } 
+.gnb .gnbTab li { margin-right: 20px; font-size: 18px; }
 
-header .headLogo { width: 170px;}
+.gnb .gnbTab li a { padding-bottom: 5px;}
+.gnbTab li a.active { color: var(--color-main); border-bottom: 2px solid var(--color-main);}
 
+.gnb .userHead { position: relative; } 
+.gnb .userHead img { margin-right: 20px; width: 32px; opacity: .6; transition: all .2s; cursor: pointer; } 
+.userHead img:hover { opacity: 1;}
 
+.gnbBottom { padding: 0 10%; margin-bottom: 20px;} 
+.gnbBottom span { margin-right: 20px; font-size: 17px; } 
+.gnbBottom span.active { color: var(--dark-yellow);}
 
+.userList { display: none; position: absolute; padding: 5px 8px; top: 150%; left: 16%; border-radius: 10px; background-color: #fff; box-shadow: 1px 3px 5px #a9a9a984; } 
+.userList li { padding: 9px 13px; margin: 5px 0; text-align: center; border-radius: 7px; font-size: 15px; transition: all .3s; cursor: pointer; } 
 
+.userList li:first-child { position: relative; color: var(--color-main); width: max-content; font-family: pBold; } 
+.userList li:first-child:before { position: absolute; content: ''; top: -80%; left: 35%; width: 0; height: 0; border-style: solid; border-width: 0 15px 20px 15px; border-color: transparent transparent #fff transparent; filter: drop-shadow(0 0 1px #78787888); z-index: -10; } 
+.userList li:nth-child(2):hover,
+.userList li:nth-child(3):hover { background: #ffd43871; } 
 
 /* --------------------- footer --------------------------- */
-footer { display:flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px 0; height: 90px; font-size: 13px; font-family: pLight; background: #072c4d;}
-footer img { width: 120px;}
-footer p { margin-top: 10px; color: #ffffff7d;}
+footer { display:flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px 0; height: 120px; font-size: 13px; font-family: pLight; background: #999; } 
+footer img { width: 120px; } 
+footer p { margin-top: 10px; color: #ffffff; } 
