@@ -1,3 +1,15 @@
-section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 180px;}
+section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 
-.schAll .schMap { height: 280px; width: 280px;}
+.schFrm { width: 250px; margin-bottom: 40px; padding: 10px; background-color: #eee; border-radius: 10px; }
+.schFrm input { font-size: 15px; font-family: pMedium; background: transparent; }
+
+.postBtn { padding: 7px 10px; background: #55ed50aa; border-radius: 6px; float: right; font-size: 14px; transition: all .2s;}
+.postBtn:hover { background: var(--color-sub);}
+
+.schTopInfo { width: 280px; display: flex; align-items: center;  justify-content: space-between; background: #fff; font-size: 13px; }
+.schTopInfo .schUser { display: flex; align-items: center;}
+.schTopInfo .schUser img { margin-right: 10px; width: 30px; border-radius: 20px;}
+
+.schDays .days { color: var(--color-main); font-family: pBold; }
+
+.schOne .schMap { width: 280px; height: 230px; }
