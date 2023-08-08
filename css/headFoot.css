@@ -11,9 +11,10 @@ header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; }
 .gnbTab li a:hover { color: var(--color-main);}
 .gnbTab li a.active { color: var(--color-main); border-bottom: 2px solid var(--color-main);}
 
-.gnb .userHead { position: relative; } 
-.gnb .userHead img { margin-right: 20px; width: 32px; opacity: .6; transition: all .2s; cursor: pointer; } 
-.userHead img:hover { opacity: 1;}
+.gnb .userHead { position: relative; padding-top: 10px; display: flex; align-items: center;} 
+.gnb .userHead .msgImg { margin-right: 30px; width: 32px; opacity: .6; transition: all .2s; cursor: pointer; } 
+.userHead .msgImg:hover { opacity: 1; }
+.userHead .userImg { width: 45px; border-radius: 10px; cursor: pointer; }
 
 .gnbBottom { display: flex; padding: 0 8.5%; margin-bottom: 20px; }
 
@@ -23,7 +24,7 @@ header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; }
 .gnbBottom img { width: 20px; margin-right: 10px;}
 .together img { width: 25px; margin-bottom: 2px;} 
 
-.userList { display: none; position: absolute; padding: 5px 8px; top: 150%; left: 15%; border-radius: 10px; background-color: #fff; box-shadow: 1px 3px 5px #a9a9a984; } 
+.userList { display: none; position: absolute; padding: 5px 8px; top: 135%; left: 27%; border-radius: 10px; background-color: #fff; box-shadow: 1px 3px 5px #a9a9a984; } 
 .userList li { padding: 9px 13px; margin: 5px 0; text-align: center; border-radius: 7px; font-size: 15px; transition: all .3s; cursor: pointer; } 
 
 .userList li:first-child { position: relative; color: var(--color-main); width: max-content; font-family: pBold; } 
