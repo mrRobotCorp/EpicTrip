@@ -1,1 +1,3 @@
-section { min-height: calc(100vh - 240px); }
+section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 180px;}
+
+.schAll .schMap { height: 300px; width: 300px;}

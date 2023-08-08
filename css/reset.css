@@ -168,7 +168,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 
