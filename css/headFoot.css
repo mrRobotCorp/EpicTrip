@@ -7,26 +7,37 @@ header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; }
 .gnb .gnbTab { display: flex; justify-content: center; align-items: center; } 
 .gnb .gnbTab li { margin-right: 20px; font-size: 18px; }
 
-.gnb .gnbTab li a { padding-bottom: 5px;}
+.gnb .gnbTab li a { padding-bottom: 5px;  transition: all .2s;}
+.gnbTab li a:hover { color: var(--color-main);}
 .gnbTab li a.active { color: var(--color-main); border-bottom: 2px solid var(--color-main);}
 
 .gnb .userHead { position: relative; } 
 .gnb .userHead img { margin-right: 20px; width: 32px; opacity: .6; transition: all .2s; cursor: pointer; } 
 .userHead img:hover { opacity: 1;}
 
-.gnbBottom { padding: 0 10%; margin-bottom: 20px;} 
-.gnbBottom span { margin-right: 20px; font-size: 17px; } 
-.gnbBottom span.active { color: var(--dark-yellow);}
+.gnbBottom { display: flex; padding: 0 8.5%; margin-bottom: 20px; }
 
-.userList { display: none; position: absolute; padding: 5px 8px; top: 150%; left: 16%; border-radius: 10px; background-color: #fff; box-shadow: 1px 3px 5px #a9a9a984; } 
+.gnbBottom a { display: flex; align-items: center; padding: 6px 15px; margin-right: 10px; border-radius: 13px; font-size: 16px; transition: all .2s;} 
+.gnbBottom a:hover { background: #eee;}
+.gnbBottom a.active { background-color: var(--yellow);}
+.gnbBottom img { width: 20px; margin-right: 10px;}
+.together img { width: 25px; margin-bottom: 2px;} 
+
+.userList { display: none; position: absolute; padding: 5px 8px; top: 150%; left: 15%; border-radius: 10px; background-color: #fff; box-shadow: 1px 3px 5px #a9a9a984; } 
 .userList li { padding: 9px 13px; margin: 5px 0; text-align: center; border-radius: 7px; font-size: 15px; transition: all .3s; cursor: pointer; } 
 
 .userList li:first-child { position: relative; color: var(--color-main); width: max-content; font-family: pBold; } 
-.userList li:first-child:before { position: absolute; content: ''; top: -80%; left: 35%; width: 0; height: 0; border-style: solid; border-width: 0 15px 20px 15px; border-color: transparent transparent #fff transparent; filter: drop-shadow(0 0 1px #78787888); z-index: -10; } 
+.userList li:first-child:before { position: absolute; content: ''; top: -70%; left: 35%; width: 0; height: 0; border-style: solid; border-width: 0 13px 15px 13px; border-color: transparent transparent #fff transparent; filter: drop-shadow(0 0 1px #78787888); z-index: -10; } 
 .userList li:nth-child(2):hover,
 .userList li:nth-child(3):hover { background: #ffd43871; } 
 
+/* ------- 로그인 회원가입 페이지 ---------- */
+nav .account a { padding: 5px 10px; margin-right: 5px; border-radius: 5px; font-size: 15px; transition: all .2s;}
+.account a:hover { color: var(--color-main); background: #8242f017;}
+
+
 /* --------------------- footer --------------------------- */
-footer { display:flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px 0; height: 120px; font-size: 13px; font-family: pLight; background: #999; } 
-footer img { width: 120px; } 
-footer p { margin-top: 10px; color: #ffffff; } 
+footer { display:flex; align-items: flex-start; justify-content: center; flex-direction: column; padding: 20px 10% 30px 10%; height: 190px; font-size: 13px; font-family: pLight; background: #dedede; } 
+footer img { margin: 0 0 15px -5px; width: 200px; filter: drop-shadow(1px 1px 2px #0000006e); } 
+footer a { color: #222;}
+footer p { margin-top: 10px; color: #222; } 

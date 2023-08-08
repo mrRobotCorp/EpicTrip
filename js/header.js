@@ -26,18 +26,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const together = document.querySelector(".together");
     const sche = document.querySelector(".sche");
 
-    if (loc.includes("community") || loc.includes("Community")) {
+    if (loc.includes("Community")) {
         community.classList.add("active");
     }
     if (loc.includes("store")) {
         store.classList.add("active");
     }
 
-    if (loc.includes("community") && loc.includes("schedule")) {
+    // ---- 커뮤니티 중 일정 탭
+    if (loc.includes("Community") && loc.includes("Schedule")) {
         sche.classList.add("active");
     }
-    if (loc.includes("store")) {
-        store.classList.add("active");
+    if (loc.includes("Community") && loc.includes("SchDetail")) {
+        sche.classList.add("active");
+    }
+    if (loc.includes("Community") && loc.includes("Write")) {
+        sche.classList.add("active");
+    }
+
+
+    // ---- 커뮤니티 중 동행 탭
+    if (loc.includes("Community") && loc.includes("Group")) {
+        together.classList.add("active");
+    }
+    if (loc.includes("Community") && loc.includes("Posting")) {
+        together.classList.add("active");
     }
 
 
