@@ -1,15 +1,34 @@
 section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 
-.schFrm { width: 250px; margin-bottom: 40px; padding: 10px; background-color: #eee; border-radius: 10px; }
+.frmLine { display: flex; align-items: center; justify-content: space-between;  margin-bottom: 30px;}
+.frmLine div { display: flex; align-items: center;}
+.schFrm { display: flex; justify-content: space-around; align-items: center; margin-right: 25px; width: 250px; padding: 10px; background-color: #eee; border-radius: 10px; }
 .schFrm input { font-size: 15px; font-family: pMedium; background: transparent; }
+.schFrm button { width: 25px; height: 25px; background: url(../source/srhIco.png) center center; background-size: cover; cursor: pointer; }
+.sortBtn { padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; font-family: pRegular; background: #f1f1f1; cursor: pointer; transition: all .2s ease; }
 
-.postBtn { padding: 7px 10px; background: #55ed50aa; border-radius: 6px; float: right; font-size: 14px; transition: all .2s;}
+.postBtn { padding: 9px 13px; background: #55ed50aa; border-radius: 6px; font-size: 15px; transition: all .2s;}
 .postBtn:hover { background: var(--color-sub);}
 
-.schTopInfo { width: 280px; display: flex; align-items: center;  justify-content: space-between; background: #fff; font-size: 13px; }
+.schAll { width: calc(100vw * 1660 / 1920); margin: 20px auto; display: flex; flex-wrap: wrap; }
+.schOne { width: calc(100vw * 360 / 1920); margin: calc(100vw * 20 / 1920) calc(100vw * 40 / 1920) calc(100vw * 20 / 1920) 0; position: relative; border-radius: 15px; box-shadow: 1px 1px 7px #8585856b;}
+.schTopInfo { position: absolute; top: 5%; left: 4.5%; width: calc(100vw * 275 / 1920); padding: 12px 20px; display: flex; align-items: center;  justify-content: space-between; background: #fff; font-size: 13px; border-radius: 15px; box-shadow: 1px 1px 6px #a7a7a7; line-height: 125%; z-index: 10;}
 .schTopInfo .schUser { display: flex; align-items: center;}
-.schTopInfo .schUser img { margin-right: 10px; width: 30px; border-radius: 20px;}
+.schTopInfo .schUser img { margin-right: 10px; width: 35px; border-radius: 20px;}
+.schUser .schNicK { font-family: pSemi;}
+
+.subTxt { font-size: 12px; color: #666; font-family: pRegular;}
 
 .schDays .days { color: var(--color-main); font-family: pBold; }
 
-.schOne .schMap { width: 280px; height: 230px; }
+.schOne .schMap { width: calc(100vw * 360 / 1920); height: calc(100vw * 230 / 1920); border-radius: 15px 15px 0 0;}
+
+.schBottom { height: 60px; display: flex; align-items: center; justify-content: space-around; font-size: 15px;}
+.schBottom > * { width: 50%; height: 50%; text-align: center; display: flex; align-items: center; justify-content: center;}
+.schBottom .schLoc { margin-left: 20px; position: relative; border-right: 1px solid var(--color-line);}
+.schBottom .schLoc::before { position: absolute; top: 7%; left: 20%; content: ''; background: url(../source/loc.png) center center; background-size: cover; width: 23px; height: 23px; }
+
+.detailBtn { transition: all .2s; }
+.detailBtn:hover { color: var(--color-main); }
+
+.pagination { margin: 40px auto; width: 80px; display: flex; align-items: center; justify-content: space-around;}
