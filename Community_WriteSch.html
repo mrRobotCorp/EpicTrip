@@ -23,6 +23,10 @@
 
     <link href="./css/headFoot.css" rel="stylesheet">
     <link href="./css/cWriteSch.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -32,15 +36,15 @@
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
-                        <a href="#"  class="store">여행상점</a>
+                        <a href="#" class="store">여행상점</a>
                     </li>
                     <li>
-                        <a href="#"  class="community">커뮤니티</a>
+                        <a href="#" class="community">커뮤니티</a>
                     </li>
                 </ul>
                 <div class="userHead">
                     <a href="#"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="#" ><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
                     <ul class="userList">
                         <li>유저 닉네임</li>
                         <li>마이페이지</li>
@@ -52,9 +56,9 @@
         <div class="gnbBottom">
             <a href="#" class="together">
                 <img src="./source/group.png">
-                <span >동행</span>
+                <span>동행</span>
             </a>
-            <a href="#"  class="sche">
+            <a href="#" class="sche">
                 <img src="./source/date.png">
                 <span>일정</span>
             </a>
@@ -63,7 +67,123 @@
 
     <section class="cWriteSection">
         <div class="selecAll">
-            
+            <form action="" class="schFrm">
+                <div class="opLine">
+                    <span>한국</span>
+                    <div class="options">
+                        <input id="loc01" type="radio" name="loc" value="">
+                        <label for="loc01">서울</label>
+                        <input id="loc02" type="radio" name="loc" value="">
+                        <label for="loc02">강원도</label>
+                        <input id="loc03" type="radio" name="loc" value="">
+                        <label for="loc03">제주</label>
+                        <input id="loc04" type="radio" name="loc" value="">
+                        <label for="loc04">부산</label>
+                        <input id="loc05" type="radio" name="loc" value="">
+                        <label for="loc05">경기도</label>
+                        <input id="loc06" type="radio" name="loc" value="">
+                        <label for="loc06">인천</label>
+                        <input id="loc07" type="radio" name="loc" value="">
+                        <label for="loc07">충청도</label>
+                        <input id="loc08" type="radio" name="loc" value="">
+                        <label for="loc08">경상도</label>
+                        <input id="loc09" type="radio" name="loc" value="">
+                        <label for="loc09">전라도</label>
+                        <input id="loc10" type="radio" name="loc" value="">
+                        <label for="loc10">울릉도</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>일본</span>
+                    <div class="options">
+                        <input id="loc11" type="radio" name="loc" value="">
+                        <label for="loc11">도쿄</label>
+                        <input id="loc12" type="radio" name="loc" value="">
+                        <label for="loc12">오사카</label>
+                        <input id="loc13" type="radio" name="loc" value="">
+                        <label for="loc13">후쿠오카</label>
+                        <input id="loc14" type="radio" name="loc" value="">
+                        <label for="loc14">오키나와</label>
+                        <input id="loc15" type="radio" name="loc" value="">
+                        <label for="loc15">나고야</label>
+                        <input id="loc16" type="radio" name="loc" value="">
+                        <label for="loc16">교토</label>
+                        <input id="loc17" type="radio" name="loc" value="">
+                        <label for="loc17">훗카이도</label>
+                        <input id="loc18" type="radio" name="loc" value="">
+                        <label for="loc18">히로시마</label>
+                        <input id="loc19" type="radio" name="loc" value="">
+                        <label for="loc19">나가노</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>홍콩</span>
+                    <div class="options">
+                        <input id="loc20" type="radio" name="loc" value="">
+                        <label for="loc20">홍콩</label>
+                    </div>
+                </div>
+
+                <div class="opLine">
+                    <span>마카오</span>
+                    <div class="options">
+                        <input id="loc21" type="radio" name="loc" value="">
+                        <label for="loc21">마카오</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>대만</span>
+                    <div class="options">
+                        <input id="loc22" type="radio" name="loc" value="">
+                        <label for="loc22">타이페이</label>
+                        <input id="loc23" type="radio" name="loc" value="">
+                        <label for="loc23">타이중</label>
+                        <input id="loc24" type="radio" name="loc" value="">
+                        <label for="loc24">가오슝</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>중국</span>
+                    <div class="options">
+                        <input id="loc25" type="radio" name="loc" value="">
+                        <label for="loc25">상하이</label>
+                        <input id="loc26" type="radio" name="loc" value="">
+                        <label for="loc26">베이징</label>
+                        <input id="loc27" type="radio" name="loc" value="">
+                        <label for="loc27">칭다오</label>
+                        <input id="loc28" type="radio" name="loc" value="">
+                        <label for="loc28">청두</label>
+                        <input id="loc29" type="radio" name="loc" value="">
+                        <label for="loc29">광저우</label>
+                        <input id="loc30" type="radio" name="loc" value="">
+                        <label for="loc30">하이난</label>
+                        <input id="loc31" type="radio" name="loc" value="">
+                        <label for="loc31">장가계</label>
+                        <input id="loc32" type="radio" name="loc" value="">
+                        <label for="loc32">충칭</label>
+                        <input id="loc33" type="radio" name="loc" value="">
+                        <label for="loc33">서안</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>몽골</span>
+                    <div class="options">
+                        <input id="loc34" type="radio" name="loc" value="">
+                        <label for="loc34">울란바토르</label>
+                    </div>
+                </div>
+
+                <div class="dateSelec">
+                    <span>날짜 선택</span>
+                    <div class="dateInput">
+                        <input type="text" class="datePick" placeholder="첫째날 선택">
+                        <input type="text" class="datePick" placeholder="마지막날 선택">
+                    </div>
+                </div>
+
+
+
+            </form>
         </div>
     </section>
 
@@ -76,6 +196,7 @@
 
 
     <script src="./js/header.js"></script>
+    <script src="./js/cWriteSch.js"></script>
 </body>
 
 </html>

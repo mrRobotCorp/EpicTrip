@@ -1,1 +1,14 @@
-section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
+section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
+
+.selecAll { padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+
+.opLine { display: flex; align-items: center; }
+.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 66px; margin-right: 40px; background: #eee; font-size: 17px; font-family: pBold;}
+.schFrm input[type="radio"] { display: none; }
+.schFrm input[type="radio"] + label {padding: 7px 16px; margin-right: 13px; border-radius: 20px; font-size: 17px; font-family: pRegular; cursor: pointer; transition: all .2s;}
+.schFrm input[type="radio"]:checked + label { background: #41ff3b5a;}
+
+.dateSelec { margin-top: 20px; display: flex; align-items: center; }
+.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 66px; margin-right: 40px; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 17px; font-family: pBold; }
+.dateSelec .dateInput { display: flex; align-items: center; justify-content: space-around; }
+.dateSelec .datePick { font-size: 17px; font-family: pMedium;}
