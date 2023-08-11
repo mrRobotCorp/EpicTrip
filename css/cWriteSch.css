@@ -1,29 +1,29 @@
-section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
+section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 200px; }
 
 .selecAll { padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
 
 .opLine { display: flex; align-items: center; }
-.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 66px; margin-right: 40px; background: #eee; font-size: 17px; font-family: pBold;}
+.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: 40px; background: #eee; font-size: 15px; font-family: pBold;}
 .schFrm input[type="radio"] { display: none; }
-.schFrm input[type="radio"] + label {padding: 7px 16px; margin-right: 13px; border-radius: 20px; font-size: 17px; font-family: pRegular; cursor: pointer; transition: all .2s;}
+.schFrm input[type="radio"] + label {padding: 7px 16px; margin-right: 13px; border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s;}
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a;}
 
-.dateSelec { margin-top: 20px; display: flex; align-items: center; }
-.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 55px; margin-right: 40px; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 17px; font-family: pBold; }
+.dateSelec { margin-top: 15px; display: flex; align-items: center; }
+.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; }
 .dateSelec .dateInput { display: flex; align-items: center; justify-content: space-around; }
 .dateSelec .dpDiv { position: relative; display: flex; align-items: center; width: 300px; height: 45px; padding-left: 60px; margin-right: 30px; border: 1px solid #ddd; border-radius: 5px;}
 .dateSelec .dpDiv::before { content: ''; position: absolute; top: 27%; left: 7%; width: 20px; height: 20px; background: url(../source/dateGr.png) center center; background-size: cover;}
-.dpDiv .datePick {  font-size: 17px; font-family: pRegular; }
+.dpDiv .datePick {  font-size: 14px; font-family: pRegular; }
 
 /*  */
 
-.detailWrtie { margin: 30px 0 70px 0; } 
+.detailWrite { margin: 30px 0 70px 0; } 
 
 .mapInfoAll { display: flex; align-items: center; justify-content: space-between;}
 
-.schMap { width: calc(100vw * 650 / 1920); height: calc(100vw * 900 / 1920); border-radius: 10px; border: 2px solid #ddd;}
+.schMap { width: calc(100vw * 580 / 1920); height: calc(100vw * 900 / 1920); border-radius: 10px; border: 2px solid #ddd;}
 
-.schInfo { display: flex; align-items: center; flex-direction: column; justify-content: flex-start; width: calc(100vw * 800 / 1920); height: calc(100vw * 840 / 1920); border-radius: 10px; padding: 30px; border: 1px solid #ddd;}
+.schInfo { display: flex; align-items: center; flex-direction: column; justify-content: flex-start; width: calc(100vw * 750 / 1920); height: calc(100vw * 840 / 1920); border-radius: 10px; padding: 30px; border: 1px solid #ddd;}
 
 .infoTitle { width: 100%; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; font-size: 17px; font-family: pSemi;}
 .infoTitle .btn { opacity: .5; cursor: pointer; transition: all .2s;}
@@ -47,8 +47,8 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
 .dayTxt { margin: 0 0 30px 20px;}
 .daySch .schMemo { margin: 0 0 20px 30px; display: flex; align-items: center; }
 .daySch .schMemo .memoCnt { margin-right: 20px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; }
-.daySch .schMemo .memoTxt { width: 85%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-size: 15px; }
+.daySch .schMemo .memoTxt { width: 85%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px;  font-family: pRegular; font-size: 15px; }
 .mNone { color: #888;}
 
-.dayOne .locAdd { margin-left: 40%; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; }
-.locAdd:hover { background: #ddd; }
+.dayOne .locAdd { margin-left: 43%; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; }
+.locAdd:hover { background: #ffd4389f; }
