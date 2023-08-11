@@ -1,7 +1,8 @@
-$(function() {
+// ----------- 날짜 선택 -----------------
+$(function () {
     $(".datePick").datepicker({
         dateFormat: 'yy-mm-dd',
-        showMonthAfterYear:true,
+        showMonthAfterYear: true,
         changeYear: true, //콤보박스에서 년 선택 가능
         changeMonth: true,
         prevText: '이전 달',
@@ -16,6 +17,8 @@ $(function() {
     });
 });
 
+
+// ----------- 일정 map -----------------
 function initMap() {
 
     var latLng = new google.maps.LatLng(37.6463376, 127.0235861);
@@ -45,3 +48,5 @@ function initMap() {
 };
 
 window.initMap = initMap;
+
+

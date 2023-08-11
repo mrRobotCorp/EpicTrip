@@ -43,9 +43,12 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
 .daySch .dNum { padding: 6px 15px; margin-right: 10px; background: var(--yellow); color: #333; border-radius: 15px;}
 .daySch .date { padding: 5px 15px; border-left: 1px solid var(--color-line); color: #555; font-size: 14px; }
 
-.dayOne { margin-bottom: 50px;} 
+.dayOne { margin-bottom: 50px; } 
 .dayTxt { margin: 0 0 30px 20px;}
 .daySch .schMemo { margin: 0 0 20px 30px; display: flex; align-items: center; }
 .daySch .schMemo .memoCnt { margin-right: 20px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; }
 .daySch .schMemo .memoTxt { width: 85%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-size: 15px; }
 .mNone { color: #888;}
+
+.dayOne .locAdd { margin-left: 40%; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; }
+.locAdd:hover { background: #ddd; }
