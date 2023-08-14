@@ -32,8 +32,9 @@ RangeSlider();
 // ------------- 업로드 이미지 노출 ----------------
 window.onload = function() {
 
-    var fileInput = document.querySelector('#fileInput');
-    var fileDisplayArea = document.querySelector('.imgArea');
+    const fileInput = document.querySelector('#fileInput');
+    const fileDisplayArea = document.querySelector('.imgArea');
+    const uploadedBtn = document.querySelector('.uploadedBtn');
 
 
     fileInput.addEventListener('change', function(e) {
@@ -54,8 +55,10 @@ window.onload = function() {
 
             reader.readAsDataURL(file);	
         } else {
-            fileDisplayArea.innerHTML = "잘못된 이미지 형식입니다"
+            fileDisplayArea.innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
         }
+
+        uploadedBtn.classList.add("uploaded");
     });
 
 }
