@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Final project : EpicTrip">
+    <meta property="og:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta property="og:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta property="og:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Final project : EpicTrip">
+    <meta name="twitter:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta name="twitter:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta name="twitter:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name='keywords' content='project, EpicTrip, toy project, community, trip, tour'>
+
+    <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
+    <title>EpicTrip | 에픽트립</title>
+
+    <link href="./css/headFoot.css" rel="stylesheet">
+    <link href="./css/cWriteGrp.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <div class="gnb">
+                <ul class="gnbTab">
+                    <li>
+                        <a href="./store.html" class="store">여행상점</a>
+                    </li>
+                    <li>
+                        <a href="./Community_Group.html" class="community">커뮤니티</a>
+                    </li>
+                </ul>
+                <div class="userHead">
+                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <ul class="userList">
+                        <li>유저 닉네임</li>
+                        <li>마이페이지</li>
+                        <li>로그아웃</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="gnbBottom">
+            <a href="./Community_Group.html" class="together">
+                <img src="./source/group.png">
+                <span>동행</span>
+            </a>
+            <a href="./community_schedule.html" class="sche">
+                <img src="./source/date.png">
+                <span>일정</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="cWriteSection">
+        <form action="" class="schFrm">
+            <div class="selecAll">
+                <div class="opLine">
+                    <span>한국</span>
+                    <div class="options">
+                        <input id="loc01" type="radio" name="loc" value="">
+                        <label for="loc01">서울</label>
+                        <input id="loc02" type="radio" name="loc" value="">
+                        <label for="loc02">강원도</label>
+                        <input id="loc03" type="radio" name="loc" value="">
+                        <label for="loc03">제주</label>
+                        <input id="loc04" type="radio" name="loc" value="">
+                        <label for="loc04">부산</label>
+                        <input id="loc05" type="radio" name="loc" value="">
+                        <label for="loc05">경기도</label>
+                        <input id="loc06" type="radio" name="loc" value="">
+                        <label for="loc06">인천</label>
+                        <input id="loc07" type="radio" name="loc" value="">
+                        <label for="loc07">충청도</label>
+                        <input id="loc08" type="radio" name="loc" value="">
+                        <label for="loc08">경상도</label>
+                        <input id="loc09" type="radio" name="loc" value="">
+                        <label for="loc09">전라도</label>
+                        <input id="loc10" type="radio" name="loc" value="">
+                        <label for="loc10">울릉도</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>일본</span>
+                    <div class="options">
+                        <input id="loc11" type="radio" name="loc" value="">
+                        <label for="loc11">도쿄</label>
+                        <input id="loc12" type="radio" name="loc" value="">
+                        <label for="loc12">오사카</label>
+                        <input id="loc13" type="radio" name="loc" value="">
+                        <label for="loc13">후쿠오카</label>
+                        <input id="loc14" type="radio" name="loc" value="">
+                        <label for="loc14">오키나와</label>
+                        <input id="loc15" type="radio" name="loc" value="">
+                        <label for="loc15">나고야</label>
+                        <input id="loc16" type="radio" name="loc" value="">
+                        <label for="loc16">교토</label>
+                        <input id="loc17" type="radio" name="loc" value="">
+                        <label for="loc17">훗카이도</label>
+                        <input id="loc18" type="radio" name="loc" value="">
+                        <label for="loc18">히로시마</label>
+                        <input id="loc19" type="radio" name="loc" value="">
+                        <label for="loc19">나가노</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>홍콩</span>
+                    <div class="options">
+                        <input id="loc20" type="radio" name="loc" value="">
+                        <label for="loc20">홍콩</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>마카오</span>
+                    <div class="options">
+                        <input id="loc21" type="radio" name="loc" value="">
+                        <label for="loc21">마카오</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>대만</span>
+                    <div class="options">
+                        <input id="loc22" type="radio" name="loc" value="">
+                        <label for="loc22">타이페이</label>
+                        <input id="loc23" type="radio" name="loc" value="">
+                        <label for="loc23">타이중</label>
+                        <input id="loc24" type="radio" name="loc" value="">
+                        <label for="loc24">가오슝</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>중국</span>
+                    <div class="options">
+                        <input id="loc25" type="radio" name="loc" value="">
+                        <label for="loc25">상하이</label>
+                        <input id="loc26" type="radio" name="loc" value="">
+                        <label for="loc26">베이징</label>
+                        <input id="loc27" type="radio" name="loc" value="">
+                        <label for="loc27">칭다오</label>
+                        <input id="loc28" type="radio" name="loc" value="">
+                        <label for="loc28">청두</label>
+                        <input id="loc29" type="radio" name="loc" value="">
+                        <label for="loc29">광저우</label>
+                        <input id="loc30" type="radio" name="loc" value="">
+                        <label for="loc30">하이난</label>
+                        <input id="loc31" type="radio" name="loc" value="">
+                        <label for="loc31">장가계</label>
+                        <input id="loc32" type="radio" name="loc" value="">
+                        <label for="loc32">충칭</label>
+                        <input id="loc33" type="radio" name="loc" value="">
+                        <label for="loc33">서안</label>
+                    </div>
+                </div>
+                <div class="opLine">
+                    <span>몽골</span>
+                    <div class="options">
+                        <input id="loc34" type="radio" name="loc" value="">
+                        <label for="loc34">울란바토르</label>
+                    </div>
+                </div>
+
+                <div class="dateSelec">
+                    <span>날짜 선택</span>
+                    <div class="dateInput">
+                        <div class="dpDiv">
+                            <input type="text" class="datePick startDay" placeholder="첫째날 선택">
+                        </div>
+                        <div class="dpDiv">
+                            <input type="text" class="datePick endDay" placeholder="마지막날 선택">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detailWrite">
+                <div class="mapInfoAll">
+                    <div class="schMap"></div>
+
+                    <div class="schInfo">
+                        <div class="infoTitle">
+                            <a href="./Community_Schedule.html" class="backBtn btn"></a>
+                            <span>닉네임 님의 여행 일정</span>
+                            <span class="delBtn btn"></span>
+                        </div>
+                        <span class="schDays">23.08.23. ~ 23.08.28.</span>
+                        <div class="schLoc">여행위치</div>
+
+                        <div class="daySch">
+
+                            <div class="dayOne">
+                                <div class="dayTxt">
+                                    <span class="dNum">Day 1</span>
+                                    <span class="date">08.23</span>
+                                </div>
+
+                                <!-- 
+                                    <div class="schMemo">
+                                        <span class="memoCnt">1</span>
+                                        <input type="text" class="memoTxt">
+                                    </div>
+                                -->
+
+                                <button type="button" class="locAdd">장소 추가하기</button>
+                            </div>
+                            <div class="dayOne">
+                                <div class="dayTxt">
+                                    <span class="dNum">Day 2</span>
+                                    <span class="date">08.24</span>
+                                </div>
+
+                                <!-- 
+                                    <div class="schMemo">
+                                        <span class="memoCnt">1</span>
+                                        <input type="text" class="memoTxt">
+                                    </div>
+                                -->
+                                <button type="button" class="locAdd">장소 추가하기</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="modalBg">
+            <div class="locModal">
+                <h4>장소 추가하기</h4>
+                <div class="schBox">
+                    <input type="text" placeholder="장소를 입력해주세요" class="addLocTxt">
+                    <button type="button" class="locSchBtn"></button>
+                </div>
+                <form class="schLocBox">
+                    <div class="locAll">
+                        <input type="radio" id="ds01" name="ds" value="">
+                        <label for="ds01">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                        <input type="radio" id="ds02" name="ds" value="">
+                        <label for="ds02">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                        <input type="radio" id="ds03" name="ds" value="">
+                        <label for="ds03">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                        <input type="radio" id="ds04" name="ds" value="">
+                        <label for="ds04">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                        <input type="radio" id="ds05" name="ds" value="">
+                        <label for="ds05">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                        <input type="radio" id="ds06" name="ds" value="">
+                        <label for="ds06">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+    
+                    </div>
+    
+                    <button type="button" class="addBtn">추가하기</button>
+                </form>
+    
+                <div class="cls">
+                    <button type="button" class="clsBtn"></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <img src="./source/logo_white.png">
+        <p><a href="mailto:depo89055@gmail.com">프로젝트 문의 dddd@gmail.com</a></p>
+        <p>유선 상담 010-1234-1234</p>
+        <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/cWriteGrp.js"></script>
+</body>
+
+</html>

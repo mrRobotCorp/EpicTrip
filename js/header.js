@@ -34,13 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ---- 커뮤니티 중 일정 탭
-    if (loc.includes("ommunity") && loc.includes("chedule")) {
+    if (loc.includes("Community") && loc.includes("Sch")) {
         sche.classList.add("active");
     }
-    if (loc.includes("Community") && loc.includes("SchDetail")) {
-        sche.classList.add("active");
-    }
-    if (loc.includes("Community") && loc.includes("Write")) {
+    if (loc.includes("ommunity") && loc.includes("sch")) {
         sche.classList.add("active");
     }
 
@@ -49,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community") && loc.includes("Group")) {
         together.classList.add("active");
     }
-    if (loc.includes("ommunity") && loc.includes("osting")) {
+    if (loc.includes("Community") && loc.includes("Grp")) {
         together.classList.add("active");
     }
 
