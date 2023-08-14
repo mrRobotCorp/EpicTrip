@@ -172,6 +172,14 @@
                     </div>
                 </div>
 
+                <div class="teamSelec">
+                    <span class="teamTxt">모집 인원</span>
+                    <div class="rangeAll">
+                        <span class="rangeValue">0</span>명
+                        <input type="range" name="teamNum" class="teamNum" value="0" min="0" max="20">
+                    </div>
+                </div>    
+
                 <div class="dateSelec">
                     <span>날짜 선택</span>
                     <div class="dateInput">
@@ -186,112 +194,19 @@
             </div>
 
             <div class="detailWrite">
-                <div class="mapInfoAll">
-                    <div class="schMap"></div>
 
-                    <div class="schInfo">
-                        <div class="infoTitle">
-                            <a href="./Community_Schedule.html" class="backBtn btn"></a>
-                            <span>닉네임 님의 여행 일정</span>
-                            <span class="delBtn btn"></span>
-                        </div>
-                        <span class="schDays">23.08.23. ~ 23.08.28.</span>
-                        <div class="schLoc">여행위치</div>
-
-                        <div class="daySch">
-
-                            <div class="dayOne">
-                                <div class="dayTxt">
-                                    <span class="dNum">Day 1</span>
-                                    <span class="date">08.23</span>
-                                </div>
-
-                                <!-- 
-                                    <div class="schMemo">
-                                        <span class="memoCnt">1</span>
-                                        <input type="text" class="memoTxt">
-                                    </div>
-                                -->
-
-                                <button type="button" class="locAdd">장소 추가하기</button>
-                            </div>
-                            <div class="dayOne">
-                                <div class="dayTxt">
-                                    <span class="dNum">Day 2</span>
-                                    <span class="date">08.24</span>
-                                </div>
-
-                                <!-- 
-                                    <div class="schMemo">
-                                        <span class="memoCnt">1</span>
-                                        <input type="text" class="memoTxt">
-                                    </div>
-                                -->
-                                <button type="button" class="locAdd">장소 추가하기</button>
-                            </div>
-                        </div>
-
+                <div class="imgUpAll">
+                    <span>배경 이미지를 선택해주세요</span>
+                    <div class="imgArea">
+                        <input type="file" id="fileInput">
+                        <label for="fileInput" class="fileLabel">업로드</label> 
                     </div>
                 </div>
+
+
+                <button type="button" class="submitBtn">작성완료</button>
             </div>
         </form>
-
-        <div class="modalBg">
-            <div class="locModal">
-                <h4>장소 추가하기</h4>
-                <div class="schBox">
-                    <input type="text" placeholder="장소를 입력해주세요" class="addLocTxt">
-                    <button type="button" class="locSchBtn"></button>
-                </div>
-                <form class="schLocBox">
-                    <div class="locAll">
-                        <input type="radio" id="ds01" name="ds" value="">
-                        <label for="ds01">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                        <input type="radio" id="ds02" name="ds" value="">
-                        <label for="ds02">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                        <input type="radio" id="ds03" name="ds" value="">
-                        <label for="ds03">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                        <input type="radio" id="ds04" name="ds" value="">
-                        <label for="ds04">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                        <input type="radio" id="ds05" name="ds" value="">
-                        <label for="ds05">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                        <input type="radio" id="ds06" name="ds" value="">
-                        <label for="ds06">
-                            <span>후쿠오카 타워</span>
-                            <div class="check"></div>
-                        </label>
-    
-                    </div>
-    
-                    <button type="button" class="addBtn">추가하기</button>
-                </form>
-    
-                <div class="cls">
-                    <button type="button" class="clsBtn"></button>
-                </div>
-            </div>
-        </div>
-
     </section>
 
 

@@ -12,27 +12,52 @@ $(function () {
     });
 });
 
-
-// ------------------ modal ---------------------
-const modal = document.querySelector(".modalBg");
-const clsBtn = document.querySelector(".cls");
-const locAdd = document.querySelectorAll(".locAdd");
-
-function showModal() {
-    modal.classList.add("active")
+// ---------------  모집인원 ------------------------
+function ShowSliderValue(sVal) {
+    var obValueView = document.querySelector(".rangeValue");
+    obValueView.innerHTML = sVal
 }
 
-function clsModal() {
-    modal.classList.remove("active");
-}
+var RangeSlider = function () {
+    var range = $('.teamNum');
 
-locAdd.forEach((e) => {
-    e.onclick = function() {
-        showModal();
-    };
-});
-
-clsBtn.onclick = function() {
-    clsModal();
+    range.on('input', function () {
+        ShowSliderValue(this.value);
+    });
 };
+
+RangeSlider();
+
+
+// ------------- 업로드 이미지 노출 ----------------
+window.onload = function() {
+
+    var fileInput = document.querySelector('#fileInput');
+    var fileDisplayArea = document.querySelector('.imgArea');
+
+
+    fileInput.addEventListener('change', function(e) {
+        var file = fileInput.files[0];
+        var imageType = /image.*/;
+
+        if (file.type.match(imageType)) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                fileDisplayArea.innerHTML = "";
+
+                var img = new Image();
+                img.src = reader.result;
+
+                fileDisplayArea.appendChild(img);
+            }
+
+            reader.readAsDataURL(file);	
+        } else {
+            fileDisplayArea.innerHTML = "잘못된 이미지 형식입니다"
+        }
+    });
+
+}
+
 
