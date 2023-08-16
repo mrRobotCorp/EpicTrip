@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community") && loc.includes("Group")) {
         together.classList.add("active");
     }
-    if (loc.includes("Community") && loc.includes("Grp")) {
+    if (loc.includes("Community") && loc.includes("Gro")) {
         together.classList.add("active");
     }
 
