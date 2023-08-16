@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Final project : EpicTrip">
+    <meta property="og:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta property="og:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta property="og:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Final project : EpicTrip">
+    <meta name="twitter:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta name="twitter:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta name="twitter:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name='keywords' content='project, EpicTrip, toy project, community, trip, tour'>
+
+    <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
+    <title>EpicTrip | 에픽트립</title>
+
+    <link href="./css/headFoot.css" rel="stylesheet">
+    <link href="./css/sPay.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <div class="gnb">
+                <ul class="gnbTab">
+                    <li>
+                        <a href="./Store.html"  class="store">여행상점</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="community">커뮤니티</a>
+                    </li>
+                </ul>
+                <div class="userHead">
+                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="#" ><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <ul class="userList">
+                        <li>유저 닉네임</li>
+                        <li>마이페이지</li>
+                        <li>로그아웃</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form action="" class="payWrap">
+            <div class="buyerInfo">
+                <h1>예약하기</h1>
+                <div class="bIline"></div>
+                <h2>예약자 정보</h2>
+                <div class="buyerInfoList">
+                    <div class="nameGen">
+                        <span>
+                            <p>예약자 이름</p>
+                            <input type="text" name="name" id="name">
+                        </span>
+                        <span>
+                            <p>성별</p>
+                            <select name="gender" id="gender">
+                                <option value="cGender">성별</option>
+                                <option value="male">남</option>
+                                <option value="female">여</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="birth">
+                        <p>태어난 년도</p>
+                        <input type="date" name="birth" id="birth">
+                    </div>
+                    <div class="phoneNum">
+                        <p>휴대전화 번호</p>
+                        <input type="number" name="birth" id="phoneNum">
+                    </div>
+                    <div class="email">
+                        <p>이메일 주소</p>
+                        <input type="text" name="email" id="email">
+                    </div>
+    
+    
+                </div>
+            </div>
+
+            <div class="itemInfo">
+                <div class="itemInfoInner">
+                    <h1>결제하기</h1>
+                    <p class="ment">꼭 확인해주세요</p>
+                    <div class="itemThumb">
+                        <div class="imgWrap">
+                            <img src="./source/stList01.jpg" alt="">
+                        </div>
+                        <div class="itemThtext">
+                            <span class="itemTitle">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                            <p><span>YYYY.MM.DD</span> 출발</p>
+                        </div>
+                    </div>
+                    <p class="selP">선택된 상품</p>
+                    <div class="selectItem">
+                        <span>1인 당 예약금</span>
+                        <div class="datePrice">
+                            <p>MM.DD</p>
+                            <h3>총 N개</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div  class="point">
+                            <p>포인트 사용</p>
+                            <span>보유 포인트 : NN,NNN p</span>
+                        </div>
+                        <div class="usePoint">
+                            <input type="text" name="" id="">
+                            <button>전액 사용</button>
+                        </div>
+                    </div>
+                    <div class="payLine"></div>
+                    <div class="priceInfo">
+                        <h3>결제 금액</h3>
+                        <div class="pspt">
+                            <div class="psptIn">
+                                <p>총 상품 금액</p>
+                                <p>700,000 원</p>
+                            </div>
+                            <div class="psptIn">
+                                <p>할인율</p>
+                                <p>0 원</p>
+                            </div>
+                            <div class="psptIn">
+                                <p>포인트 사용</p>
+                                <p>0 원</p>
+                            </div>
+                            <div class="psptIn tot">
+                                <p class="totment">총 결제 금액</p>
+                                <p>700,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payLine"></div>
+                    <h3 class="hP">결제 방식</h3>
+                    <div class="howPay">
+                        <button id="cardPay">카드 결제</button>
+                        <button id="nobankBook">무통장 입금</button>
+                    </div>
+                </div>
+                <button class="itemBtn" id="itemBtn" type="button">총 700,000원 결제하기</button>
+            </div>
+        </form>
+
+
+    </section>
+
+    <footer>
+        <img src="./source/logo_white.png">
+        <p><a href="mailto:depo89055@gmail.com">프로젝트 문의 dddd@gmail.com</a></p>
+        <p>유선 상담 010-1234-1234</p>
+        <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/sPay.js"></script>
+
+</body>
+
+</html>

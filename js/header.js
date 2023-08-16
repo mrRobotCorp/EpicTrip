@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const together = document.querySelector(".together");
     const sche = document.querySelector(".sche");
 
-    if (loc.includes("ommunity")) {
+    if (loc.includes("Community")) {
         community.classList.add("active");
     }
-    if (loc.includes("store")) {
+    if (loc.includes("Store")) {
         store.classList.add("active");
     }
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community") && loc.includes("Sch")) {
         sche.classList.add("active");
     }
-    if (loc.includes("ommunity") && loc.includes("sch")) {
+    if (loc.includes("Community") && loc.includes("sch")) {
         sche.classList.add("active");
     }
 
