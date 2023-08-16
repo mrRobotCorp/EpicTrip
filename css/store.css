@@ -2,7 +2,7 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 140px; }
 
 h3 { position: relative; margin-bottom: 25px; color: #222; font-size: 23px; font-family: pBold;}
 h3::before { content: ""; position: absolute; top: 12px; left: -5px; width: 135px; height: 15px; background: #41ff3b78; border-radius: 3px; z-index: -10; }
-.ctryBanner { display: flex; align-items: center; justify-content: space-between; padding-bottom: 60px; border-bottom: 1px solid #eee;}
+.ctryBanner { display: flex; align-items: center; justify-content: space-between; padding-bottom: 60px; border-bottom: 1px solid #ddd;}
 .ctryBanner .ctry { position: relative; display: flex; align-items: center; justify-content: center; width: 165px; height: 215px; overflow: hidden; border-radius: 15px; }
 .ctryBanner .ctry .ctryBg { transition: all .3s; height: 100%; filter: brightness(0.85); }
 .ctryBanner .ctry:hover .ctryBg { transform: scale(1.15); filter: brightness(0.95); }
