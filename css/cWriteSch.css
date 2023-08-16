@@ -9,7 +9,9 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 200px; }
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; display: flex; align-items: center; } 
-.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
+.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; background: #fff; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; cursor: pointer; transition: all .25s;} 
+.dateSelec #dateClick:hover { background: #eee;}
+
 .dateSelec .dateInput { display: flex; align-items: center; justify-content: space-around; } 
 .dateSelec .dpDiv { position: relative; display: flex; align-items: center; width: 300px; height: 45px; padding-left: 60px; margin-right: 30px; border: 1px solid #ddd; border-radius: 5px; transition: all .2s; } 
 .dateSelec .dpDiv::before { content: ''; position: absolute; top: 27%; left: 7%; width: 20px; height: 20px; background: url(../source/dateGr.png) center center; background-size: cover; } 
@@ -75,14 +77,17 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .daySch .date { padding: 5px 15px; border-left: 1px solid var(--color-line); color: #555; font-size: 14px; } 
 
 .dayOne { margin-bottom: 50px; } 
-.dayTxt { margin: 0 0 30px 20px; } 
-.daySch .schMemo { margin: 0 0 20px 30px; display: flex; align-items: center; } 
-.daySch .schMemo .memoCnt { margin-right: 20px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; } 
-.daySch .schMemo .memoTxt { width: 85%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-family: pRegular; font-size: 15px; } 
+.dayTxt { margin: 0 0 30px 20px; display: flex; align-items: center; justify-content: space-between;} 
+.dayOne .locAdd { margin-right: 10px; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; } 
+.locAdd:hover { background: #ffd4389f; } 
+
+.daySch .schMemo { margin: 0 0 20px 30px; display: flex; align-items: center; justify-content: space-around; } 
+.daySch .schMemo .memoCnt { margin-right: 13px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; } 
+.daySch .schMemo .memoTxt { width: 80%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-family: pRegular; font-size: 15px; } 
 .mNone { color: #888; } 
 
-.dayOne .locAdd { margin-left: 43%; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; } 
-.locAdd:hover { background: #ffd4389f; } 
+.locDel { margin-left: 10px; width: 35px; height: 35px; line-height: 15px; color: #333; background: #e8e8e8; font-size: 17px; cursor: pointer; border-radius: 20px; transition: all .25s;}
+.locDel:hover { background: #dcdcdc; }
 
 .submitBtn { display: block; margin: 40px auto 0 auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer;}
 .submitBtn:hover { background: #ffd4389f;}

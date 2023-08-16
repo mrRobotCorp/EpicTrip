@@ -9,16 +9,21 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 140px; }
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; display: flex; align-items: center; } 
-.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
+.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; background: #fff; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; cursor: pointer; transition: all .25s;} 
+.dateSelec #dateClick:hover { background: #eee;}
+
 .dateSelec .dateInput { display: flex; align-items: center; justify-content: space-around; } 
 .dateSelec .dpDiv { position: relative; display: flex; align-items: center; width: 300px; height: 45px; padding-left: 60px; margin-right: 30px; border: 1px solid #ddd; border-radius: 5px; transition: all .2s; } 
 .dateSelec .dpDiv::before { content: ''; position: absolute; top: 27%; left: 7%; width: 20px; height: 20px; background: url(../source/dateGr.png) center center; background-size: cover; } 
 .dateSelec .dpDiv:focus-within { border-color: #2ce126; } 
 .dpDiv .datePick { width: 100%; font-size: 14px; font-family: pRegular; } 
 
+.saleSelec { margin-top: 15px; display: flex; align-items: center; }
+.saleSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; background: #fff; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold;}
+.saleSelec .saleDiv { display: flex; align-items: center; width: 300px; height: 45px; padding-left: 60px; margin-right: 30px; border-radius: 5px; transition: all .2s;}
 /* ----------- date custom --------------*/
 
-.ui-datepicker { top: 780px !important; width: 250px !important; } 
+.ui-datepicker { top: 650px !important; width: 250px !important; } 
 .ui-widget.ui-widget-content { /* 전체 박스 */
 border:0px; box-shadow: 2px 2px 8px #a4a4a44b; padding:0; border-radius: 10px; } 
 .ui-widget-header { /* 헤더 (화살표/날짜표시 영역) */ font-size: 15px; border: 0px; border-radius: 0px; } 
