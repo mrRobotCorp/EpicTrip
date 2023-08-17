@@ -15,10 +15,29 @@ section .bnImg { width: 100%; }
 
 .postText { margin-top: 31px; font-size: 16px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
 
-.postDV { margin-top: 100px; display: flex; font-family: pLight; font-size: 15px; color: rgb(62, 62, 62); } 
+.postDV { margin: 100px 0 50px 0; padding-bottom: 50px; display: flex; font-family: pLight; font-size: 15px; color: #3e3e3e; border-bottom: 1px solid var(--color-line); } 
 .postDV span { padding-right: 5px; } 
 .postDV p { padding: 0 5px 0 15px; } 
 
+.cmmtFrm strong { display: inline-block; margin-bottom: 20px; color: #333; font-size: 23px; font-family: pBold; }
+
+.cmmtBox { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; background: #eee; border-radius: 10px; border: 2px solid transparent; transition: all .2s; }
+.cmmtBox:focus-within { background-color: #fafafa; border-color: var(--color-main);}
+.cmmtBox textarea { width: 88%; height: 55px; padding: 0 20px; background: transparent; font-size: 15px; font-family: pRegular; resize: none;}
+.cmmtBox textarea::-webkit-scrollbar { width: 6px; }
+.cmmtBox textarea::-webkit-scrollbar-thumb { background-color: #999; border: none; }
+
+.cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer;}
+.cmmtBox button:hover { opacity: 1;}
+
+
+.cmmtUserImg { width: 33px; margin: 0 18px 0 5px; border-radius: 50%; }
+.cmmtUserTxt span:first-child { font-family: pMedium; font-size: 14px; } 
+.cmmtUserTxt span:nth-child(2) { font-size: 11px; color: #777; } 
+.cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 14px; font-family: pLight; line-height: 120%; }  
+
+
+/* --------------------- */
 .pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; width: 350px; border-radius: 10px;  border: solid 1px var(--color-line);}
 .rightWrap { margin: 0 auto; padding: 20px; }
 
