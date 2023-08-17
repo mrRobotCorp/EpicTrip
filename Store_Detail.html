@@ -32,15 +32,15 @@
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
-                        <a href="./Store.html"  class="store">여행상점</a>
+                        <a href="./Store.html" class="store">여행상점</a>
                     </li>
                     <li>
-                        <a href="./Community_Group.html"  class="community">커뮤니티</a>
+                        <a href="./Community_Group.html" class="community">커뮤니티</a>
                     </li>
                 </ul>
                 <div class="userHead">
                     <a href="#"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="#" ><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
                     <ul class="userList">
                         <li>유저 닉네임</li>
                         <li>마이페이지</li>
@@ -55,35 +55,71 @@
         <div class="banner">
             <img src="./source/sDetailBg.jpg" class="bnImg">
         </div>
-        
+
         <div class="postContent">
             <div class="pLeft">
                 <strong>[베트남 호치민] 🌇 Ho Chi Minh City tour in 1 Day 🙌🏻</strong>
                 <div class="titleBottom">
                     <div class="postingBtn">
-                        <button type="button" id="upBtn">수정</button>
-                        <button type="button" id="delBtn">삭제</button>
+                        <button type="button" class="wishBtn">위시</button>
+                        <button type="button" class="upBtn">수정</button>
+                        <button type="button" class="delBtn">삭제</button>
                     </div>
-                    <span class="itemPrice">124,000원</span>
+                    <span class="itemPrice">124,000 <span>원</span></span>
                 </div>
 
                 <p class="postText">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem quasi ipsum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur sapiente, ea nulla voluptatibus ex!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem quasi ipsum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur sapiente, ea nulla voluptatibus ex!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti
+                    quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem
+                    quasi ipsum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem
+                    rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur
+                    sapiente, ea nulla voluptatibus ex!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti
+                    quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem
+                    quasi ipsum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem
+                    rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur
+                    sapiente, ea nulla voluptatibus ex!
                 </p>
 
                 <div class="postDV">
-                    <span>2023-08-11</span> <span>14:31</span> <p>조회수</p> <span>51</span>
+                    <span>2023-08-11</span> <span>14:31</span>
+                    <p>조회수</p> <span>51</span>
                 </div>
             </div>
 
 
             <div class="pRight">
-                <div id="calendar"></div>
+                <div class="rightWrap">
+                    <div id="calendar"></div>
 
-                
+                    <p class="chTxt">상품 선택</p>
+                    <div class="priceCnt">
+                        <div>
+                            <p>1인 당 예약금</p>
+                            <p class="chosenDay">23-08-16</p>
+                        </div>
+                        <div class="cntCtrl">
+                            <span class="minus numBtn">&#8211</span>
+                            <span class="number"></span>
+                            <span class="plus numBtn">+</span>
+                        </div>
+                    </div>
+
+                    <div class="payInfo">
+                        <span>인원별 할인 정보 상세</span>
+                        <p>
+                            3인 이상 예약할 시, 총 금액에서 10%,<br>
+                            5인 이상 예약할 시, 총 금액에서 15% 할인이 적용됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <button type="button" class="goPay">
+                    <span>127,000</span>
+                    <span>원 결제하기</span>
+                </button>
             </div>
         </div>
 
