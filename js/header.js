@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community")) {
         community.classList.add("active");
     }
-    if (loc.includes("Store")) {
+    if (loc.includes("tore")) {
         store.classList.add("active");
     }
 

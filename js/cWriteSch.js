@@ -46,6 +46,7 @@ window.initMap = initMap;
 
 
 // ------------------ modal ---------------------
+
 const modal = document.querySelector(".modalBg");
 const clsBtn = document.querySelector(".cls");
 const locAdd = document.querySelectorAll(".locAdd");

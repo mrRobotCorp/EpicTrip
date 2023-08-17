@@ -35,26 +35,22 @@ input[name="saleDay"]:checked + label::before { color: #000; }
 /* ----------- date custom --------------*/
 
 .ui-datepicker { top: 650px !important; width: 250px !important; } 
-.ui-widget.ui-widget-content { /* 전체 박스 */
-border:0px; box-shadow: 2px 2px 8px #a4a4a44b; padding:0; border-radius: 10px; } 
-.ui-widget-header { /* 헤더 (화살표/날짜표시 영역) */ font-size: 15px; border: 0px; border-radius: 0px; } 
-.ui-widget-header .ui-icon { /* 이전,다음 화살표 */
-background: none; } 
+.ui-widget.ui-widget-content { border:0px; box-shadow: 2px 2px 8px #a4a4a44b; padding:0; border-radius: 10px; } 
+.ui-widget-header { font-size: 15px; border: 0px; border-radius: 0px; } 
+.ui-widget-header .ui-icon { background: none; } 
 .ui-datepicker-prev span { display: none !important; } 
 .ui-datepicker-next span { display: none !important; } 
-.ui-datepicker-prev { /* 이전 화살표 */
-width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
+.ui-datepicker-prev { width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
 .ui-datepicker-prev::before { content:'\02C2'; } 
-.ui-datepicker-next { /* 다음 화살표 */
-width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
+.ui-datepicker-next { width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
 .ui-datepicker-next::before { content:'\02C3'; } 
 
 .ui-datepicker .ui-datepicker-header { background: #fff; border-radius: 10px 10px 0 0; } 
 .ui-datepicker .ui-datepicker-title { color: var(--color-main); } 
 .ui-datepicker .ui-datepicker-title .ui-datepicker-year { width: 70px; font-family: pRegular; } 
 .ui-datepicker .ui-datepicker-title .ui-datepicker-month { width: 70px; font-family: pRegular; } 
-.ui-datepicker th { /* 요일 영역 */ background : #955ef5; } 
-.ui-datepicker th span { /* 요일 텍스트 */ font-size:14px; color: #fff; font-family: pRegular; } 
+.ui-datepicker th { background : #955ef5; } 
+.ui-datepicker th span { font-size:14px; color: #fff; font-family: pRegular; } 
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { /* 일자 기본영역 */
 border:0px; background: none; font-family: pLight; font-size: 13px; text-align: center; width: 22px; height: 22px; line-height: 22px; padding:0; border-radius: 3px; margin: 0 auto; } 
@@ -62,6 +58,7 @@ border:0px; background: none; font-family: pLight; font-size: 13px; text-align: 
 border:0px; background:var(--yellow) !important; color: #000 !important; } 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover { /* 선택 일자 */
 border: 1px solid var(--color-main) !important; background: var(--color-main) !important; } 
+
 /*-------------------------------------------------*/
 
 
