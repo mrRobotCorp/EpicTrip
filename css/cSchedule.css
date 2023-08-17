@@ -31,10 +31,10 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 .detailBtn { transition: all .2s; }
 .detailBtn:hover { color: var(--color-main); }
 
-.pagination { margin: 40px auto; display: flex; align-items: center; justify-content: center;}
-.pagination span { display: inline-block; width: 25px; height: 25px; margin: 0 5px; border-radius: 20px; text-align: center; line-height: 25px; cursor: pointer; transition: all .2s;}
-.pagination span:hover { background-color: #eee; }
 
+.pagination { margin: 40px auto; display: flex; align-items: center; justify-content: center;}
+.pagination span { display: inline-block; width: 25px; height: 25px; margin: 0 5px; border-radius: 20px; color: #444; text-align: center; line-height: 25px; cursor: pointer; transition: all .2s;}
+.pagination span:hover { background-color: #ffd43856; }
 .pagination .arrow { width: 12px; height: 12px;  opacity: .5; cursor: pointer; transition: all .2s;}
 .pagination .prevBtn { background: url(../source/arrow_l.png) center center; background-size: cover; }
 .pagination .nextBtn { background: url(../source/arrow_r.png) center center; background-size: cover; }
