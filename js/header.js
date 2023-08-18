@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community")) {
         community.classList.add("active");
     }
-    if (loc.includes("tore")) {
+    if (loc.includes("Store")) {
         store.classList.add("active");
     }
 
@@ -37,15 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("Community") && loc.includes("Sch")) {
         sche.classList.add("active");
     }
-    if (loc.includes("Community") && loc.includes("sch")) {
-        sche.classList.add("active");
-    }
 
 
     // ---- 커뮤니티 중 동행 탭
-    if (loc.includes("Community") && loc.includes("Group")) {
-        together.classList.add("active");
-    }
     if (loc.includes("Community") && loc.includes("Gro")) {
         together.classList.add("active");
     }

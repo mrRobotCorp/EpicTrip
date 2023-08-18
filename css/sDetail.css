@@ -8,8 +8,10 @@ section .bnImg { width: 100%; }
 .pLeft strong { font-family: pSemi; font-size: 25px; } 
 .pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line) ;}
 .postingBtn { display: flex; align-items: center; } 
-.postingBtn button {  margin-right: 10px; width: 52px; height: 30px; border-radius: 5px; background-color: #ddd; font-family: pMedium; font-size: 14px; color: rgb(27, 27, 27); cursor: pointer; transition: all .3s; } 
-.postingBtn button:hover { background-color: #55ed50aa; } 
+.postingBtn .admBtn {  margin-right: 10px; width: 52px; height: 30px; border-radius: 5px; background-color: #ddd; font-family: pMedium; font-size: 14px; color: rgb(27, 27, 27); cursor: pointer; transition: all .3s; } 
+.postingBtn .admBtn:hover { background-color: #55ed50aa; } 
+.wishBtn { margin-right: 10px; width: 28px; height: 28px; background: url(../source/like.png) center center; background-size: cover; cursor: pointer; }
+.wishBtn.active { background: url(../source/like_red.png) center center; background-size: cover; }
 .itemPrice { color: #222; font-size: 33px; font-family: pBold;}
 .itemPrice span { font-size: 22px; font-family: pMedium;}
 
@@ -30,7 +32,7 @@ section .bnImg { width: 100%; }
 .cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer;}
 .cmmtBox button:hover { opacity: 1;}
 
-
+.comment { display: flex; align-items:flex-start; }
 .cmmtUserImg { width: 33px; margin: 0 18px 0 5px; border-radius: 50%; }
 .cmmtUserTxt span:first-child { font-family: pMedium; font-size: 14px; } 
 .cmmtUserTxt span:nth-child(2) { font-size: 11px; color: #777; } 

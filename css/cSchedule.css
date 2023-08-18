@@ -26,16 +26,28 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 .schBottom { height: 60px; display: flex; align-items: center; justify-content: space-around; font-size: 15px;}
 .schBottom > * { width: 50%; height: 50%; text-align: center; display: flex; align-items: center; justify-content: center;}
 .schBottom .schLoc { margin-left: 20px; position: relative; border-right: 1px solid var(--color-line);}
-.schBottom .schLoc::before { position: absolute; top: 7%; left: 20%; content: ''; background: url(../source/loc.png) center center; background-size: cover; width: 23px; height: 23px; }
+.schBottom .schLoc::before { position: absolute; top: 7%; left: 17%; content: ''; background: url(../source/loc.png) center center; background-size: cover; width: 23px; height: 23px; }
 
 .detailBtn { transition: all .2s; }
 .detailBtn:hover { color: var(--color-main); }
 
+.dayLocAll { width: 90%; margin: 0 auto;}
+.dayAll { display: flex; align-items: center; flex-wrap: wrap;}
+.dayAll input[type="radio"] { display: none; }
+.dayAll input + label { margin: 0 8px 8px 0; padding: 8px 15px; border: 1px solid #ddd; border-radius: 20px; font-size: 14px; cursor: pointer; transition: all .2s;}
+.dayAll input + label:hover { background: #ddd;}
+.dayAll input:checked + label { background: var(--color-main); color: #fff; border-color: transparent;}
+
+.dayLoc { display: none; padding: 10px; font-size: 14px;}
+.dayLoc.active { display: block; }
+
+.dayLoc li { padding: 5px; }
 
 .pagination { margin: 40px auto; display: flex; align-items: center; justify-content: center;}
-.pagination span { display: inline-block; width: 25px; height: 25px; margin: 0 5px; border-radius: 20px; color: #444; text-align: center; line-height: 25px; cursor: pointer; transition: all .2s;}
-.pagination span:hover { background-color: #ffd43856; }
+.pagination .pageNum { display: inline-block; width: 25px; height: 25px; margin: 0 5px; font-family: pRegular; font-size: 14px; background: transparent; border-radius: 20px; color: #444; text-align: center; line-height: 25px; cursor: pointer; transition: all .2s;}
+.pagination .pageNum:hover { background-color: #ffd43856; }
+.pagination .pageNum.active { color: #000; background-color: var(--yellow); }
 .pagination .arrow { width: 12px; height: 12px;  opacity: .5; cursor: pointer; transition: all .2s;}
-.pagination .prevBtn { background: url(../source/arrow_l.png) center center; background-size: cover; }
-.pagination .nextBtn { background: url(../source/arrow_r.png) center center; background-size: cover; }
+.pagination .prevBtn { margin-right: 5px; background: url(../source/arrow_l.png) center center; background-size: cover; }
+.pagination .nextBtn { margin-left: 5px; background: url(../source/arrow_r.png) center center; background-size: cover; }
 .pagination .arrow:hover { opacity: 1; }

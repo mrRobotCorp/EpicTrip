@@ -51,3 +51,14 @@ function initMap() {
 };
 
 window.initMap = initMap;
+
+// --------------------------------
+const day = document.querySelectorAll("input[name='day']");
+const dayLoc = document.querySelectorAll(".dayLoc");
+
+for(let i=0; i<day.length; i++) {
+    day[i].onclick = function() {
+        dayLoc[i].classList.add("active");
+        
+    }
+}

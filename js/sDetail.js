@@ -491,3 +491,9 @@ function Timer(mins, secs) {
     this.secs = secs;
 }
 
+// --------------------------
+const wishBtn = document.querySelector(".wishBtn");
+wishBtn.onclick = function() {
+    this.classList.toggle("active");
+}
+
