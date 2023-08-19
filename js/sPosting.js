@@ -16,11 +16,10 @@
 
 // ------------- 업로드 이미지 노출 ----------------
 window.onload = function() {
-
+    // ----------- 설명 이미지
     const fileInput = document.querySelector('#fileInput');
-    const fileDisplayArea = document.querySelector('.imgArea');
-    const uploadedBtn = document.querySelector('.uploadedBtn');
-
+    const fileDisplayArea = document.querySelectorAll('.imgArea');
+    const uploadedBtn = document.querySelectorAll('.uploadedBtn');
 
     fileInput.addEventListener('change', function(e) {
         var file = fileInput.files[0];
@@ -30,19 +29,46 @@ window.onload = function() {
             var reader = new FileReader();
 
             reader.onload = function(e) {
-                fileDisplayArea.innerHTML = "";
+                fileDisplayArea[0].innerHTML = "";
 
                 var img = new Image();
                 img.src = reader.result;
 
-                fileDisplayArea.appendChild(img);
+                fileDisplayArea[0].appendChild(img);
             }
 
             reader.readAsDataURL(file);	
         } else {
-            fileDisplayArea.innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
+            fileDisplayArea[0].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
         }
-        uploadedBtn.classList.add("uploaded");
+        uploadedBtn[0].classList.add("uploaded");
+    });
+
+
+    // ------- 배경 이미지
+    const bgInput = document.querySelector('#bgInput');
+
+    bgInput.addEventListener('change', function(e) {
+        var file = bgInput.files[0];
+        var imageType = /image.*/;
+
+        if (file.type.match(imageType)) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                fileDisplayArea[1].innerHTML = "";
+
+                var img = new Image();
+                img.src = reader.result;
+
+                fileDisplayArea[1].appendChild(img);
+            }
+
+            reader.readAsDataURL(file);	
+        } else {
+            fileDisplayArea[1].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
+        }
+        uploadedBtn[1].classList.add("uploaded");
     });
 
 }

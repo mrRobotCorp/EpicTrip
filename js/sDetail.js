@@ -455,7 +455,7 @@ if (calendarElem != null) {
 }
 
 
-// -------------------------------------------------
+// ---------------- 숫자 컨트롤러 -----------------------------
 var breakTime = document.querySelector(".number");
 var breakAdd = document.querySelector(".plus");
 var breakSub = document.querySelector(".minus");
