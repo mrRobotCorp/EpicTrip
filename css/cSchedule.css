@@ -36,8 +36,9 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 .dayAll { display: flex; align-items: center; flex-wrap: wrap;}
 .dayAll input[type="radio"] { display: none; }
 .dayAll span.day { margin: 0 8px 8px 0; padding: 8px 11px; border: 1px solid #ddd; border-radius: 20px; font-size: 14px; cursor: pointer; transition: all .2s;}
-.dayAll span.day:hover { background: #ddd;}
+.dayAll span.day:hover { color: #000; background: #ddd;}
 .dayAll .day.active {background: var(--color-main); color: #fff; border-color: transparent; }
+.dayAll .day.active:hover {background: var(--color-main); color: #fff; border-color: transparent; }
 
 .locList { height: 102px; overflow-y: auto; }
 .locList::-webkit-scrollbar { width: 12px; } 
@@ -49,8 +50,7 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 .locList ul li { position: relative; padding: 15px 0; padding-left: 25px; border-bottom: 1px solid #ddd;}
 .locList ul li:last-child { border: none;}
 .locList ul li::before { content: ''; position: absolute; width: 22px; height: 22px; top: 11px; left: -5px; background: url(../source/locGr.png) center center; background-size: cover; }
-.noLoc { display: flex; align-items: center; justify-content: center;}
-.noLoc li { margin: 20px 0 0 -10px; color: #555; font-size: 16px; }
+.noLoc { color: #666; font-size: 16px; }
 
 .pagination { margin: 40px auto; display: flex; align-items: center; justify-content: center;}
 .pagination .pageNum { display: inline-block; width: 25px; height: 25px; margin: 0 5px; font-family: pRegular; font-size: 14px; background: transparent; border-radius: 20px; color: #444; text-align: center; line-height: 25px; cursor: pointer; transition: all .2s;}

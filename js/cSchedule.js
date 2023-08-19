@@ -52,28 +52,29 @@ mLoc02.forEach(({ label, name, lat, lng }) => {
 
 window.initMap = initMap;
 
-
 // -------------- day 별 장소 리스트 보이기 ------------------
 const day = document.querySelectorAll(".day");
 const dayLoc = document.querySelectorAll(".locList ul");
-const noLoc = document.querySelector(".noLoc");
+// const noLoc = document.querySelector(".noLoc");
 
 function locListShow(e) {
     day[e].onclick = function () {
-        if (dayLoc[e] != null) {
+        if (dayLoc[e].innerText != "") {
 
             if (dayLoc[e].getAttribute('class') != 'active') {
                 for (var i = 0; i < dayLoc.length; i++) {
                     dayLoc[i].removeAttribute('class');
+                    day[i].classList.remove('active');
                 }
                 dayLoc[e].setAttribute('class', 'active');
+                day[e].classList.add('active');
             } else {
                 dayLoc[e].removeAttribute('class');
+                day[e].classList.remove('active');
             }
-            noLoc.innerHTML = "";
 
         } else {
-            noLoc.innerHTML = "<ul class='active'><li>저장된 일정이 없습니다.</li></ul>";
+            dayLoc[e].innerHTML = "<li class='noLoc'>저장된 일정이 없습니다.</li>";
             for (var i = 0; i < dayLoc.length; i++) {
                 dayLoc[i].removeAttribute('class');
             }
@@ -82,7 +83,7 @@ function locListShow(e) {
     };
 }
 
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < day.length; i++) {
     locListShow(i);
 }
 
