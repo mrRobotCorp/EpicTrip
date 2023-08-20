@@ -16,13 +16,19 @@ $(function() {
             console.log(date);
         }
     });
+
+    const td = document.querySelectorAll(".ui-datepicker td");
+    
+    td.forEach((e,i) => {
+        let cls = e.getAttribute("data-month");
+        if(true) {
+            e.insertAdjacentHTML("beforeend", `<p class='dayPrice'>47만</p>`)
+        }
+    })
+
+
 });
 
-const td = document.querySelectorAll(".ui-datepicker td");
-
-td.forEach((e,i) => {
-    e.insertAdjacentHTML("beforeend", `<span>47만</span>`)
-})
 
 
 // ---------------- 숫자 컨트롤러 -----------------------------

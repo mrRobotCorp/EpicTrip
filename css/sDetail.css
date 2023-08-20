@@ -1,11 +1,11 @@
-section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 140px 0 200px 0; } 
+section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 140px 0 100px 0; } 
 .banner { display: flex; align-items: center; width: 100%; height: 450px; border-radius: 15px; overflow: hidden; } 
 section .bnImg { width: 100%; } 
 
 .postContent { display: flex; margin-top: 25px; justify-content: space-between; } 
 
 .pLeft { width: 850px; } 
-.pLeft strong { font-family: pSemi; font-size: 25px; } 
+.pLeft strong { position: relative; font-family: pSemi; font-size: 25px; } 
 .pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line); } 
 .postingBtn { display: flex; align-items: center; } 
 .postingBtn .admBtn { margin-right: 10px; width: 52px; height: 30px; border-radius: 5px; background-color: #ddd; font-family: pMedium; font-size: 14px; color: rgb(27, 27, 27); cursor: pointer; transition: all .3s; } 
@@ -23,6 +23,7 @@ section .bnImg { width: 100%; }
 
 .cmmtFrm { margin-bottom: 40px;}
 .cmmtFrm strong { display: inline-block; margin: 0 0 25px 5px; color: #333; font-size: 23px; font-family: pBold; } 
+.cmmtFrm strong::after { position: absolute; content: ''; width: 27px; height: 27px; background: url(../source/reviewIco.png) center center; background-size: cover; top: -2px; right: -38px; }
 
 .cmmtBox { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; background: #eee; border-radius: 10px; border: 2px solid transparent; transition: all .2s; } 
 .cmmtBox:focus-within { background-color: #fafafa; border-color: var(--color-main); } 
@@ -42,11 +43,11 @@ section .bnImg { width: 100%; }
 
 
 /* --------------------- */
-.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; height: fit-content; width: 350px; border-radius: 10px; border: solid 1px var(--color-line); } 
-.rightWrap { margin: 0 auto; padding: 20px; } 
+.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; height: fit-content; border-radius: 10px; border: solid 1px var(--color-line); } 
+.rightWrap { padding: 20px; } 
 
-.chTxt { padding: 20px 0 10px 0; font-size: 18px; font-family: pSemi; } 
-.priceCnt { display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #ebe4f8b7; border-radius: 10px; } 
+.chTxt { padding: 25px 0 15px 0; font-size: 18px; font-family: pSemi; } 
+.priceCnt { display: flex; align-items: center; justify-content: space-between; padding: 20px 15px; background: #ebe4f8b7; border-radius: 10px; } 
 .priceCnt .chosenDay { margin-top: 5px; color: #555; font-size: 14px; } 
 
 .cntCtrl { display: flex; align-items: center; } 
@@ -54,14 +55,14 @@ section .bnImg { width: 100%; }
 .cntCtrl .numBtn { display: inline-block; width: 30px; height: 30px; margin: 0 10px; font-size: 22px; line-height: 27px; color: var(--color-main); background-color: #fff; border-radius: 20px; border: 1px solid var(--color-main); text-align: center; cursor: pointer; transition: all .2s; } 
 .cntCtrl .numBtn:hover { background: #ebe4f8; } 
 
-.payInfo span { color: #777; display: inline-block; padding: 20px 0 5px 0; font-size: 14px; font-family: pSemi; } 
+.payInfo span { color: #777; display: inline-block; padding: 25px 0 8px 0; font-size: 14px; font-family: pSemi; } 
 .payInfo p { color: #888; font-size: 13px; font-family: pLight; line-height: 125%; } 
-.goPay { width: 100%; margin-top: 20px; padding: 20px 0; font-size: 19px; font-family: pBold; color: #fff; background: var(--color-main); border-radius: 0 0 10px 10px; cursor: pointer; } 
+.goPay { width: 100%; margin-top: 15px; padding: 20px 0; font-size: 19px; font-family: pBold; color: #fff; letter-spacing: 0.5px; background: var(--color-main); border-radius: 0 0 10px 10px; cursor: pointer; } 
 
 
 /* --------------- calendar ---------------- */
-.calendar { padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
-.ui-widget.ui-widget-content { /* 전체 박스 */ border: none; padding:0; border-radius: 10px; } 
+.calendar { width: 320px; padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
+.ui-widget.ui-widget-content { /* 전체 박스 */ width: 100%; border: none; padding:0; border-radius: 10px; } 
 .ui-widget-header { font-size: 15px; border: none; border-radius: 0px; } 
 .ui-widget-header .ui-icon { /* 이전,다음 화살표 */ background: none; } 
 .ui-datepicker-prev span { display: none; } 
@@ -94,7 +95,7 @@ section .bnImg { width: 100%; }
 .ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default, 
 .ui-button, .ui-button.ui-state-disabled:hover, 
-.ui-button.ui-state-disabled:active { /* 일자 기본영역 */ border: none; background: none ; font-family: pSemi; font-size: 14px; text-align: center; width: 25px; height: 24px; line-height: 24px; border-radius: 15px; } 
+.ui-button.ui-state-disabled:active { /* 일자 기본영역 */ border: none; background: none ; font-family: pSemi; font-size: 16px; text-align: center; width: 25px; height: 24px; line-height: 24px; border-radius: 15px; } 
 .ui-state-highlight, 
 .ui-widget-content .ui-state-highlight, 
 .ui-widget-header .ui-state-highlight { /* 오늘일자 */
@@ -106,3 +107,5 @@ border: none; background:var(--yellow) !important; color: #000 !important; }
 a.ui-button:active, .ui-button:active, 
 .ui-button.ui-state-active:hover { /* 선택 일자 */
 border: none; background: var(--color-main); } 
+
+.dayPrice { font-size: 12px; font-family: pLight; text-align: center; }
