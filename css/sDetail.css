@@ -15,13 +15,14 @@ section .bnImg { width: 100%; }
 .itemPrice { color: #222; font-size: 33px; font-family: pBold; } 
 .itemPrice span { font-size: 22px; font-family: pMedium; } 
 
-.postText { margin-top: 31px; font-size: 16px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
+.postText { margin-top: 31px; font-size: 17px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
 
 .postDV { margin: 100px 0 50px 0; padding-bottom: 50px; display: flex; font-family: pLight; font-size: 15px; color: #3e3e3e; border-bottom: 1px solid var(--color-line); } 
 .postDV span { padding-right: 5px; } 
 .postDV p { padding: 0 5px 0 15px; } 
 
-.cmmtFrm strong { display: inline-block; margin-bottom: 20px; color: #333; font-size: 23px; font-family: pBold; } 
+.cmmtFrm { margin-bottom: 40px;}
+.cmmtFrm strong { display: inline-block; margin: 0 0 25px 5px; color: #333; font-size: 23px; font-family: pBold; } 
 
 .cmmtBox { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; background: #eee; border-radius: 10px; border: 2px solid transparent; transition: all .2s; } 
 .cmmtBox:focus-within { background-color: #fafafa; border-color: var(--color-main); } 
@@ -32,15 +33,16 @@ section .bnImg { width: 100%; }
 .cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer; } 
 .cmmtBox button:hover { opacity: 1; } 
 
-.comment { display: flex; align-items:flex-start; } 
-.cmmtUserImg { width: 33px; margin: 0 18px 0 5px; border-radius: 50%; } 
-.cmmtUserTxt span:first-child { font-family: pMedium; font-size: 14px; } 
-.cmmtUserTxt span:nth-child(2) { font-size: 11px; color: #777; } 
-.cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 14px; font-family: pLight; line-height: 120%; } 
+.comment { margin: 20px 0; padding-bottom: 17px; display: flex; align-items: center; border-bottom: 1px solid #ddd; } 
+.comment:last-child { border: none; }
+.cmmtUserImg { width: 50px; margin: 0 18px 0 5px; border-radius: 50%; } 
+.cmmtUserTxt span:first-child { font-family: pSemi; font-size: 17px; } 
+.cmmtUserTxt span:nth-child(2) { margin-left: 5px; font-family: pRegular; font-size: 14px; color: #999; } 
+.cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 15px; font-family: pLight; line-height: 120%; } 
 
 
 /* --------------------- */
-.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; width: 350px; border-radius: 10px; border: solid 1px var(--color-line); } 
+.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; height: fit-content; width: 350px; border-radius: 10px; border: solid 1px var(--color-line); } 
 .rightWrap { margin: 0 auto; padding: 20px; } 
 
 .chTxt { padding: 20px 0 10px 0; font-size: 18px; font-family: pSemi; } 
@@ -58,56 +60,49 @@ section .bnImg { width: 100%; }
 
 
 /* --------------- calendar ---------------- */
-.date-picker { position: relative; } 
-.date-picker__calendar { left: 0; position: absolute; top: 100%; width: 300px; overflow: 0; transition: opacity 0.2s ease-out, visibility 0.2s step-start 0.2s; visibility: hidden; } 
-.date-picker__calendar_visible { opacity: 1; transition-delay: 0s; visibility: visible; } 
-
 .calendar { padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
-.calendar__header { position: relative; padding: 10px 35px; font-size: 16px; font-family: pBold; letter-spacing: 0.5px; } 
-.calendar__year { color: var(--color-main); } 
-.calendar__btn { position: absolute; top: 8px; display: block; height: 20px; padding: 0; width: 20px; text-indent: -9999px; background: transparent; border: none; cursor: pointer; outline: none; overflow: hidden; } 
-.calendar__btn:before { content: ""; position: absolute; top: 6px; display: block; height: 8px; width: 8px; border-left: 1px solid #000; border-top: 1px solid #000; transform-origin: center; } 
-.calendar__btn_prev { left: 10px; } 
-.calendar__btn_prev:before { left: 8px; transform: rotate(-45deg); } 
-.calendar__btn_next { right: 10px; } 
-.calendar__btn_next:before { right: 8px; transform: rotate(135deg); } 
-.calendar__btn_disabled { pointer-events: none; } 
-.calendar__btn_disabled:before { border-color: #a0a0a0; } 
-.calendar__btn:hover:before { border-color: var(--dark-yellow); } 
-.calendar__table { margin-top: 8px; width: 100%; table-layout: fixed; } 
-.calendar__table-col-header { padding: 12px 0; color: #b2b2b2; font-size: 12px; letter-spacing: 0.1em; } 
-.calendar__table-cell { padding: 6px 0; color: #1e2633; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; } 
-.calendar__table-cell_disabled { color: #d3dbe8; pointer-events: none; } 
-.calendar__table-cell_selected { color: #fff; background: var(--color-main); border-radius: 15px; } 
-.calendar__table-cell:hover { color: var(--dark-yellow); } 
+.ui-widget.ui-widget-content { /* 전체 박스 */ border: none; padding:0; border-radius: 10px; } 
+.ui-widget-header { font-size: 15px; border: none; border-radius: 0px; } 
+.ui-widget-header .ui-icon { /* 이전,다음 화살표 */ background: none; } 
+.ui-datepicker-prev span { display: none; } 
+.ui-datepicker-next span { display: none; } 
 
-/* ---------------------- */
+.ui-datepicker-prev,
+.ui-datepicker-next { position: absolute; top: 8px; display: block; height: 20px; padding: 0; width: 20px; text-indent: -9999px; background: transparent; border: none; cursor: pointer; outline: none; overflow: hidden; }
+.ui-datepicker-prev:before,
+.ui-datepicker-next:before { content: ""; position: absolute; top: 6px; display: block; height: 8px; width: 8px; border-left: 1px solid #000; border-top: 1px solid #000; transform-origin: center; transition: all .2s;} 
 
-.ui-datepicker { top: 780px !important; } 
-.ui-widget.ui-widget-content { /* 전체 박스 */
-border:0px; padding:0; border-radius: 10px; } 
-.ui-widget-header { /* 헤더 (화살표/날짜표시 영역) */ font-size: 15px; border: 0px; border-radius: 0px; } 
-.ui-widget-header .ui-icon { /* 이전,다음 화살표 */
-background: none; } 
-.ui-datepicker-prev span { display: none !important; } 
-.ui-datepicker-next span { display: none !important; } 
-.ui-datepicker-prev { /* 이전 화살표 */
-width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
-.ui-datepicker-prev::before { content:'\02C2'; } 
-.ui-datepicker-next { /* 다음 화살표 */
-width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
-.ui-datepicker-next::before { content:'\02C3'; } 
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover { background: none; border: none;}
+.ui-datepicker-prev:hover:before,
+.ui-datepicker-next:hover:before { border-color: var(--dark-yellow); } 
+
+.ui-datepicker-prev { left: 10px; } 
+.ui-datepicker-prev:before { left: 8px; transform: rotate(-45deg); } 
+.ui-datepicker-next { right: 10px; } 
+.ui-datepicker-next:before { right: 8px; transform: rotate(135deg); }  
 
 .ui-datepicker .ui-datepicker-header { background: #fff; border-radius: 10px 10px 0 0; } 
-.ui-datepicker .ui-datepicker-title { color: var(--color-main); } 
-.ui-datepicker .ui-datepicker-title .ui-datepicker-year { width: 70px; font-family: pRegular; } 
-.ui-datepicker .ui-datepicker-title .ui-datepicker-month { width: 70px; font-family: pRegular; } 
-.ui-datepicker th { /* 요일 영역 */ background : #955ef5; } 
-.ui-datepicker th span { /* 요일 텍스트 */ font-size:14px; color: #fff; font-family: pRegular; } 
+.ui-datepicker .ui-datepicker-title { font-size: 17px; } 
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year { color: var(--color-main); font-family: pSemi;} 
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month { font-family: pBold; } 
+.ui-datepicker th { /* 요일 영역 */ padding: 12px 0; } 
+.ui-datepicker th span { /* 요일 텍스트 */  font-size: 12px; font-weight: normal; color: #b2b2b2; font-family: pLight; } 
+.ui-datepicker td a { display: inline-block;}
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { /* 일자 기본영역 */
-border:0px; background: none; font-family: pLight; font-size: 13px; text-align: center; width: 22px; height: 22px; line-height: 22px; padding:0; border-radius: 3px; margin: 0 auto; } 
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { /* 오늘일자 */
-border:0px; background:var(--yellow) !important; color: #000 !important; } 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover { /* 선택 일자 */
-border: 1px solid var(--color-main) !important; background: var(--color-main) !important; } 
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, .ui-button.ui-state-disabled:hover, 
+.ui-button.ui-state-disabled:active { /* 일자 기본영역 */ border: none; background: none ; font-family: pSemi; font-size: 14px; text-align: center; width: 25px; height: 24px; line-height: 24px; border-radius: 15px; } 
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight { /* 오늘일자 */
+border: none; background:var(--yellow) !important; color: #000 !important; } 
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active, 
+a.ui-button:active, .ui-button:active, 
+.ui-button.ui-state-active:hover { /* 선택 일자 */
+border: none; background: var(--color-main); } 
