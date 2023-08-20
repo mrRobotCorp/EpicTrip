@@ -442,9 +442,10 @@ if (calendarElem != null) {
             today.getMonth(),
             today.getDate()
         ),
+        // ----- 선택할 수 있는 최대 기간 설정
         maxDate: new Date(
-            today.getFullYear() + 1,
-            today.getMonth(),
+            today.getFullYear(),
+            today.getMonth() + 1,
             today.getDate()
         ),
     });
@@ -453,6 +454,14 @@ if (calendarElem != null) {
         calendar.setDate(event.detail.date);
     });
 }
+
+const dayTd = document.querySelectorAll("#calendar td");
+
+dayTd.forEach((e) => {
+    e.onclick = function() {
+        alert(e.getAttribute("data-date"));
+    }
+})
 
 
 // ---------------- 숫자 컨트롤러 -----------------------------
@@ -491,9 +500,27 @@ function Timer(mins, secs) {
     this.secs = secs;
 }
 
-// --------------------------
+// ------------- 좋아요 버튼 -------------
 const wishBtn = document.querySelector(".wishBtn");
 wishBtn.onclick = function() {
     this.classList.toggle("active");
 }
 
+// ----------------------------------------
+$(function() {
+    $( "#datepicker" ).datepicker({ 
+        firstDay: 1,
+        dateFormat: 'yy-mm-dd',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년',
+        onSelect: function() { 
+            var date = $.datepicker.formatDate("yymmdd",$("#datepicker").datepicker("getDate")); 
+            alert(date);
+        }
+    });
+});

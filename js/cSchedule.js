@@ -52,10 +52,11 @@ mLoc02.forEach(({ label, name, lat, lng }) => {
 
 window.initMap = initMap;
 
+
+
 // -------------- day 별 장소 리스트 보이기 ------------------
 const day = document.querySelectorAll(".day");
 const dayLoc = document.querySelectorAll(".locList ul");
-// const noLoc = document.querySelector(".noLoc");
 
 function locListShow(e) {
     day[e].onclick = function () {

@@ -6,14 +6,14 @@ section .bnImg { width: 100%; }
 
 .pLeft { width: 850px; } 
 .pLeft strong { font-family: pSemi; font-size: 25px; } 
-.pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line) ;}
+.pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line); } 
 .postingBtn { display: flex; align-items: center; } 
-.postingBtn .admBtn {  margin-right: 10px; width: 52px; height: 30px; border-radius: 5px; background-color: #ddd; font-family: pMedium; font-size: 14px; color: rgb(27, 27, 27); cursor: pointer; transition: all .3s; } 
+.postingBtn .admBtn { margin-right: 10px; width: 52px; height: 30px; border-radius: 5px; background-color: #ddd; font-family: pMedium; font-size: 14px; color: rgb(27, 27, 27); cursor: pointer; transition: all .3s; } 
 .postingBtn .admBtn:hover { background-color: #55ed50aa; } 
-.wishBtn { margin-right: 10px; width: 28px; height: 28px; background: url(../source/like.png) center center; background-size: cover; cursor: pointer; }
-.wishBtn.active { background: url(../source/like_red.png) center center; background-size: cover; }
-.itemPrice { color: #222; font-size: 33px; font-family: pBold;}
-.itemPrice span { font-size: 22px; font-family: pMedium;}
+.wishBtn { margin-right: 10px; width: 28px; height: 28px; background: url(../source/like.png) center center; background-size: cover; cursor: pointer; } 
+.wishBtn.active { background: url(../source/like_red.png) center center; background-size: cover; } 
+.itemPrice { color: #222; font-size: 33px; font-family: pBold; } 
+.itemPrice span { font-size: 22px; font-family: pMedium; } 
 
 .postText { margin-top: 31px; font-size: 16px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
 
@@ -21,40 +21,40 @@ section .bnImg { width: 100%; }
 .postDV span { padding-right: 5px; } 
 .postDV p { padding: 0 5px 0 15px; } 
 
-.cmmtFrm strong { display: inline-block; margin-bottom: 20px; color: #333; font-size: 23px; font-family: pBold; }
+.cmmtFrm strong { display: inline-block; margin-bottom: 20px; color: #333; font-size: 23px; font-family: pBold; } 
 
-.cmmtBox { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; background: #eee; border-radius: 10px; border: 2px solid transparent; transition: all .2s; }
-.cmmtBox:focus-within { background-color: #fafafa; border-color: var(--color-main);}
-.cmmtBox textarea { width: 88%; height: 55px; padding: 0 20px; background: transparent; font-size: 15px; font-family: pRegular; resize: none;}
-.cmmtBox textarea::-webkit-scrollbar { width: 6px; }
-.cmmtBox textarea::-webkit-scrollbar-thumb { background-color: #999; border: none; }
+.cmmtBox { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; background: #eee; border-radius: 10px; border: 2px solid transparent; transition: all .2s; } 
+.cmmtBox:focus-within { background-color: #fafafa; border-color: var(--color-main); } 
+.cmmtBox textarea { width: 88%; height: 55px; padding: 0 20px; background: transparent; font-size: 15px; font-family: pRegular; resize: none; } 
+.cmmtBox textarea::-webkit-scrollbar { width: 6px; } 
+.cmmtBox textarea::-webkit-scrollbar-thumb { background-color: #999; border: none; } 
 
-.cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer;}
-.cmmtBox button:hover { opacity: 1;}
+.cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer; } 
+.cmmtBox button:hover { opacity: 1; } 
 
-.comment { display: flex; align-items:flex-start; }
-.cmmtUserImg { width: 33px; margin: 0 18px 0 5px; border-radius: 50%; }
+.comment { display: flex; align-items:flex-start; } 
+.cmmtUserImg { width: 33px; margin: 0 18px 0 5px; border-radius: 50%; } 
 .cmmtUserTxt span:first-child { font-family: pMedium; font-size: 14px; } 
 .cmmtUserTxt span:nth-child(2) { font-size: 11px; color: #777; } 
-.cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 14px; font-family: pLight; line-height: 120%; }  
+.cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 14px; font-family: pLight; line-height: 120%; } 
 
 
 /* --------------------- */
-.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; width: 350px; border-radius: 10px;  border: solid 1px var(--color-line);}
-.rightWrap { margin: 0 auto; padding: 20px; }
+.pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; width: 350px; border-radius: 10px; border: solid 1px var(--color-line); } 
+.rightWrap { margin: 0 auto; padding: 20px; } 
 
-.chTxt { padding: 20px 0 10px 0; font-size: 18px; font-family: pSemi; }
-.priceCnt { display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #ebe4f8b7; border-radius: 10px;}
-.priceCnt .chosenDay { margin-top: 5px; color: #555; font-size: 14px; }
+.chTxt { padding: 20px 0 10px 0; font-size: 18px; font-family: pSemi; } 
+.priceCnt { display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #ebe4f8b7; border-radius: 10px; } 
+.priceCnt .chosenDay { margin-top: 5px; color: #555; font-size: 14px; } 
 
-.cntCtrl { display: flex; align-items: center; }
-.cntCtrl .number { width: 25px; font-size: 20px; font-family: pSemi; text-align: center; }
-.cntCtrl .numBtn { display: inline-block; width: 30px; height: 30px; margin: 0 10px; font-size: 22px; line-height: 27px; color: var(--color-main); background-color: #fff; border-radius: 20px; border: 1px solid var(--color-main); text-align: center; cursor: pointer; transition: all .2s;}
-.cntCtrl .numBtn:hover { background: #ebe4f8; }
+.cntCtrl { display: flex; align-items: center; } 
+.cntCtrl .number { width: 25px; font-size: 20px; font-family: pSemi; text-align: center; } 
+.cntCtrl .numBtn { display: inline-block; width: 30px; height: 30px; margin: 0 10px; font-size: 22px; line-height: 27px; color: var(--color-main); background-color: #fff; border-radius: 20px; border: 1px solid var(--color-main); text-align: center; cursor: pointer; transition: all .2s; } 
+.cntCtrl .numBtn:hover { background: #ebe4f8; } 
 
-.payInfo span { color: #777; display: inline-block;  padding: 20px 0 5px 0; font-size: 14px; font-family: pSemi;}
-.payInfo p { color: #888; font-size: 13px; font-family: pLight; line-height: 125%;}
-.goPay { width: 100%; margin-top: 20px; padding: 20px 0; font-size: 19px; font-family: pBold; color: #fff; background: var(--color-main); border-radius: 0 0 10px 10px; cursor: pointer; }
+.payInfo span { color: #777; display: inline-block; padding: 20px 0 5px 0; font-size: 14px; font-family: pSemi; } 
+.payInfo p { color: #888; font-size: 13px; font-family: pLight; line-height: 125%; } 
+.goPay { width: 100%; margin-top: 20px; padding: 20px 0; font-size: 19px; font-family: pBold; color: #fff; background: var(--color-main); border-radius: 0 0 10px 10px; cursor: pointer; } 
 
 
 /* --------------- calendar ---------------- */
@@ -78,7 +78,36 @@ section .bnImg { width: 100%; }
 .calendar__table-col-header { padding: 12px 0; color: #b2b2b2; font-size: 12px; letter-spacing: 0.1em; } 
 .calendar__table-cell { padding: 6px 0; color: #1e2633; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; cursor: pointer; } 
 .calendar__table-cell_disabled { color: #d3dbe8; pointer-events: none; } 
-.calendar__table-cell_selected { color: #fff; background: var(--color-main); border-radius: 15px;}
+.calendar__table-cell_selected { color: #fff; background: var(--color-main); border-radius: 15px; } 
 .calendar__table-cell:hover { color: var(--dark-yellow); } 
 
 /* ---------------------- */
+
+.ui-datepicker { top: 780px !important; } 
+.ui-widget.ui-widget-content { /* 전체 박스 */
+border:0px; padding:0; border-radius: 10px; } 
+.ui-widget-header { /* 헤더 (화살표/날짜표시 영역) */ font-size: 15px; border: 0px; border-radius: 0px; } 
+.ui-widget-header .ui-icon { /* 이전,다음 화살표 */
+background: none; } 
+.ui-datepicker-prev span { display: none !important; } 
+.ui-datepicker-next span { display: none !important; } 
+.ui-datepicker-prev { /* 이전 화살표 */
+width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
+.ui-datepicker-prev::before { content:'\02C2'; } 
+.ui-datepicker-next { /* 다음 화살표 */
+width: 23px !important; height: 23px !important; border-radius: 50% !important; text-align:center; line-height: 1.5em; cursor: pointer; } 
+.ui-datepicker-next::before { content:'\02C3'; } 
+
+.ui-datepicker .ui-datepicker-header { background: #fff; border-radius: 10px 10px 0 0; } 
+.ui-datepicker .ui-datepicker-title { color: var(--color-main); } 
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year { width: 70px; font-family: pRegular; } 
+.ui-datepicker .ui-datepicker-title .ui-datepicker-month { width: 70px; font-family: pRegular; } 
+.ui-datepicker th { /* 요일 영역 */ background : #955ef5; } 
+.ui-datepicker th span { /* 요일 텍스트 */ font-size:14px; color: #fff; font-family: pRegular; } 
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { /* 일자 기본영역 */
+border:0px; background: none; font-family: pLight; font-size: 13px; text-align: center; width: 22px; height: 22px; line-height: 22px; padding:0; border-radius: 3px; margin: 0 auto; } 
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { /* 오늘일자 */
+border:0px; background:var(--yellow) !important; color: #000 !important; } 
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover { /* 선택 일자 */
+border: 1px solid var(--color-main) !important; background: var(--color-main) !important; } 
