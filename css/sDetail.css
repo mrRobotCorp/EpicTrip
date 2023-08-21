@@ -15,11 +15,16 @@ section .bnImg { width: 100%; }
 .itemPrice { color: #222; font-size: 33px; font-family: pBold; } 
 .itemPrice span { font-size: 22px; font-family: pMedium; } 
 
-.postCon { width: 100%;}
+.postCon { position: relative; width: 100%; max-height: 620px; overflow-y: hidden; }
+.postCon.more { height: auto; max-height: none; }
+
 .postText { margin: 35px 0; font-size: 17px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
 .postImg { width: 100%; }
+.postMore { margin: 40px auto 0 auto; padding: 10px 60px; color: var(--color-main); background: #fff; border: 2px solid var(--color-main); font-size: 16px; font-family: pSemi; border-radius: 10px; cursor: pointer; transition: all .2s;}
+.postMore.active { display: none; }
+.postMore:hover { background: #8242f013; }
 
-.postDV { margin: 100px 0 50px 0; padding-bottom: 50px; display: flex; font-family: pLight; font-size: 15px; color: #3e3e3e; border-bottom: 1px solid var(--color-line); } 
+.postDV { margin: 70px 0 50px 0; padding-bottom: 50px; display: flex; font-family: pLight; font-size: 15px; color: #3e3e3e; border-bottom: 1px solid var(--color-line); } 
 .postDV span { padding-right: 5px; } 
 .postDV p { padding: 0 5px 0 15px; } 
 
@@ -36,12 +41,15 @@ section .bnImg { width: 100%; }
 .cmmtBox button { margin-right: 30px; width: 20px; height: 20px; background: url(../source/cmmtIco.png) center center; background-size: cover; opacity: .5; transition: all .2s; cursor: pointer; } 
 .cmmtBox button:hover { opacity: 1; } 
 
-.comment { margin: 20px 0; padding-bottom: 17px; display: flex; align-items: center; border-bottom: 1px solid #ddd; } 
+.comment { margin: 20px 0; padding-bottom: 17px; display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 1px solid #ddd; } 
 .comment:last-child { border: none; }
+.comment .uInfo { display: flex; align-items: center;} 
 .cmmtUserImg { width: 50px; margin: 0 18px 0 5px; border-radius: 50%; } 
 .cmmtUserTxt span:first-child { font-family: pSemi; font-size: 17px; } 
 .cmmtUserTxt span:nth-child(2) { margin-left: 5px; font-family: pRegular; font-size: 14px; color: #999; } 
 .cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 15px; font-family: pLight; line-height: 120%; } 
+.cmmtDate { color: #777; font-size: 13px; font-family: pLight; }
+
 
 /* --------------------- */
 .pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; height: fit-content; border-radius: 10px; border: solid 1px var(--color-line); } 

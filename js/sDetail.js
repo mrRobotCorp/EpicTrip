@@ -73,3 +73,25 @@ const wishBtn = document.querySelector(".wishBtn");
 wishBtn.onclick = function() {
     this.classList.toggle("active");
 }
+
+
+// 추가된거 
+// ------------ 더보기 버튼 ---------------
+const postMore = document.querySelector(".postMore");
+const post = document.querySelector(".postCon");
+
+if(post.clientHeight >= 620) {
+    postMore.style.display = "block";
+
+    postMore.onclick = function() {
+        post.classList.toggle("more");
+        if(this.innerHTML == "더보기") {
+            this.innerHTML = "접기";
+        } else {
+            this.innerHTML = "더보기";
+        }
+    }
+} else {
+    postMore.style.display = "none";
+}
+
