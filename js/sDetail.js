@@ -1,8 +1,19 @@
 // ---------------- calendar --------------------
-var minDt = "2023-08-24";
-var maxDt = "2023-09-28";
+var minDt = "2023-08-15";
+var maxDt = "2023-09-18";
 
 $(function() {
+
+    function addPrice() {
+        const td = document.querySelectorAll(".ui-datepicker td");
+        td.forEach((e,i) => {
+            let cls = e.getAttribute("data-month");
+            if(true) {
+                e.insertAdjacentHTML("beforeend", `<p class='dayPrice'>47만</p>`)
+            }
+        });
+    }
+
     $( ".calendar" ).datepicker({ 
         dateFormat: 'yy-mm-dd',
         monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
@@ -11,61 +22,51 @@ $(function() {
         dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
         minDate: minDt,
         maxDate : maxDt,
-        onSelect: function() { 
+        // beforeShowDay: function(date){ // 요일 별 선택 제한
+        //     var day = date.getDay();
+        //     return [(day != 0 && day != 6)];
+        // },
+        onSelect: function() { // 선택한 날짜 데이터 형식 뽑기
             let date = $.datepicker.formatDate("yymmdd",$(".calendar").datepicker("getDate")); 
             console.log(date);
-        }
+        },
     });
 
-    const td = document.querySelectorAll(".ui-datepicker td");
+    // addPrice();
     
-    td.forEach((e,i) => {
-        let cls = e.getAttribute("data-month");
-        if(true) {
-            e.insertAdjacentHTML("beforeend", `<p class='dayPrice'>47만</p>`)
-        }
-    })
-
-
 });
 
 
 
 // ---------------- 숫자 컨트롤러 -----------------------------
-var breakTime = document.querySelector(".number");
-var breakAdd = document.querySelector(".plus");
-var breakSub = document.querySelector(".minus");
-var breakLength = 0;
+var cntShow = document.querySelector(".number");
+var plus = document.querySelector(".plus");
+var minus = document.querySelector(".minus");
+var cntNum = 0;
 var on = false;
 var breaker = false;
-breakTime.innerHTML = breakLength;
+cntShow.innerHTML = cntNum;
 
 
-breakAdd.onclick = function () {
+plus.onclick = function () {
     if (on === false) {
-        breakLength++;
-        if (breakLength <= 10)
-            breakTime.innerHTML = breakLength;
+        cntNum++;
+        if (cntNum <= 10)
+        cntShow.innerHTML = cntNum;
         else
-            breakLength = 10;
+            cntNum = 10;
     }
 };
 
-breakSub.onclick = function () {
+minus.onclick = function () {
     if (on === false) {
-        breakLength--;
-        if (breakLength >= 1)
-            breakTime.innerHTML = breakLength;
+        cntNum--;
+        if (cntNum >= 1)
+            cntShow.innerHTML = cntNum;
         else
-            breakLength = 1;
+            cntNum = 1;
     }
 };
-
-
-function Timer(mins, secs) {
-    this.mins = mins;
-    this.secs = secs;
-}
 
 // ------------- 좋아요 버튼 -------------
 const wishBtn = document.querySelector(".wishBtn");

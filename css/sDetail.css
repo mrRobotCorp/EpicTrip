@@ -4,7 +4,7 @@ section .bnImg { width: 100%; }
 
 .postContent { display: flex; margin-top: 25px; justify-content: space-between; } 
 
-.pLeft { width: 850px; } 
+.pLeft { width: 870px; } 
 .pLeft strong { position: relative; font-family: pSemi; font-size: 25px; } 
 .pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line); } 
 .postingBtn { display: flex; align-items: center; } 
@@ -15,7 +15,9 @@ section .bnImg { width: 100%; }
 .itemPrice { color: #222; font-size: 33px; font-family: pBold; } 
 .itemPrice span { font-size: 22px; font-family: pMedium; } 
 
-.postText { margin-top: 31px; font-size: 17px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
+.postCon { width: 100%;}
+.postText { margin: 35px 0; font-size: 17px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
+.postImg { width: 100%; }
 
 .postDV { margin: 100px 0 50px 0; padding-bottom: 50px; display: flex; font-family: pLight; font-size: 15px; color: #3e3e3e; border-bottom: 1px solid var(--color-line); } 
 .postDV span { padding-right: 5px; } 
@@ -41,14 +43,22 @@ section .bnImg { width: 100%; }
 .cmmtUserTxt span:nth-child(2) { margin-left: 5px; font-family: pRegular; font-size: 14px; color: #999; } 
 .cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 15px; font-family: pLight; line-height: 120%; } 
 
-
 /* --------------------- */
 .pRight { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; height: fit-content; border-radius: 10px; border: solid 1px var(--color-line); } 
-.rightWrap { padding: 20px; } 
+.rightWrap { width: 340px; padding: 20px; } 
+
+.saleTxt { padding: 25px 0 15px 0; font-size: 18px; font-family: pSemi; }
+.saleInfo { display: flex; align-items: center; flex-direction: column; padding: 10px 0; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; text-align: center;}
+.saleInfo .sRow { width: 100%; display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-family: pRegular; }
+.saleInfo span { width: 180px; display: inline-block; }
+.saleInfo .sHead { color: #333; font-family: pBold; font-size: 15px; margin-bottom: 10px; }
+.saleInfo .sRow .percent { color: var(--color-main); font-family: pSemi;}
 
 .chTxt { padding: 25px 0 15px 0; font-size: 18px; font-family: pSemi; } 
 .priceCnt { display: flex; align-items: center; justify-content: space-between; padding: 20px 15px; background: #ebe4f8b7; border-radius: 10px; } 
-.priceCnt .chosenDay { margin-top: 5px; color: #555; font-size: 14px; } 
+.priceCnt div:first-child { margin-left: 5px;}
+.priceCnt p:first-child { color: #444; font-size: 14px; }
+.onePrice { margin-top: 5px; font-size: 19px; font-family: pBold;}
 
 .cntCtrl { display: flex; align-items: center; } 
 .cntCtrl .number { width: 25px; font-size: 20px; font-family: pSemi; text-align: center; } 
@@ -61,7 +71,7 @@ section .bnImg { width: 100%; }
 
 
 /* --------------- calendar ---------------- */
-.calendar { width: 320px; padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
+.calendar { padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
 .ui-widget.ui-widget-content { /* 전체 박스 */ width: 100%; border: none; padding:0; border-radius: 10px; } 
 .ui-widget-header { font-size: 15px; border: none; border-radius: 0px; } 
 .ui-widget-header .ui-icon { /* 이전,다음 화살표 */ background: none; } 
