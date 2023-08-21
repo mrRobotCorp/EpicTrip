@@ -53,8 +53,46 @@
         </nav>
     </header>
 
-    <section class="">
+    <section>
         <div id='calendar'></div>
+
+        <div id="modal-view-event" class="modal calendar-modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4 class="modal-title"><span class="event-title"></span></h4>
+                    <div class="event-body"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-view-event-add" class="modal calendar-modal">
+            <div class="modal-content">
+                <form id="add-event">
+                    <div class="modal-body">
+                        <h4>Add Event Detail</h4>
+                        <div class="">
+                            <label>Event name</label>
+                            <input type="text" class="" name="ename">
+                        </div>
+                        <div class="">
+                            <label>Event Date</label>
+                            <input type='text' class="datetimepicker" name="edate">
+                        </div>
+                        <div class="">
+                            <label>Event Description</label>
+                            <textarea class="" name="edesc"></textarea>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="" class="">Save</button>
+                        <button type="button" class="" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
 
@@ -67,9 +105,8 @@
 
     <script src="./js/index.global.js"></script>
     <script src="./js/header.js"></script>
-    <script src="./js/adCalendar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
-
         document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('calendar');
 
@@ -77,63 +114,93 @@
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
                 },
-                initialDate: '2023-01-12',
                 navLinks: true, // can click day/week names to navigate views
-                businessHours: true, // display business hours
-                editable: true,
                 selectable: true,
+                selectMirror: true,
+
+                titleFormat: function (date) {
+                    year = date.date.year;
+                    month = date.date.month + 1;
+
+                    return year + "년 " + month + "월";
+                },
+                fixedWeekCount: false,
+                buttonText: {
+                    today: "오늘",
+                    month: "월별",
+                    week: "주별",
+                    day: "일별",
+                },
+                dayClick: function () {
+                    $('#modal-view-event-add').modal();
+                },
+                eventClick: function (event, jsEvent, view) {
+                    $('.event-title').html(event.title);
+                    $('.event-body').html(event.description);
+                    $('.eventUrl').attr('href', event.url);
+                    $('#modal-view-event').modal();
+                },
+
+
+                select: function (arg) {
+                    var title = prompt('Event Title:');
+                    if (title) {
+                        calendar.addEvent({
+                            title: title,
+                            start: arg.start,
+                            end: arg.end,
+                            allDay: arg.allDay
+                        })
+                    }
+                    calendar.unselect()
+                },
+                // eventClick: function (arg) {
+                //     if (confirm('해당 일정을 삭제하시겠습니까?')) {
+                //         arg.event.remove()
+                //     }
+                // },
+
+                editable: false, // 드래그 해서 수정 X
+                dayMaxEvents: true, // allow "more" link when too many events
                 events: [
                     {
-                        title: 'Business Lunch',
-                        start: '2023-01-03T13:00:00',
-                        constraint: 'businessHours'
+                        title: 'Long Event',
+                        start: '2023-08-07',
+                        end: '2023-08-10'
                     },
                     {
-                        title: 'Meeting',
-                        start: '2023-01-13T11:00:00',
-                        constraint: 'availableForMeeting', // defined below
-                        color: '#257e4a'
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2023-08-09T16:00:00'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2023-08-16T16:00:00'
                     },
                     {
                         title: 'Conference',
-                        start: '2023-01-18',
-                        end: '2023-01-20'
+                        start: '2023-08-11',
+                        end: '2023-08-13'
                     },
                     {
-                        title: 'Party',
-                        start: '2023-01-29T20:00:00'
-                    },
-
-                    // areas where "Meeting" must be dropped
-                    {
-                        groupId: 'availableForMeeting',
-                        start: '2023-01-11T10:00:00',
-                        end: '2023-01-11T16:00:00',
-                        display: 'background'
+                        title: 'Meeting',
+                        start: '2023-08-12T14:30:00'
                     },
                     {
-                        groupId: 'availableForMeeting',
-                        start: '2023-01-13T10:00:00',
-                        end: '2023-01-13T16:00:00',
-                        display: 'background'
-                    },
-
-                    // red areas where no events can be dropped
-                    {
-                        start: '2023-01-24',
-                        end: '2023-01-28',
-                        overlap: false,
-                        display: 'background',
-                        color: '#ff9f89'
+                        title: 'Happy Hour',
+                        start: '2023-08-12T17:30:00'
                     },
                     {
-                        start: '2023-01-06',
-                        end: '2023-01-08',
-                        overlap: false,
-                        display: 'background',
-                        color: '#ff9f89'
+                        title: 'Birthday Party',
+                        start: '2023-08-13T07:00:00'
+                    },
+                    {
+                        title: 'Click for Google',
+                        url: 'http://google.com/',
+                        start: '2023-08-28'
                     }
                 ]
             });
