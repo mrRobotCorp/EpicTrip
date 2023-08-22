@@ -1,9 +1,9 @@
-function openProImg(){
+function openProImg() {
     var changeImg = document.querySelector(".changeImg");
     changeImg.style.display = "flex";
 }
 
-function climbox(){
+function climbox() {
     var changeImg = document.querySelector(".changeImg");
     changeImg.style.display = "none";
 }
@@ -18,20 +18,20 @@ function saveAndCloseImageBox() {
     }
 }
 
-function openchpwdmodal(){
+function openchpwdmodal() {
     var modalWrap = document.querySelector(".modalWrap");
     modalWrap.style.display = "block";
 }
 
 
-function colsechpwd(){
+function colsechpwd() {
     var modalWrap = document.querySelector(".modalWrap");
     modalWrap.style.display = "none";
 }
 function okchanpwd() {
     var currentPwdInput = document.getElementById("pwd");
     var errNopwd = document.getElementById("errNopwd");
-    
+
     if (currentPwdInput.value.trim() === "") {
         errNopwd.style.display = "block";
         return; // 입력이 없으면 아무 작업도 하지 않고 종료
@@ -40,7 +40,7 @@ function okchanpwd() {
 }
 
 
-function openchpnummodal(){
+function openchpnummodal() {
     var phoneWrap = document.querySelector(".phoneWrap");
     phoneWrap.style.display = "block";
 }
@@ -58,7 +58,6 @@ function changePhoneNumber() {
     }
 
     // 인증번호 확인 로직 수행
-    // ...
 
     // 변경 완료 후 모달 닫기
     modalWrap.style.display = "none";
@@ -89,11 +88,11 @@ function msgCk() {
     nonepnum.textContent = "";
 }
 
-function openquitmodal(){
+function openquitmodal() {
     var quitWrap = document.querySelector(".quitWrap");
     quitWrap.style.display = "block";
 }
-function closequitModal(){
+function closequitModal() {
     var quitWrap = document.querySelector(".quitWrap");
     quitWrap.style.display = "none";
 }
@@ -104,28 +103,28 @@ function closequitModal(){
 function getCurrentPageFileName() {
     const urlParts = window.location.href.split('/');
     return urlParts[urlParts.length - 1];
-  }
-  
-  const currentPageFileName = getCurrentPageFileName();
-  
-  if (currentPageFileName === 'Mypage_mysetting.html') {
+}
+
+const currentPageFileName = getCurrentPageFileName();
+
+if (currentPageFileName === 'Mypage_mysetting.html') {
     mysetting.classList.add('myselect');
-  }
-  if (currentPageFileName === 'Mypage_mybill.html') {
+}
+if (currentPageFileName === 'Mypage_mybill.html') {
     mybill.classList.add('myselect');
-  }
-  if (currentPageFileName === 'Mypage_myreview.html') {
+}
+if (currentPageFileName === 'Mypage_myreview.html') {
     myreview.classList.add('myselect');
-  }
-  if (currentPageFileName === 'Mypage_mygroup.html') {
+}
+if (currentPageFileName === 'Mypage_mygroup.html') {
     mygroup.classList.add('myselect');
-  }
-  if (currentPageFileName === 'Mypage_mycal.html') {
+}
+if (currentPageFileName === 'Mypage_mycal.html') {
     mycal.classList.add('myselect');
-  }
-  if (currentPageFileName === 'Mypage_mywish.html') {
+}
+if (currentPageFileName === 'Mypage_mywish.html') {
     mywish.classList.add('myselect');
-  }
+}
 
 
 
