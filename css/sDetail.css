@@ -15,12 +15,14 @@ section .bnImg { width: 100%; }
 .itemPrice { color: #222; font-size: 33px; font-family: pBold; } 
 .itemPrice span { font-size: 22px; font-family: pMedium; } 
 
-.postCon { position: relative; width: 100%; max-height: 620px; overflow-y: hidden; }
+.postCon { position: relative; width: 100%; padding-bottom: 20px; max-height: 580px; overflow-y: hidden; overflow-x: hidden; }
 .postCon.more { height: auto; max-height: none; }
+.postCon::after { content: ''; position: absolute; width: 115%; height: 40px; bottom: 0; left: -3%; background: #fff; filter: drop-shadow(0px -20px 20px #fff); box-shadow: 0 -20px 20px #fff, 0 -20px 50px #fff, 0 -20px 60px #fff, 0 -20px 80px #fff; }
+.postCon.more::after { display: none; }
 
 .postText { margin: 35px 0; font-size: 17px; font-family: pLight; line-height: 1.5em; min-height: 100px; word-break: break-all; } 
 .postImg { width: 100%; }
-.postMore { margin: 40px auto 0 auto; padding: 10px 60px; color: var(--color-main); background: #fff; border: 2px solid var(--color-main); font-size: 16px; font-family: pSemi; border-radius: 10px; cursor: pointer; transition: all .2s;}
+.postMore { margin: 0 auto; padding: 10px 60px; color: var(--color-main); background: #fff; border: 2px solid var(--color-main); font-size: 16px; font-family: pSemi; border-radius: 10px; cursor: pointer; transition: all .2s;}
 .postMore.active { display: none; }
 .postMore:hover { background: #8242f013; }
 

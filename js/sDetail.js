@@ -80,7 +80,7 @@ wishBtn.onclick = function() {
 const postMore = document.querySelector(".postMore");
 const post = document.querySelector(".postCon");
 
-if(post.clientHeight >= 620) {
+if(post.clientHeight >= 580) {
     postMore.style.display = "block";
 
     postMore.onclick = function() {
