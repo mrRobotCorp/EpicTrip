@@ -76,7 +76,7 @@ section .bnImg { width: 100%; }
 .cntCtrl .numBtn:hover { background: #ebe4f8; } 
 
 .payInfo span { color: #777; display: inline-block; padding: 25px 0 8px 0; font-size: 14px; font-family: pSemi; } 
-.payInfo p { color: #888; font-size: 13px; font-family: pLight; line-height: 125%; } 
+.payInfo p { color: #888; font-size: 13px; font-family: pLight; line-height: 145%; } 
 .goPay { width: 100%; margin-top: 15px; padding: 20px 0; font-size: 19px; font-family: pBold; color: #fff; letter-spacing: 0.5px; background: var(--color-main); border-radius: 0 0 10px 10px; cursor: pointer; } 
 
 

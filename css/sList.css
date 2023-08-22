@@ -3,11 +3,13 @@ section { min-height: calc(100vh - 240px); margin-top: 170px; margin-bottom: 120
 .postBtn:hover { background: var(--color-sub);}
 
 .frmLine { display: flex; align-items: center; justify-content: space-between;  margin-bottom: 30px; margin-top: 10px;}
-.frmLine div { display: flex; align-items: center; margin-top: 10px;}
+.frmLine div { display: flex; align-items: center; margin-top: 10px; }
 .strFrm { display: flex; justify-content: space-around; align-items: center; margin-right: 25px; width: 250px; padding: 10px; background-color: #eee; border-radius: 10px; }
 .strFrm input { font-size: 15px; font-family: pMedium; background: transparent; }
 .strFrm button { width: 25px; height: 25px; background: url(../source/srhIco.png) center center; background-size: cover; cursor: pointer; }
-.sortBtn { padding: 6px 10px; margin-right: 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; font-family: pRegular; background: #f1f1f1; cursor: pointer; transition: all .2s ease; }
+.sortBtn { display: none; }
+.sortBtn + label {padding: 6px 10px; margin-right: 15px; border-radius: 6px; border: 1px solid #ccc; font-size: 14px; font-family: pRegular; background: #f1f1f1; cursor: pointer; }
+.sortBtn:checked + label {  color:#fff; background: var(--color-main); border-color: var(--color-main);}
 
 .sListThumb{position: relative; overflow: hidden; width: 100%; height: 341px; display: flex; align-items: center; justify-content: center; margin-bottom: 50px; flex-direction: column;}
 .sListThumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px;}
