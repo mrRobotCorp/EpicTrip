@@ -56,41 +56,35 @@
     <section>
         <div id='calendar'></div>
 
-        <div id="modal-view-event" class="modal calendar-modal">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h4 class="modal-title"><span class="event-title"></span></h4>
-                    <div class="event-body"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+        <div class="modalBg">
+            <div class="locModal">
+                <h4><span>8월 21일</span>매출량</h4>
+                <form class="schLocBox">
+                    <div class="locAll">
+                        <input type="radio" id="ds01" name="ds" value="">
+                        <label for="ds01">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
 
-        <div id="modal-view-event-add" class="modal calendar-modal">
-            <div class="modal-content">
-                <form id="add-event">
-                    <div class="modal-body">
-                        <h4>Add Event Detail</h4>
-                        <div class="">
-                            <label>Event name</label>
-                            <input type="text" class="" name="ename">
-                        </div>
-                        <div class="">
-                            <label>Event Date</label>
-                            <input type='text' class="datetimepicker" name="edate">
-                        </div>
-                        <div class="">
-                            <label>Event Description</label>
-                            <textarea class="" name="edesc"></textarea>
-                        </div>
+                        <input type="radio" id="ds02" name="ds" value="">
+                        <label for="ds02">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
+
+                        <input type="radio" id="ds03" name="ds" value="">
+                        <label for="ds03">
+                            <span>후쿠오카 타워</span>
+                            <div class="check"></div>
+                        </label>
                     </div>
-                    <div class="">
-                        <button type="" class="">Save</button>
-                        <button type="button" class="" data-dismiss="modal">Close</button>
-                    </div>
+                    <button type="button" class="addBtn">추가하기</button>
                 </form>
+
+                <div class="cls">
+                    <button type="button" class="clsBtn"></button>
+                </div>
             </div>
         </div>
     </section>
@@ -114,7 +108,7 @@
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    right: 'dayGridMonth,timeGridWeek'
                 },
                 navLinks: true, // can click day/week names to navigate views
                 selectable: true,
@@ -138,10 +132,10 @@
                     $('#modal-view-event-add').modal();
                 },
                 eventClick: function (event, jsEvent, view) {
+                    showModal();
                     $('.event-title').html(event.title);
                     $('.event-body').html(event.description);
                     $('.eventUrl').attr('href', event.url);
-                    $('#modal-view-event').modal();
                 },
 
 
@@ -208,6 +202,24 @@
 
             calendar.render();
         });
+
+        // ------------------ modal ---------------------
+
+        const modal = document.querySelector(".modalBg");
+        const clsBtn = document.querySelector(".cls");
+        const locAdd = document.querySelectorAll(".locAdd");
+
+        function showModal() {
+            modal.classList.add("active")
+        }
+
+        function clsModal() {
+            modal.classList.remove("active");
+        }
+
+        clsBtn.onclick = function () {
+            clsModal();
+        };
 
     </script>
 </body>
