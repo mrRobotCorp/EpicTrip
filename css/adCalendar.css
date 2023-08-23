@@ -33,9 +33,10 @@ section { min-height: calc(100vh - 240px); margin-top: 140px; margin-bottom: 100
 
 .fc .fc-button { padding: 7px 12px; font-size: 15px; border-radius: 10px;}
 .fc .fc-button-group > .fc-button { }
-.fc-day-sun a { color: #d1120f; text-decoration: none; } 
-.fc-day-sat a { color: #1a1ad2; text-decoration: none; }
+.fc-day-sun a { color: #ca0d0a; text-decoration: none; } 
+.fc-day-sat a { color: #5a1ad2; text-decoration: none; }
 
+.fc-daygrid-event-dot {	border-color: var(--dark-yellow);}
 
 /* ----------------- 모달 -------------------- */
 
