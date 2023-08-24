@@ -173,17 +173,14 @@
                     $('.eventTxt').html(event.title);
                     $('.event-body').html(event.description);
                     $('.eventUrl').attr('href', event.url);
+                    
+                    //if (confirm('해당 일정을 삭제하시겠습니까?')) {
+                    //    arg.event.remove()
+                    //}
                 },
-
-
                 select: function (arg) {
                     showModal();
                 },
-                // eventClick: function (arg) {
-                //     if (confirm('해당 일정을 삭제하시겠습니까?')) {
-                //         arg.event.remove()
-                //     }
-                // },
 
                 editable: false, // 드래그 해서 수정 X
                 dayMaxEvents: true, // allow "more" link when too many events
