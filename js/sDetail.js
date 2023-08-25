@@ -1,39 +1,27 @@
 // ---------------- calendar --------------------
-var minDt = "2023-08-15";
+var minDt = "2023-08-01";
 var maxDt = "2023-09-18";
 
-$(function() {
+$(function () {
 
-    function addPrice() {
-        const td = document.querySelectorAll(".ui-datepicker td");
-        td.forEach((e,i) => {
-            let cls = e.getAttribute("data-month");
-            if(true) {
-                e.insertAdjacentHTML("beforeend", `<p class='dayPrice'>47만</p>`)
-            }
-        });
-    }
-
-    $( ".calendar" ).datepicker({ 
+    $(".calendar").datepicker({
         dateFormat: 'yy-mm-dd',
         monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
         monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
         dayNames: ['일', '월', '화', '수', '목', '금', '토'],
         dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
         minDate: minDt,
-        maxDate : maxDt,
+        maxDate: maxDt,
         // beforeShowDay: function(date){ // 요일 별 선택 제한
         //     var day = date.getDay();
         //     return [(day != 0 && day != 6)];
         // },
-        onSelect: function() { // 선택한 날짜 데이터 형식 뽑기
-            let date = $.datepicker.formatDate("yymmdd",$(".calendar").datepicker("getDate")); 
+        onSelect: function () { // 선택한 날짜 데이터 형식 뽑기
+            let date = $.datepicker.formatDate("yymmdd", $(".calendar").datepicker("getDate"));
             console.log(date);
         },
     });
 
-    // addPrice();
-    
 });
 
 
@@ -52,7 +40,7 @@ plus.onclick = function () {
     if (on === false) {
         cntNum++;
         if (cntNum <= 10)
-        cntShow.innerHTML = cntNum;
+            cntShow.innerHTML = cntNum;
         else
             cntNum = 10;
     }
@@ -70,7 +58,7 @@ minus.onclick = function () {
 
 // ------------- 좋아요 버튼 -------------
 const wishBtn = document.querySelector(".wishBtn");
-wishBtn.onclick = function() {
+wishBtn.onclick = function () {
     this.classList.toggle("active");
 }
 
@@ -80,12 +68,12 @@ wishBtn.onclick = function() {
 const postMore = document.querySelector(".postMore");
 const post = document.querySelector(".postCon");
 
-if(post.clientHeight >= 580) {
+if (post.clientHeight >= 580) {
     postMore.style.display = "block";
 
-    postMore.onclick = function() {
+    postMore.onclick = function () {
         post.classList.toggle("more");
-        if(this.innerHTML == "더보기") {
+        if (this.innerHTML == "더보기") {
             this.innerHTML = "접기";
         } else {
             this.innerHTML = "더보기";

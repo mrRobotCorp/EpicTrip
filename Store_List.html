@@ -39,8 +39,8 @@
                     </li>
                 </ul>
                 <div class="userHead">
-                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <a href="./message.html"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="./Mypage_mysetting.html"><img class="userImg" src="./source/profImg2.jpg"></a>
                     <ul class="userList">
                         <li>유저 닉네임</li>
                         <li><a href="./Community_Group.html">마이페이지</a></li>
@@ -127,118 +127,6 @@
                     </span>
                 </div>
             </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
-            <a href="./Store_Detail.html" class="itemOne item01">
-                <div class="post">
-                    <div class="postImg">
-                        <img src="./source/stList01.jpg" alt="">
-                    </div>
-                </div>
-                <div class="postBottom">
-                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                    <span id="locPay" class="locPay">
-                        <p id="loc">일본</p>
-                        <span id="price">159,000원</span>
-                    </span>
-                </div>
-            </a>
     </section>
 
     <footer>
@@ -250,7 +138,36 @@
 
 
     <script src="./js/header.js"></script>
+    <script>
+        const soItem = document.querySelectorAll(".itemOne");
 
+        /*
+        soItem.forEach((e, i) => {
+            if(true) { // sold out 아이템 조건 너가 넣어
+                e.setAttribute("id", "soldOut");
+            }
+        }) 
+        
+        */
+
+        const soldOut = document.querySelectorAll("#soldOut");
+        // sold out 제품은 a 링크 이동 막기 
+        soldOut.forEach((e) => {
+            e.onclick = function() {
+                return false;
+            }
+        })
+
+
+        const soldOutIn = document.querySelectorAll("#soldOut .postImg");
+        // sold out 제품에만 sold out 텍스트 추가
+        soldOutIn.forEach((e) => {
+            e.insertAdjacentHTML("afterend", `
+                <p class="soldOutTxt">Sold Out</p>
+            `);
+        })
+
+    </script>
 </body>
 
 </html>

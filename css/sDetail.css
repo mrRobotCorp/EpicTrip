@@ -83,6 +83,7 @@ section .bnImg { width: 100%; }
 
 
 /* --------------- calendar ---------------- */
+.dayActive { color: var(--color-main); font-family: pSemi; }
 .calendar { padding: 10px; font-family: pRegular; line-height: 1.2; text-align: center; border: 2px solid #edeff2; border-radius: 8px; user-select: none; } 
 .ui-widget.ui-widget-content { /* 전체 박스 */ width: 100%; border: none; padding:0; border-radius: 10px; } 
 .ui-widget-header { font-size: 15px; border: none; border-radius: 0px; } 

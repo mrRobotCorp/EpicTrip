@@ -32,15 +32,15 @@
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
-                        <a href="./Store.html"  class="store">여행상점</a>
+                        <a href="./Store.html" class="store">여행상점</a>
                     </li>
                     <li>
-                        <a href="./Community_Group.html"  class="community">커뮤니티</a>
+                        <a href="./Community_Group.html" class="community">커뮤니티</a>
                     </li>
                 </ul>
                 <div class="userHead">
-                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <a href="./message.html"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="./Mypage_mysetting.html"><img class="userImg" src="./source/profImg2.jpg"></a>
                     <ul class="userList">
                         <li>유저 닉네임</li>
                         <li><a href="./Community_Group.html">마이페이지</a></li>
@@ -53,9 +53,9 @@
         <div class="gnbBottom">
             <a href="./Community_Group.html" class="together">
                 <img src="./source/group.png">
-                <span >동행</span>
+                <span>동행</span>
             </a>
-            <a href="./Community_Schedule.html"  class="sche">
+            <a href="./Community_Schedule.html" class="sche">
                 <img src="./source/date.png">
                 <span>일정</span>
             </a>
@@ -87,23 +87,32 @@
                         </div>
                     </div>
                     <p class="postText">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem quasi ipsum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur sapiente, ea nulla voluptatibus ex!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae sit quidem quasi ipsum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore consequuntur sapiente, ea nulla voluptatibus ex!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil
+                        deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae
+                        sit quidem quasi ipsum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium
+                        rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore
+                        consequuntur sapiente, ea nulla voluptatibus ex!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste officia expedita nihil
+                        deleniti quas laboriosam voluptatum aliquam corrupti saepe nostrum amet aliquid, quod odio vitae
+                        sit quidem quasi ipsum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum doloremque, laudantium
+                        rem rerum provident quo commodi itaque odio magnam necessitatibus optio quam. Dolore
+                        consequuntur sapiente, ea nulla voluptatibus ex!
                     </p>
                     <div class="postDV">
-                        <span>2023-08-11</span> <span>14:31</span> <p>조회수</p> <span>51</span>
+                        <span>2023-08-11</span> <span>14:31</span>
+                        <p>조회수</p> <span>51</span>
                     </div>
                 </div>
                 <div class="pRight">
                     <div class="wUser">
                         <div class="wUserInner">
-                            <div class="wUserInfo">
+                            <div class="wUserInfo" onclick="memMpopen()">
                                 <img src="./source/profImg3.jpg" alt="">
                                 <div class="ngc">
                                     <p>닉네임</p>
-                                    <div class="ag">                                
+                                    <div class="ag">
                                         <p>20대 | <span> 여성</span></p>
                                     </div>
                                 </div>
@@ -147,7 +156,52 @@
                     </div>
                 </div>
             </div>
-    
+
+            <div class="memMpModal">
+                <div class="memMp">
+                    <div class="memMpclose">
+                        <div></div>
+                        <button onclick="memMpclose()"></button>
+                    </div>
+                    <div class="memMpInner">
+                        <div class="memIninfo">
+                            <div class="memimgLv">
+                                <img src="./source/profImg1.jpg" class="profile">
+                                <img src="./source/Lv_0.png" class="level">
+                            </div>
+                            <div class="lvandN">
+                                <p>초보 여행자</p>
+                                <span>user name</span>
+                            </div>
+                            <div class="recoBtn">
+                                <button class="goodMem" onclick="recogood()"></button>
+                                <div class="reconBtnline"></div>
+                                <button class="badMem" onclick="recobad()"></button>
+                            </div>
+                        </div>
+                        <div class="myintroduce">
+                            <p>소개글</p>
+                            <div class="myintroin">
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, dicta autem
+                                    molestiae et esse magni</span>
+                            </div>
+                        </div>
+                        <div class="subgb">
+                            <div class="ageGen">
+                                <div class="mybirth">
+                                    <p>나이</p>
+                                    <span>20대</span>
+                                </div>
+                                <div class="mygen">
+                                    <p>성별</p>
+                                    <span>여자</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -161,6 +215,29 @@
 
 
     <script src="./js/header.js"></script>
+    <script>
+        // =============== 모달 js ==================
+        // ms모달 열기,닫기
+        var memMpModal = document.querySelector(".memMpModal");
+        
+        function memMpclose() {
+            memMpModal.classList.remove("active");
+        }
+        function memMpopen() {
+            memMpModal.classList.add("active");
+        }
+        // .goodMem 버튼 클릭 시 토글 동작
+        function recogood() {
+            var goodButton = document.querySelector('.goodMem');
+            goodButton.classList.toggle('choice');
+        }
+
+        // .badMem 버튼 클릭 시 토글 동작
+        function recobad() {
+            var badButton = document.querySelector('.badMem');
+            badButton.classList.toggle('choiceB');
+        }
+    </script>
 
 </body>
 

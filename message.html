@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Final project : EpicTrip">
+    <meta property="og:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta property="og:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta property="og:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Final project : EpicTrip">
+    <meta name="twitter:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
+    <meta name="twitter:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta name="twitter:description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name="description" content="4조 프로젝트 사이트 - EpicTrip">
+    <meta name='keywords' content='project, EpicTrip, toy project, community, trip, tour'>
+
+    <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
+    <title>EpicTrip | 에픽트립</title>
+
+    <link href="./css/headFoot.css" rel="stylesheet">
+    <link href="./css/message.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <div class="gnb">
+                <ul class="gnbTab">
+                    <li>
+                        <a href="#" class="store">여행상점</a>
+                    </li>
+                    <li>
+                        <a href="#" class="community">커뮤니티</a>
+                    </li>
+                </ul>
+                <div class="userHead">
+                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <ul class="userList">
+                        <li>유저 닉네임</li>
+                        <li>마이페이지</li>
+                        <li>로그아웃</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="chatMemList">
+            <p>현재 대화 상대</p>
+            <div class="memandselmem">
+                <div class="memPro">
+                    <div class="member">
+                        <div class="memberModalBtn" onclick="memMpopen()">
+                            <img src="./source/profImg1.jpg" alt="">
+                        </div>
+                        <span>user name</span>
+                        <p class="groupon"></p>
+                    </div>
+                    <div class="member">
+                        <div class="memberModalBtn" onclick="memMpopen()">
+                            <img src="./source/profImg2.jpg" alt="">
+                        </div>
+                        <span>user name</span>
+                        <p class="groupon"></p>
+                    </div>
+                    <div class="member">
+                        <div class="memberModalBtn" onclick="memMpopen()">
+                            <img src="./source/profImg3.jpg" alt="">
+                        </div>
+                        <span>user name</span>
+                        <p class="groupon"></p>
+                    </div>
+                    <div class="member">
+                        <div class="memberModalBtn" onclick="memMpopen()">
+                            <img src="./source/profImg4.jpg" alt="">
+                        </div>
+                        <span>user name</span>
+                        <p class="groupon"></p>
+                    </div>
+                </div>
+                <div class="selgroupMem">
+                    <button  class="selMbtn" onclick="openSelm()">
+                        <img src="./source/addUser.png" alt="">
+                        동행 확정하기
+                    </button>
+
+                    <div class="selmModal">
+                        <div class="modalname">
+                            <h1>동행 확정하기</h1>
+                            <button id="closeSelm" onclick="closeSelm()"></button>
+                        </div>
+                        <div class="warnmsg">
+                            <p>📢 현재 채팅방에 있는 회원만 노출됩니다.</p>
+                        </div>
+                        <span>확정할 상대 선택</span>
+                        <div class="selecmems">
+                            <div class="memsimgname">
+                                <img src="./source/profImg1.jpg" alt="">
+                                <span>user name</span>
+                            </div>
+                            <button type="button" class="groupToggle">확정</button>
+                        </div>
+                        <div class="selecmems">
+                            <div class="memsimgname">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <span>user name</span>
+                            </div>
+                            <button type="button" class="groupToggle">확정</button>
+                        </div>
+                        <div class="selecmems">
+                            <div class="memsimgname">
+                                <img src="./source/profImg3.jpg" alt="">
+                                <span>user name</span>
+                            </div>
+                            <button type="button" class="groupToggle">확정</button>
+                        </div>
+                        <div class="selecmems">
+                            <div class="memsimgname">
+                                <img src="./source/profImg4.jpg" alt="">
+                                <span>user name</span>
+                            </div>
+                            <button type="button" class="groupToggle">확정</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="selchat">
+            <div></div>
+            <div>
+                <a href="./message.html" class="ms"><button id="memChat">채팅</button></a>
+                <a href="./message_userAdChat.html" class="msA"><button id="adminChat">1:1 문의</button></a>
+            </div>
+
+        </div>
+        <div class="chatandlist">
+            <div class="chatList">
+                <div class="chatListInner">
+                    <h3>채팅목록</h3>
+                    <div class="chatListinin">
+                        <ul>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산여행</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor autem illo necessitatibus officia quaerat recusandae commodi architecto voluptatem assumenda ratione voluptates dolores, enim tempore sunt corrupti. Quos, laborum? Magnam, porro?.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산여행부산여행부부산여행부산여행부산여행부</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatroom">
+                                <img src="./source/profImg2.jpg" alt="">
+                                <div class="roominfo">
+                                    <div class="roomtitle">
+                                        <p>[동행] 부산여행부산여행부산여행</p>
+                                        <span>2</span>
+                                    </div>
+                                    <p class="lastMsg">메시지가 없습니다.</p>
+                                    <div class="listmsgtime">
+                                        <div></div>
+                                        <span>19일전</span>
+                                    </div>
+                                </div>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="chatBoard">
+                <div class="chatWrap">
+                    <div class="chatroomname">
+                        <div>
+                            <span>[동행] 부산여행부산여행부산</span>
+                            <span>2</span>
+                        </div>
+                        <button type="button">나가기</button>
+                    </div>
+                    <div  class="chatInner">
+                        <ul>
+                            <li class="ment">
+                                <p class="mentp">2023년 8월 16일</p>
+                            </li>
+                            <li class="ment">
+                                <p class="mentp">신혜원님이 들어왔습니다.</p>
+                            </li>
+                            <li class="ansarea">
+                                <div class="ansprof">
+                                    <img src="./source/profImg1.jpg" alt="">
+                                </div>
+                                <div class=".chatCom">
+                                    <p>신혜원</p>
+                                    <p class="ansInner">
+                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit in aliquid
+                                            quisquam laudantium quia voluptate possimus cumque nesciunt rerum maiores
+                                            aliquam deserunt soluta, error facere nihil minus eius at sint.</span>
+                                    </p>
+                                </div>
+                                <p class="sendDate">오후 5:24</p>
+                            </li>
+                            <li class="mychat">
+                                <div class="mychatBlank"></div>
+                                <div class="mychatTime">
+                                    <p class="sendDate">오후 5:30</p>
+                                </div>
+                                <div class=".chatCom">
+                                    <p class="mychatInner">
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mychat">
+                                <div class="mychatBlank"></div>
+                                <div class="mychatTime">
+                                    <p class="sendDate">오후 5:30</p>
+                                </div>
+                                <div class=".chatCom">
+                                    <p class="mychatInner">
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mychat">
+                                <div class="mychatBlank"></div>
+                                <div class="mychatTime">
+                                    <p class="sendDate">오후 5:30</p>
+                                </div>
+                                <div class=".chatCom">
+                                    <p class="mychatInner">
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="ment">
+                                <p class="mentp">신혜원님이 들어왔습니다.</p>
+                            </li>
+                            <li class="ansarea">
+                                <div class="ansprof">
+                                    <img src="./source/profImg1.jpg" alt="">
+                                </div>
+                                <div class=".chatCom">
+                                    <p>신혜원</p>
+                                    <p class="ansInner">
+                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit in aliquid
+                                            quisquam laudantium quia voluptate possimus cumque nesciunt rerum maiores
+                                            aliquam deserunt soluta, error facere nihil minus eius at sint.</span>
+                                    </p>
+                                </div>
+                                <p class="sendDate">오후 5:24</p>
+                            </li>
+                            <li class="ment">
+                                <p class="mentp">신혜원님이 들어왔습니다.</p>
+                            </li>
+                            <li class="ansarea">
+                                <div class="ansprof">
+                                    <img src="./source/profImg1.jpg" alt="">
+                                </div>
+                                <div class=".chatCom">
+                                    <p>신혜원</p>
+                                    <p class="ansInner">
+                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit in aliquid
+                                            quisquam laudantium quia voluptate possimus cumque nesciunt rerum maiores
+                                            aliquam deserunt soluta, error facere nihil minus eius at sint.</span>
+                                    </p>
+                                </div>
+                                <p class="sendDate">오후 5:24</p>
+                            </li>
+                            <li class="ansarea">
+                                <div class="ansprof">
+                                    <img src="./source/profImg1.jpg" alt="">
+                                </div>
+                                <div class=".chatCom">
+                                    <p>신혜원</p>
+                                    <p class="ansInner">
+                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit in aliquid
+                                            quisquam laudantium quia voluptate possimus cumque nesciunt rerum maiores
+                                            aliquam deserunt soluta, error facere nihil minus eius at sint.</span>
+                                    </p>
+                                </div>
+                                <p class="sendDate">오후 5:24</p>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sendflex">
+            <div></div>
+            <div class="sendMs">
+                <textarea placeholder="메세지를 입력해주세요." class="msArea" id="messageTextarea"></textarea>
+                <button class="sendBtn" id="sendButton"></button>
+            </div>
+        </div>
+        <div class="memMpModal">
+            <div class="memMp">
+                <div class="memMpclose">
+                    <div></div>
+                    <button onclick="memMpclose()"></button>
+                </div>
+                <div class="memMpInner">
+                    <div class="memIninfo">
+                        <div class="memimgLv">
+                            <img src="./source/profImg1.jpg" class="profile">
+                            <img src="./source/Lv_0.png" class="level">
+                        </div>
+                        <div class="lvandN">
+                            <p>초보 여행자</p>
+                            <span>user name</span>
+                        </div>
+                        <div class="recoBtn">
+                            <button class="goodMem" onclick="recogood()"></button>
+                            <div class="reconBtnline"></div>
+                            <button class="badMem" onclick="recobad()"></button>
+                        </div>
+                    </div>
+                    <div class="myintroduce">
+                        <p>소개글</p>
+                        <div class="myintroin">
+                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, dicta autem molestiae et esse magni</span>
+                        </div>
+                    </div>
+                    <div class="subgb">
+                        <div class="ageGen">
+                            <div class="mybirth">
+                                <p>나이</p>
+                                <span>20대</span>
+                            </div>
+                            <div class="mygen">
+                                <p>성별</p>
+                                <span>여자</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <img src="./source/logo_white.png">
+        <p><a href="mailto:depo89055@gmail.com">프로젝트 문의 dddd@gmail.com</a></p>
+        <p>유선 상담 010-1234-1234</p>
+        <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/mes.js"></script>
+
+</body>
+
+</html>
