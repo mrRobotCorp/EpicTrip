@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
         store.classList.add("active");
     }
 
+    // --- 일정 리스트 (Schedule_List.jsp) 때문에 추가
+    if(loc.includes("Sch") && loc.includes("List")) {
+        community.classList.add("active");
+        sche.classList.add("active");
+    }
+
     // ---- 커뮤니티 중 일정 탭
     if (loc.includes("Community") && loc.includes("Sch")) {
         sche.classList.add("active");

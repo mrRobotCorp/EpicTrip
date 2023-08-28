@@ -1,5 +1,26 @@
-section { min-height: calc(100vh - 240px); padding: 0 12%; margin: 80px 0 100px 0; }
-section .titleTxt { position: relative; margin-top: 40px; font-size: 25px; font-family: pBold;}
+/* ------------------ mainBanner ---------------------*/
+.mainBanner { display: flex; align-items: center; justify-content: center; position: relative; height: 95vh; background-size: cover;  }
+.mainCon { display: flex; flex-direction: column; align-items: center;}
+.mainBnLogo { width: 550px; }
+.mainCon p { width: 650px; text-align: center; font-size: 18px; font-family: pLight; line-height: 140%;}
+.scrollDown { position: absolute; left: 50%; bottom: 5%; padding-top: calc( 100vw * 70 / 1920 ); color: #999; font-size: calc( 100vw * 16 / 1920 ); font-family: pRegular; cursor: pointer; } 
+.scrollDown span { position: absolute; top: 0; left: 50%; width: calc( 100vw * 24 / 1920 ); height: calc( 100vw * 24 / 1920 ); margin-left: calc( 100vw * -12 / 1920 ); border-left: calc( 100vw * 2 / 1920 ) solid #999; border-bottom: calc( 100vw * 2 / 1920 ) solid #999; transform: rotate(-45deg); animation: sdb05 1.5s infinite; } 
+
+@-webkit-keyframes sdb05 { 
+0% { -webkit-transform: rotate(-45deg) translate(0, 0); opacity: 0; } 
+50% { opacity: 1; } 
+100% { -webkit-transform: rotate(-45deg) translate(-20px, 20px); opacity: 0; } 
+}
+@keyframes sdb05 { 
+0% { transform: rotate(-45deg) translate(0, 0); opacity: 0; } 
+50% { opacity: 1; } 
+100% { transform: rotate(-45deg) translate(-20px, 20px); opacity: 0; } 
+}
+
+
+
+.mainSection { padding: 0 12%; margin: 30px 0 100px 0; }
+.mainSection .titleTxt { position: relative; margin-top: 40px; font-size: 25px; font-family: pBold;}
 .txtPple { color: var(--color-main); }
 .epicTxt::before { content: ""; position: absolute; top: 14px; left: -4px; width: 144px; height: 15px; background: #41ff3b78; border-radius: 3px; z-index: -10;}
 
