@@ -39,8 +39,8 @@
                     </li>
                 </ul>
                 <div class="userHead">
-                    <a href="./message.html"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="./Mypage_mysetting.html"><img class="userImg" src="./source/profImg2.jpg"></a>
+                    <a href="#"><img class="msgImg" src="./source/msg.png"></a>
+                    <a href="#"><img class="userImg" src="./source/profImg2.jpg"></a>
                     <ul class="userList">
                         <li>유저 닉네임</li>
                         <li><a href="./Mypage_mysetting.html">마이페이지</a></li>
@@ -57,10 +57,11 @@
             <div class="myInner">
                 <div class="mypageGnb">
                     <div class="mlInner">
-                        <div class="mproname">
-                            <img src="./source/profImg2.jpg" alt="">
-                            <span>user name</span>
-                        </div>
+                        <a href="./Mypage_mymain.html" class="mproname menuin">
+                            <img class="mypimg" src="./source/profImg2.jpg" alt="">
+                            <span>신혜원</span>
+                            <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                        </a>
                         <ul>
                             <li>
                                 <div class="menuin  pointbox">
@@ -137,15 +138,20 @@
                                     </div>
                                 </div>  
                                 <p>전설의 콜롬버스</p>
-                                <span>user name</span>
+                                <div class="mpnid">
+                                    <div class="mpname"><span>신혜원</span></div>
+                                    <div class="mpuid"><span>@hyewon01</span></div>
+                                </div>
+
+
                             </div>
                             <div class="myintro">
                                 <div class="myintTop">
                                     <p>소개글</p>
-                                    <button type="button" class="cmmtBtn" onclick="chIntorduce()"></button>
+                                    <button type="button" class="cmmtBtn" onclick="chIntorduce()">수정</button>
                                 </div>
                                 <div class="cmmtBox">
-                                    <textarea placeholder="소개글을 입력해주세요.(2000자 이내)" readonly></textarea>
+                                    <textarea id="introTextarea" placeholder="소개글을 입력해주세요.(100자 이내)" readonly maxlength="100"></textarea>
                                 </div>
                             </div>
                             </div>
