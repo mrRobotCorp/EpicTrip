@@ -5,7 +5,7 @@ body { cursor: url(../source/cursor_Commom.cur), auto !important; }
 */
 /* 
 */
-body { cursor: none;} 
+body { cursor: none; overflow-x: hidden;} 
 
 header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 5px #a9a9a95c; } 
 header .headLogo { width: 170px; margin-right: 30px; } 
