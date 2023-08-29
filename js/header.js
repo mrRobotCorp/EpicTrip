@@ -63,12 +63,29 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector("body").prepend(cursor, follower);
 
     function myCursor(e) {
-        cursor.style.top = e.pageY + 10 + "px";
-        cursor.style.left = e.pageX + 10 + "px";
+        cursor.style.top = e.pageY + 13 + "px";
+        cursor.style.left = e.pageX + 13 + "px";
     }
 
     function Trailer(e) {
-        gsap.to(follower, { duration: 0.5, left: e.pageX - 5, top: e.pageY - 5 });
+        gsap.to(follower, { duration: 0.5, left: e.pageX + 5, top: e.pageY + 5});
+
+        store.addEventListener("mouseover", () => {
+            cursor.classList.add("sHover");
+            follower.classList.add("sHover_f");
+        });
+        store.addEventListener("mouseout", () => {
+            cursor.classList.remove("sHover");
+            follower.classList.remove("sHover_f");
+        });
+        community.addEventListener("mouseover", () => {
+            cursor.classList.add("sHover");
+            follower.classList.add("cHover_f");
+        });
+        community.addEventListener("mouseout", () => {
+            cursor.classList.remove("sHover");
+            follower.classList.remove("cHover_f");
+        });
     }
 
     window.addEventListener("mousemove", myCursor);
