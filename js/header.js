@@ -73,4 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener("mousemove", myCursor);
     window.addEventListener("mousemove", Trailer);
-})
+});
+
+

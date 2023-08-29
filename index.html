@@ -57,9 +57,9 @@
 
     <section class="mainBanner">
         <div class="mainCon">
-            <img src="./source/mainBnLogo.png" class="mainBnLogo">
+            <img src="./source/logo_white.png" class="mainBnLogo">
             <p>
-                일상을 벗어나 특별한 여행을 계획하고 싶은 이들을 위한 플랫폼
+                일상을 벗어나 <span class="boldTxt">특별한 여행</span>을 계획하고 싶은 이들을 위한 플랫폼<br>
                 여행에 동행을 구하거나 일정을 공유할 수 있으며, 다양한 여행 상품을 경험해보세요.
             </p>
         </div>
@@ -986,6 +986,10 @@
 
 
     <footer>
+        <div id="scrollTop">
+            <span class="blind">맨 위로 가기</span>
+            <div class="topTxt">Top</div>
+        </div>
         <img src="./source/logo_white.png">
         <p><a href="mailto:depo89055@gmail.com">프로젝트 문의 dddd@gmail.com</a></p>
         <p>유선 상담 010-1234-1234</p>
@@ -1006,12 +1010,37 @@
 
         down.onclick = function () {
             window.scrollTo({
-                top: 800,
+                top: 820,
                 behavior: 'smooth'
             });
         }
 
-        
+        document.getElementById("scrollTop").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        };
+
+        $(document).ready(function () {
+            const Height = $("#scrollTop").height();
+            $("#scrollTop").hide();
+
+            $(window).scroll(function () {
+                var rolling = $(this).scrollTop() >= Height;
+                if (rolling) {
+                    $("#scrollTop").fadeIn(500).css({ "position": "fixed" });
+                }
+                else {
+                    $("#scrollTop").fadeOut(300);
+                }
+
+            });
+
+        });
+
+
     </script>
 </body>
 
