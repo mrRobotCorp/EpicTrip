@@ -21,8 +21,11 @@
     <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
     <title>EpicTrip | 에픽트립</title>
 
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick_theme.css" />
     <link href="./css/headFoot.css" rel="stylesheet">
     <link href="./css/mypage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
 <body>
@@ -59,8 +62,10 @@
                     <div class="mlInner">
                         <a href="./Mypage_mymain.html" class="mproname menuin">
                             <img class="mypimg" src="./source/profImg2.jpg" alt="">
-                            <span>신혜원</span>
-                            <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            <div class="nameflag">
+                                <span>신혜원</span>
+                                <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            </div>
                         </a>
                         <ul>
                             <li>
@@ -110,58 +115,100 @@
                 </div>
                 <div class="mypageCon">
                     <h1 class="mypageName">내 후기</h1>
-                    <a href="#" class="reviewInner">
-                        <div class="buyitem">
-                            <h1>상품명</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
-                                perspiciatis repudiandae,
-                                quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
-                                cupiditate, at vero ipsam eos?
-                            </p>
-                            <div class="redatedel">
-                                <span>YYYY.MM.DD |</span>
-                                <button>삭제</button>
-                            </div>
 
+                    <div class="slider">
+                        <div class="rvAll">
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        cupiditate, at vero ipsam eos?
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="reviewInner">
-                        <div class="buyitem">
-                            <h1>상품명</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
-                                perspiciatis repudiandae,
-                            </p>
-                            <div class="redatedel">
-                                <span>YYYY.MM.DD |</span>
-                                <button>삭제</button>
-                            </div>
-
+                        <div class="rvAll">
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        cupiditate, at vero ipsam eos?
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
+                            <a href="#" class="reviewInner">
+                                <div class="buyitem">
+                                    <h1>상품명</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        perspiciatis repudiandae,
+                                    </p>
+                                    <div class="redatedel">
+                                        <span>YYYY.MM.DD |</span>
+                                        <button>삭제</button>
+                                    </div>
+        
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="reviewInner">
-                        <div class="buyitem">
-                            <h1>상품명</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
-                                perspiciatis repudiandae,
-                                quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
-                                cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
-                                perspiciatis repudiandae,
-                            </p>
-                            <div class="redatedel">
-                                <span>YYYY.MM.DD |</span>
-                                <button>삭제</button>
-                            </div>
-
-                        </div>
-                    </a>
-                    <div class="pagination">
-                        <button type="button" class="prevBtn pageBtn"></button>
-                        <button type="button" value="" class="pageNum active">1</button>
-                        <button type="button" value="" class="pageNum">2</button>
-                        <button type="button" value="" class="pageNum">3</button>
-                        <button type="button" value="" class="pageNum">4</button>
-                        <button type="button" value="" class="pageNum">5</button>
-                        <button type="button" class="nextBtn pageBtn"></button>
                     </div>
                 </div>
 
@@ -176,6 +223,9 @@
         <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mypage.js"></script>
 

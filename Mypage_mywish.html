@@ -21,14 +21,17 @@
     <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
     <title>EpicTrip | 에픽트립</title>
 
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick_theme.css" />
     <link href="./css/headFoot.css" rel="stylesheet">
     <link href="./css/mypage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <a href="./index.html"><img class="headLogo" src="./source/logo.png"></a>
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
@@ -59,9 +62,11 @@
                     <div class="mlInner">
                         <a href="./Mypage_mymain.html" class="mproname menuin">
                             <img class="mypimg" src="./source/profImg2.jpg" alt="">
-                            <span>신혜원</span>
-                            <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
-                        </a> 
+                            <div class="nameflag">
+                                <span>신혜원</span>
+                                <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            </div>
+                        </a>
                         <ul>
                             <li>
                                 <div class="menuin  pointbox">
@@ -108,107 +113,192 @@
                         </ul>
                     </div>
                 </div>
+                
                 <div class="mypageCon">
-                    <h1 class="mypageName">위시리스트</h1>
-                    <div class="itemAll">
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                    <h1 class="mypageName">구매 내역</h1>
+
+                    <div class="slider">
+                        <div class="itemAll">
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
-                        <a href="./Store_Detail.html" class="itemOne item01">
-                            <div class="post">
-                                <div class="postImg">
-                                    <img src="./source/stList01.jpg" alt="">
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="postBottom">
-                                <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
-                                <span id="locPay" class="locPay">
-                                    <p id="loc">일본</p>
-                                    <span id="price">159,000원</span>
-                                </span>
-                            </div>
-                        </a>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="itemAll">
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./Store_Detail.html" class="itemOne item01">
+                                <div class="post">
+                                    <div class="postImg">
+                                        <img src="./source/stList01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="postBottom">
+                                    <span id="infoText" class="infoText">[일본 오사카] 유니버셜 스튜디오 재팬 익스프레스 패스</span>
+                                    <span id="locPay" class="locPay">
+                                        <p id="loc">일본</p>
+                                        <span id="price">159,000원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="pagination">
-                        <button type="button" class="prevBtn pageBtn"></button>
-                        <button type="button" value="" class="pageNum active">1</button>
-                        <button type="button" value="" class="pageNum">2</button>
-                        <button type="button" value="" class="pageNum">3</button>
-                        <button type="button" value="" class="pageNum">4</button>
-                        <button type="button" value="" class="pageNum">5</button>
-                        <button type="button" class="nextBtn pageBtn"></button>
-                    </div>
                 </div>
             </div>
         </div>
+        </div>
+
 
     </section>
 
@@ -218,7 +308,9 @@
         <p>유선 상담 010-1234-1234</p>
         <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mypage.js"></script>
 

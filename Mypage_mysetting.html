@@ -23,6 +23,7 @@
 
     <link href="./css/headFoot.css" rel="stylesheet">
     <link href="./css/mypage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
 <body>
@@ -59,8 +60,10 @@
                     <div class="mlInner">
                         <a href="./Mypage_mymain.html" class="mproname menuin">
                             <img class="mypimg" src="./source/profImg2.jpg" alt="">
-                            <span>신혜원</span>
-                            <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            <div class="nameflag">
+                                <span>신혜원</span>
+                                <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            </div>
                         </a>
                         <ul>
                             <li>
@@ -178,8 +181,8 @@
                     </div>
                 </div>
             </div>
-            <div class="modalWrap">
-                <div class="modalInner">
+            <div class="mypaModal modalWrap">
+                <div class="myMp">
                     <div class="chPwd">
                         <p class="modalname">비밀번호 변경</p>
                         <input type="password" value="" id="pwd" name="pwd" placeholder="현재 비밀번호"
@@ -196,8 +199,8 @@
                     </div>
                 </div>
             </div>
-            <div class="phoneWrap">
-                <div class="phoneInner">
+            <div class="phoneWrap mypaModal">
+                <div class="myMp">
                     <div class="phoneModal">
                         <p class="modalname">전화번호 변경</p>
                         <div class="phoneInput">
@@ -217,13 +220,12 @@
                             <button class="mychBtn" onclick="closePhoneModal()">취소</button>
                             <button class="mychBtn" onclick="changePhoneNumber()">변경하기</button>
                         </div>
-    
                     </div>
                 </div>
             </div>
-            <div class="quitWrap">
-                <div class="quitInner">
-                    <div class="quit">
+            <div class="mypaModal quitWrap">
+                <div class="myMp">
+                    <div class="quitInner">
                         <p>탈퇴하시면 그동안의 모든 데이터가 사라집니다. <br>
                             그래도 회원 탈퇴하시겠습니까?</p>
                         <div class="modlabtn">

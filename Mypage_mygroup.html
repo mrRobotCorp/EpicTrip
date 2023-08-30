@@ -21,14 +21,17 @@
     <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
     <title>EpicTrip | 에픽트립</title>
 
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick_theme.css" />
     <link href="./css/headFoot.css" rel="stylesheet">
     <link href="./css/mypage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <a href="./index.html"><img class="headLogo" src="./source/logo.png"></a>
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
@@ -59,8 +62,10 @@
                     <div class="mlInner">
                         <a href="./Mypage_mymain.html" class="mproname menuin">
                             <img class="mypimg" src="./source/profImg2.jpg" alt="">
-                            <span>신혜원</span>
-                            <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            <div class="nameflag">
+                                <span>신혜원</span>
+                                <div class="lvflag"><img src="./source/Lv_9.png" alt=""></div>
+                            </div>
                         </a>
                         <ul>
                             <li>
@@ -110,244 +115,457 @@
                 </div>
                 <div class="mypageCon">
                     <h1 class="mypageName">내 동행</h1>
-                    <div class="groAll">
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
-                                        </div>
-                                    </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
-                                    </div>
-                                </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg1.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                    <div class="slider">
+                        <div class="groAll">
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
                                             </div>
                                         </div>
-                                    </div>
-                
-                                </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
-                                    </div>
-                                </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg6.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
                                             </div>
                                         </div>
+                    
                                     </div>
-                
-                                </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
-                                        </div>
-                                    </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
                                     </div>
                                 </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg7.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
                                             </div>
                                         </div>
-                                    </div>
-                
-                                </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
-                                    </div>
-                                </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg8.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
                                             </div>
                                         </div>
+                    
                                     </div>
-                
-                                </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
-                                        </div>
-                                    </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
                                     </div>
                                 </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg9.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
                                             </div>
                                         </div>
-                                    </div>
-                
-                                </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="Community_GroDetail.html" class="goDetail">
-                            <div class="schOne">
-                                <div class="schTopInfo">
-                                    <div class="schUser">
-                                        <img src="./source/profImg3.jpg">
-                                        <div>
-                                            <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
-                                            <span>30대 • 여성</span>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="schDays">
-                                        <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
-                                        <p class="subTxt">
-                                            23-08-01 ~ 23-08-06
-                                        </p>
-                                    </div>
-                                </div>
-                
-                                <div class="post post01">
-                                    <div class="postImg">
-                                        <img src="./source/cG_bg10.jpg" alt="">
-                                        <div class="hiddenBox">
-                                            <p id="pCnt">모집중 | 3명</p>
-                                            <div class="viewInner">
-                                                <span class="viewCnt">3</span>
-                                                <span class="chatCnt">1</span>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
                                             </div>
                                         </div>
+                    
                                     </div>
-                
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
                                 </div>
-                
-                                <div class="postBottom">
-                                    <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="pagination">
-                        <button type="button" class="prevBtn pageBtn"></button>
-                        <button type="button" value="" class="pageNum active">1</button>
-                        <button type="button" value="" class="pageNum">2</button>
-                        <button type="button" value="" class="pageNum">3</button>
-                        <button type="button" value="" class="pageNum">4</button>
-                        <button type="button" value="" class="pageNum">5</button>
-                        <button type="button" class="nextBtn pageBtn"></button>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+    
+                        </div>
+                        <div class="groAll">
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="Community_GroDetail.html" class="goDetail">
+                                <div class="schOne">
+                                    <div class="schTopInfo">
+                                        <div class="schUser">
+                                            <img src="./source/profImg3.jpg">
+                                            <div>
+                                                <span class="schNicK">닉네임 &nbsp;&nbsp;|&nbsp;</span>
+                                                <span>30대 • 여성</span>
+                                            </div>
+                                        </div>
+                                        <div class="schDays">
+                                            <p>여행기간&nbsp;&nbsp;<span class="days">5일</span></p>
+                                            <p class="subTxt">
+                                                23-08-01 ~ 23-08-06
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="post post01">
+                                        <div class="postImg">
+                                            <img src="./source/cG_bg1.jpg" alt="">
+                                            <div class="hiddenBox">
+                                                <p id="pCnt">모집중 | 3명</p>
+                                                <div class="viewInner">
+                                                    <span class="viewCnt">3</span>
+                                                    <span class="chatCnt">1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <div class="postBottom">
+                                        <h3 id="truncated">부산 락페 기대기대 기대기대기대기대 김윤아 와주세요</h3>
+                                    </div>
+                                </div>
+                            </a>
+    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -361,6 +579,9 @@
         <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mypage.js"></script>
 
