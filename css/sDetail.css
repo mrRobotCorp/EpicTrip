@@ -4,7 +4,7 @@ section .bnImg { width: 100%; }
 
 .postContent { display: flex; margin-top: 25px; justify-content: space-between; } 
 
-.pLeft { width: 870px; } 
+.pLeft { width: calc(100vw * 880 / 1920); } 
 .pLeft strong { position: relative; font-family: pSemi; font-size: 25px; } 
 .pLeft .titleBottom { padding: 50px 0 30px 0; display: flex; align-items: center; justify-content: space-between; border-bottom:1px solid var(--color-line); } 
 .postingBtn { display: flex; align-items: center; } 
@@ -45,14 +45,15 @@ section .bnImg { width: 100%; }
 
 .comment { margin: 20px 0; padding-bottom: 17px; display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 1px solid #ddd; } 
 .comment:last-child { border: none; }
-.comment .uInfo { display: flex; align-items: center;} 
+.comment .uInfo { display: flex; align-items: center; width: 100%;} 
 .cmmtUserImg { width: 50px; margin: 0 18px 0 5px; border-radius: 50%; } 
+.cmmtUserTxt { width: 100%;}
 .cmmtUserTxt span:first-child { font-family: pSemi; font-size: 17px; } 
 .cmmtUserTxt span:nth-child(2) { margin-left: 5px; font-family: pRegular; font-size: 14px; color: #999; } 
 .cmmtUserTxt .commDel { padding: 3px 8px; color: #e22309; background: #fff; font-family: pRegular; border-radius: 5px; cursor: pointer; transition: all .2s;}
 .cmmtUserTxt .commDel:hover { background: #eee; }
 .cmmtUserTxt .cmmtCon { padding: 10px 0; font-size: 15px; font-family: pLight; line-height: 120%; } 
-.cmmtDate { color: #777; font-size: 13px; font-family: pLight; }
+.cmmtDate { color: #777; font-size: 13px; font-family: pLight; float: right;}
 
 
 /* --------------------- */

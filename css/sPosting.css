@@ -3,9 +3,10 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 140px; }
 .selecAll { padding: 20px; border: 1px solid #ddd; border-radius: 10px; } 
 
 .opLine { display: flex; align-items: center; } 
-.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: 40px; background: #eee; font-size: 15px; font-family: pBold; } 
+.opLine .options { width: 70%; display: flex; align-items: center; flex-wrap: wrap; }
+.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: calc(100vw * 45 / 1920); background: #eee; font-size: 15px; font-family: pBold; } 
 .schFrm input[type="radio"] { display: none; } 
-.schFrm input[type="radio"] + label { padding: 7px 16px; margin-right: 13px; border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
+.schFrm input[type="radio"] + label { padding: 7px 16px; margin-right: calc(100vw * 13 /1920); border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; display: flex; align-items: center; } 

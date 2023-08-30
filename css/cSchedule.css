@@ -12,12 +12,12 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 
 .schAll { width: calc(100vw * 1660 / 1920); margin: 20px auto; display: flex; flex-wrap: wrap; }
 .schOne { width: calc(100vw * 360 / 1920); margin: calc(100vw * 20 / 1920) calc(100vw * 40 / 1920) calc(100vw * 20 / 1920) 0; padding-bottom: 10px; position: relative; border-radius: 15px; box-shadow: 1px 1px 7px #8585856b;}
-.schTopInfo { position: absolute; top: 5%; left: 4.5%; width: calc(100vw * 275 / 1920); padding: 12px 20px; display: flex; align-items: center;  justify-content: space-between; background: #fff; font-size: 13px; border-radius: 15px; box-shadow: 1px 1px 6px #a7a7a7; line-height: 125%; z-index: 10;}
+.schTopInfo { position: absolute; top: 5%; left: 4.5%; width: calc(100vw * 285 / 1920); padding: calc(100vw * 12 / 1920) calc(100vw * 20 / 1920); display: flex; align-items: center; justify-content: space-between; background: #fff; font-size: 13px; border-radius: 15px; box-shadow: 1px 1px 4px #747474ac; line-height: 125%; z-index: 10; } 
 .schTopInfo .schUser { display: flex; align-items: center;}
 .schTopInfo .schUser img { margin-right: 10px; width: 35px; border-radius: 20px;}
 .schUser .schNicK { font-family: pSemi;}
 
-.subTxt { font-size: 12px; color: #666; font-family: pRegular;}
+.subTxt { font-size: calc(100vw * 12 / 1920); color: #666; font-family: pRegular; } 
 
 .schDays .days { color: var(--color-main); font-family: pBold; }
 
@@ -45,7 +45,7 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px;}
 .dayAll .day.active:hover {background: var(--color-main); color: #fff; border-color: transparent; }
 
 .locList { height: 102px; overflow-y: auto; }
-.locList::-webkit-scrollbar { width: 12px; } 
+.locList::-webkit-scrollbar { width: calc(100vw * 12 / 1920); } 
 .locList::-webkit-scrollbar-thumb { background-color: #999; border: 3px solid #fff; border-radius: 20px; } 
 .locList::-webkit-scrollbar-track { background-color: transparent; }
 

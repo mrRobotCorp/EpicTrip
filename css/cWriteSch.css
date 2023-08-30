@@ -3,9 +3,9 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 200px; }
 .selecAll { padding: 20px; border: 1px solid #ddd; border-radius: 10px; } 
 
 .opLine { display: flex; align-items: center; } 
-.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: 40px; background: #eee; font-size: 15px; font-family: pBold; } 
+.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: calc(100vw * 45 / 1920);  background: #eee; font-size: 15px; font-family: pBold; } 
 .schFrm input[type="radio"] { display: none; } 
-.schFrm input[type="radio"] + label { padding: 7px 16px; margin-right: 13px; border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
+.schFrm input[type="radio"] + label { padding: 7px 16px;  margin-right: calc(100vw * 13 /1920); border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; display: flex; align-items: center; } 
@@ -81,9 +81,9 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .dayOne .locAdd { margin-right: 10px; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; } 
 .locAdd:hover { background: #ffd4389f; } 
 
-.daySch .schMemo { margin: 0 0 20px 30px; display: flex; align-items: center; justify-content: space-around; } 
+.daySch .schMemo { margin: 0 calc(100vw * 10 / 1920) 20px calc(100vw * 30 / 1920); display: flex; align-items: center; justify-content: space-around; } 
 .daySch .schMemo .memoCnt { margin-right: 13px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; } 
-.daySch .schMemo .memoTxt { width: 80%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-family: pRegular; font-size: 15px; } 
+.daySch .schMemo .memoTxt { width: 78%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-family: pRegular; font-size: 15px; } 
 .mNone { color: #888; } 
 
 .locDel { margin-left: 10px; width: 35px; height: 35px; line-height: 15px; color: #333; background: #e8e8e8; font-size: 17px; cursor: pointer; border-radius: 20px; transition: all .25s;}
