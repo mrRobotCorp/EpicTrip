@@ -1,6 +1,7 @@
 section { min-height: calc(100vh - 240px); margin-top: 170px; margin-bottom: 120px; padding: 0 12%;}
 .postBtn { padding: 9px 13px; background: #55ed50aa; border-radius: 6px; font-size: 15px; transition: all .2s;}
 .postBtn:hover { background: var(--color-sub);}
+.postBtn.hide { display: none;}
 
 .frmLine { display: flex; align-items: center; justify-content: space-between;  margin-bottom: 30px; margin-top: 10px;}
 .frmLine div { display: flex; align-items: center; margin-top: 10px; }

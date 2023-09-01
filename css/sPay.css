@@ -75,7 +75,21 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; marg
 .itemBtn { width: 100%; height: 75px; background-color: var(--color-main); color: white; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;border: solid 1px var(--color-main); font-family: pBold; font-size: 20px; cursor: pointer; } 
 
 
+/* -----------------언어 선택--------------------- */
+.infoTop { display: flex; align-items: center; justify-content: space-between;}
+.infoTop span { display: flex; align-items: center;}
 
+.lBtn { display: none; }
+.lBtn + label { position: relative; width: calc(100vw * 40 / 1920); height: calc(100vw * 40 / 1920); cursor: pointer; transition: all .2s; }
+label[for='langKor'] { margin-right: 10px; background: url(../source/korBtn.png) center center; background-size: cover; }
+label[for='langUs'] { background: url(../source/usBtn.png) center center; background-size: cover; }
+
+label[for='langKor']::before, label[for='langUs']::before { position: absolute; top: calc(100vw * 1 / 1920); left: calc(100vw * 1 / 1920); width: calc(100vw * 38 / 1920); height: calc(100vw * 38 / 1920); background: #0000009b; line-height: calc(100vw * 38 / 1920); text-align: center; font-family: pMedium; font-size: 13px; color: #fff; border-radius: 50%; opacity: 0; transition: all .3s; }
+label[for='langKor']::before { content: 'Kor'; }
+label[for='langUs']::before { content: 'Eng'; }
+label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity: 1; } 
+
+.lBtn:checked + label::before { opacity: 1; }
 
 
 

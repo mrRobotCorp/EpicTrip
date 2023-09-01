@@ -163,14 +163,14 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; marg
 .goDetail .postBottom { display: flex; flex-direction: column; width: 330px; padding: 5px; margin: 15px auto 15px 15px; } 
 .goDetail .postBottom h3 { width: calc(100vw * 220 / 1920); font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
 
-.hiddenBox { display: flex; align-items: center; justify-content: space-between; position: absolute; bottom: -4px; width: 100%; height: 50px; z-index: -1; background-color: #00000093; color: #fff; padding: 20px; font-size: 14px; font-family: pMedium; box-sizing: border-box; } 
+.hiddenBox { display: flex; align-items: center; justify-content: space-between; position: absolute; bottom: -4px; width: 100%; height: calc(100vw * 50 / 1920); z-index: -1; background-color: #00000093; color: #fff; padding: calc(100vw * 20 / 1920); font-size: calc(100vw * 14 / 1920); font-family: pMedium; box-sizing: border-box; } 
 .schOne:hover .hiddenBox { opacity: 1; animation-name: fadeIn; animation: fadeIn 0.4s ease-in-out; z-index: 10; } 
 
 .viewCnt, .chatCnt { position: relative; } 
 .viewCnt { margin-right: 30px; } 
 
-.hiddenBox .viewCnt::before { content: ""; top: 0; left: -25px; width: 20px; height: 20px; background: url(../source/cG_view.png) center center; position: absolute; } 
-.hiddenBox .chatCnt::before { content: ""; top: 0; left: -25px; width: 20px; height: 20px; background: url(../source/cG_send.png) center center; position: absolute; } 
+.hiddenBox .viewCnt::before { content: ""; top: calc(100vw * -3 / 1920); left: -25px; width: 20px; height: 20px; background: url(../source/cG_view.png) center center; position: absolute; } 
+.hiddenBox .chatCnt::before { content: ""; top: calc(100vw * -3 / 1920); left: -25px; width: 20px; height: 20px; background: url(../source/cG_send.png) center center; position: absolute; } 
 
 @keyframes fadeIn {from { opacity: 0; transform: translateY(15px); } 
 to { opacity: 1; transform: none; } 
@@ -185,7 +185,7 @@ to { opacity: 1; transform: none; }
 .schInfo .schUser img { margin-right: 10px; width: 45px; border-radius: 40px; } 
 .schInfo .schNicK { margin-left: 10px; font-family: pBold; } 
 
-.schDays { padding-top: 10px; }
+.schAll .schDays { padding-top: 10px; }
 .schDays p:first-child { font-size: 14px; }
 .schDays .days { font-family: pBold; } 
 .schDays .schDate { position: relative; margin-top: 7px; font-family: pSemi; font-size: 15px; }
@@ -196,7 +196,6 @@ to { opacity: 1; transform: none; }
 .schBottom div { border-right: 1px solid var(--color-line); } 
 .schBottom .schLoc { margin-left: 5px; position: relative; } 
 .schBottom .locIco { width: 23px; height: 23px; } 
-yConIn
 .detailBtn { transition: all .2s; } 
 .detailBtn:hover { color: var(--color-main); } 
 
