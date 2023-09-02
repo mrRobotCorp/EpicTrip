@@ -7,28 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Final project : EpicTrip">
     <meta property="og:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
-    <meta property="og:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta property="og:image"
+        content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
     <meta property="og:description" content="4조 프로젝트 사이트 - EpicTrip">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Final project : EpicTrip">
     <meta name="twitter:url" content="https://mrrobotcorp.github.io/project6_EpicTrip/">
-    <meta name="twitter:image" content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
+    <meta name="twitter:image"
+        content="https://mrrobotcorp.github.io/project6_EpicTrip//source/thumbnail.png">
     <meta name="twitter:description" content="4조 프로젝트 사이트 - EpicTrip">
     <meta name="description" content="4조 프로젝트 사이트 - EpicTrip">
     <meta name='keywords' content='project, EpicTrip, toy project, community, trip, tour'>
 
-    <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
+    <link rel="icon" href="${path}/source/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="${path}/source/apple-icon-180x180.png" sizes="180x180">
     <title>EpicTrip | 에픽트립</title>
 
     <link href="./css/headFoot.css" rel="stylesheet">
-    <link href="./css/cSchedule.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
 <body>
     <header>
         <nav>
-            <a href="./main.html"><img class="headLogo" src="./source/logo.png"></a>
+            <a href="./index.html"><img class="headLogo" src="./source/logo.png"></a>
             <div class="gnb">
                 <ul class="gnbTab">
                     <li>
@@ -46,19 +52,143 @@
         </nav>
     </header>
 
-    <section>
-
+    <section class="logJoinWrap">
+        <form method="post" class="logInner">
+            <h1>로그인</h1>
+            <div class="logInput">
+                <input type="text" value="" id="userid" name="userid" placeholder="아이디"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='아이디'">
+                <input type="password" value="" id="pass" name="pass" placeholder="비밀번호"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'">
+            </div>
+            <div class="checkAll">
+                <div class="checkbox">
+                    <input type="checkbox" id="saveId">
+                    <label for="saveId"></label>
+                    <span>로그인 상태 유지</span>
+                </div>
+                <span class="langAll">
+                    <input type="radio" name="lang" id="langKor" class="lBtn">
+                    <label for="langKor"></label>
+                    <input type="radio" name="lang" id="langUs" class="lBtn">
+                    <label for="langUs"></label>
+                </span>
+            </div>
+            <input type="button" value="로그인" class="logBtn">
+            <div class="findJion">
+                <a href="${path}/findAccount" class="find">아이디 찾기 · 비밀번호 찾기</a> <a
+                    href="${path}/join">회원가입</a>
+            </div>
+        </form>
     </section>
 
     <footer>
-        <img src="./source/logo_white.png">
-        <a href="mailto:depo89055@gmail.com">프로젝트 문의 dddd@gmail.com</a>
-        <p>유선 상담 010-1234-1234</p>
+        <img src="./source/logo_white.png"> <a href="heoyoun38@naver.com">프로젝트 문의
+            heoyoun38@naver.com</a>
+        <p>유선 상담 010-3329-3090</p>
         <p>Copyright© EpicTrip, Inc. 2023. All Rights Reserved.</p>
     </footer>
-
-
-    <script src="./js/header.js"></script>
+    <script src=".//js/header.js"></script>
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".logBtn").click(function () {
+            if ($("#userid").val() == "") {
+                alert("아이디를 입력해 주세요")
+            } else if ($("#pass").val() == "") {
+                alert("비밀번호를 입력해 주세요")
+            } else {
+                loginCheck()
+            }
+
+        })
+        $("#pass").keyup(function (key) {
+            if (key.keyCode == 13) {
+                loginCheck()
+            }
+        })
+
+
+        // 저장한 쿠키를 가져오는 로직 
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length === 2) {
+                return parts.pop().split(";").shift();
+            }
+        }
+
+        // 쿠키를 생성하는 로직
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+
+        // "myCookie"라는 이름의 쿠키 값을 가져와서 출력
+        var cookieValue = getCookie("userCookie");
+        if (cookieValue) {
+            console.log("myCookie: " + cookieValue);
+            $("#userid").val(cookieValue);
+            $("#saveId").prop("checked", true);
+        } else {
+            console.log("쿠키 없어유");
+            $("#saveId").prop("checked", false);
+        }
+
+
+
+        // 체크박스가 false일시 쿠키 삭제하겠다는 뜻
+        $("#saveId").change(function () {
+            if (!$(this).prop("checked")) {
+                deleteCookie("userCookie");
+                $("#userid").val(""); // 입력 요소의 값을 비움
+            }
+        });
+
+        // 쿠키 삭제 로직
+        function deleteCookie(name) {
+            document.cookie =
+                name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        }
+
+
+
+
+        // 로그인 로직
+        function loginCheck() {
+            console.log($(".logInner").serialize());
+            $.ajax({
+                type: "post",
+                url: "${path}/loginYN",
+                data: $(".logInner").serialize(),
+                dataType: "text",
+                success: function (yn) {
+                    console.log(yn)
+                    if (yn == "로그인 성공") {
+                        alert(yn)
+                        window.location.href = "./EpicTrip";
+
+                        if ($("#saveId").prop("checked")) {
+                            setCookie("userCookie", $("#userid").val(), 7);
+                        }
+
+                    } else {
+                        alert(yn)
+                    }
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            })
+        }
+        console.log("1")
+    })// document 괄호임
+</script>
 
 </html>
