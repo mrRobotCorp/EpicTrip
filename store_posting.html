@@ -239,7 +239,7 @@
                     </div>
 
                     <div class="contxtAll">
-                        <span>상세글 입력</span>
+                        <span>상세글 입력<span id="charCount">0/1000</span></span>
                         <div class="contextBox">
                             <textarea name="prodcontent" placeholder="여행 상품에 대해 상세히 기재해주세요"></textarea>
                         </div>
@@ -327,11 +327,11 @@
             }
 
             // ---- 추가!!! ------ 선택 비활성화
-            if(startDate == "" || endDate == "") {
+            if (startDate == "" || endDate == "") {
                 alert("날짜를 선택해주세요.");
             } else {
-                $("#startdate").attr("disabled",true); 
-                $("#enddate").attr("disabled",true); 
+                $("#startdate").attr("disabled", true);
+                $("#enddate").attr("disabled", true);
                 $("#dateClick").addClass("clicked");
             }
 
@@ -355,13 +355,13 @@
             $("#dcday").val(dcday)
 
             // ---- 추가!!! ------ 선택 비활성화
-            if(dcday == "") {
+            if (dcday == "") {
                 alert("할인 요일을 선택해주세요.");
-            } else if($(".saleDrop").val() == null) {
+            } else if ($(".saleDrop").val() == null) {
                 alert("할인율을 선택해주세요.");
             } else {
-                $(".saleDrop").attr("disabled",true); 
-                $("input[name='saleDay']").attr("disabled",true); 
+                $(".saleDrop").attr("disabled", true);
+                $("input[name='saleDay']").attr("disabled", true);
                 $("#dcdayBtn").addClass("clicked");
             }
 
@@ -464,6 +464,29 @@
         });
     });
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const textarea = document.querySelector("textarea[name='prodcontent']");
+        const charCountSpan = document.getElementById('charCount');
+
+        function updateCharCount() {
+            const currentLength = textarea.value.length;
+            console.log(currentLength);
+
+            // 1000자를 초과하는 입력을 방지
+            if (currentLength > 1000) {
+                alert('입력 글자 수 제한을 초과했습니다.');
+                textarea.value = textarea.value.substring(0, 1000); // 1000자를 초과한 부분을 잘라냅니다.
+            }
+
+            charCountSpan.textContent = currentLength + "/1000";
+        }
+
+        textarea.addEventListener('input', updateCharCount);
+        textarea.addEventListener('keyup', updateCharCount);
+        textarea.addEventListener('compositionend', updateCharCount); // 한글 조합이 끝난 후의 이벤트
+        updateCharCount();
+
+    });
 
 </script>
 

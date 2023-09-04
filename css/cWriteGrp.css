@@ -87,3 +87,5 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .submitBtn { display: block; margin: 30px auto 50px auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer; } 
 .submitBtn:hover { background: #ffd4389f; } 
 
+.txtTitle { margin: 5px 0 15px 5px; color: #333; font-size: 20px; font-family: pBold;}
+#charCount { display: inline-block; margin: 10px 0 0 10px; font-size: 13px; font-family: pMedium; color: #999;}

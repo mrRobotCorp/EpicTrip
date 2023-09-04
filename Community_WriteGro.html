@@ -205,13 +205,16 @@
                     </div>
                 </div>
 
+                <p class="txtTitle">제목을 입력해주세요</p>
                 <div class="titleBox">
                     <input type="text" name="title" placeholder="제목을 입력해주세요">
                 </div>
 
+                <p class="txtTitle">본문을 입력해주세요<span id="charCount">0/1000</span></p>
                 <div class="contextBox">
                     <textarea name="context" placeholder="1. 현재 동행이 있나요?&#13;&#10;ex) 혼자에요 / 동행 1명이 있어요&#13;&#10;&#13;&#10;2.어떤 동행을 찾고 있나요?&#13;&#10;ex) 맛집 탐방을 좋아하는 20대 여성 동행을 찾아요!&#13;&#10;&#13;&#10;3. 원하는 여행 코스가 있다면 알려주세요!&#13;&#10;(1000자 이내) "></textarea>
                 </div>
+                
             </div>
             <button type="button" class="submitBtn">작성완료</button>
         </form>
@@ -228,6 +231,32 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/cWriteGrp.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const textarea = document.querySelector('textarea[name="context"]');
+            const charCountSpan = document.getElementById('charCount');
+    
+            function updateCharCount() {
+                const currentLength = textarea.value.length;
+                console.log(currentLength);
+                
+                // 1000자를 초과하는 입력을 방지
+                if (currentLength > 1000) {
+                    alert('입력 글자 수 제한을 초과했습니다.');
+                    textarea.value = textarea.value.substring(0, 1000); // 1000자를 초과한 부분을 잘라냅니다.
+                }
+    
+                charCountSpan.textContent = currentLength + "/1000";
+            }
+    
+            textarea.addEventListener('input', updateCharCount);
+            textarea.addEventListener('keyup', updateCharCount);
+            textarea.addEventListener('compositionend', updateCharCount); // 한글 조합이 끝난 후의 이벤트
+            updateCharCount();
+    
+        });
+    
+    </script>
 </body>
 
 </html>
