@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector("body").prepend(cursor, follower);
 
     function myCursor(e) {
-        cursor.style.top = e.pageY + 13 + "px";
-        cursor.style.left = e.pageX + 13 + "px";
+        cursor.style.top = e.pageY + 10 + "px";
+        cursor.style.left = e.pageX + 10 + "px";
     }
 
     function Trailer(e) {
