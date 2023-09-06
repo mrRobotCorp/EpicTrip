@@ -167,10 +167,9 @@
                     week: "주별",
                 },
                 dayClick: function () {
-
+                    showModal();
                 },
                 eventClick: function (event, jsEvent, view) {
-                    showModal();
                     $('.eventTxt').html(event.title);
                     $('.event-body').html(event.description);
                     $('.eventUrl').attr('href', event.url);
