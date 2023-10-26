@@ -43,10 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("ommunity") && loc.includes("chedule")) {
         sche.classList.add("active");
     }
+    if (loc.includes("WriteSch")) {
+        sche.classList.add("active");
+    }
 
 
     // ---- 커뮤니티 중 동행 탭
     if (loc.includes("Community") && loc.includes("Gro")) {
+        together.classList.add("active");
+    }
+    if (loc.includes("WriteGro")) {
         together.classList.add("active");
     }
 
