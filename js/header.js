@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const together = document.querySelector(".together");
     const sche = document.querySelector(".sche");
 
-    if (loc.includes("Community")) {
+    if (loc.includes("ommunity")) {
         community.classList.add("active");
     }
-    if (loc.includes("Store")) {
+    if (loc.includes("tore")) {
         store.classList.add("active");
     }
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ---- 커뮤니티 중 일정 탭
-    if (loc.includes("Community") && loc.includes("Sch")) {
+    if (loc.includes("ommunity") && loc.includes("chedule")) {
         sche.classList.add("active");
     }
 
