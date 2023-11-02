@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loc.includes("ommunity") && loc.includes("chedule")) {
         sche.classList.add("active");
     }
-    if (loc.includes("WriteSch")) {
+    if (loc.includes("WriteSch") || loc.includes("SchDetail")) {
         sche.classList.add("active");
     }
 
