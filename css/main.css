@@ -145,28 +145,3 @@ to { opacity: 1; transform: none; }
 #scrollTop::before { content: "\2303"; position: absolute; top: calc(100vw * 7 / 1920); left: calc(100vw * 17 / 1920); color: #171717; font-family: pLight; font-size: calc(100vw * 23 / 1920); } 
 #scrollTop .topTxt { display: block; margin-top: calc(100vw * 23 / 1920); font-size: calc(100vw * 14 / 1920); } 
 
-
-
-/* --------------- responsible --------------- */
-
-@media screen and (max-width: 768px) { 
-    body { background-color: pink; cursor: auto; }
-    .cursor { visibility: hidden;} 
-    .cursor_follower { visibility: hidden;}
-    
-    .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
-    .mainCon p { width: 360px; font-size: 18px;}
-}
-
-@media screen and (min-width: 1024px) { 
-    body { background-color: aqua; } 
-
-    .desktop { display: block; } 
-    header { }
-
-    footer { } 
-}
-
-@media screen and (min-width: 1440px) { 
-    body { background-color: gray; } 
-}

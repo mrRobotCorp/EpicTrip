@@ -1,5 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ----------------- menu trigger ----------------
+    let menuTrigger = document.querySelector(".menuTrigger");
+    let gnbMenu = document.querySelector(".gnbInner");
+
+    menuTrigger.onclick = function(){
+        gnbMenu.style.transition = "all .5s"
+        this.classList.toggle("active");
+        gnbMenu.classList.toggle("active");
+    };
+    window.onresize = function(){
+        console.log("onresize");
+        console.log(window.innerWidth);
+        gnbMenu.style.transition = "none"
+
+        if(window.innerWidth > 768){
+            gnbMenu.classList.remove("active");
+        }
+    }
+
     // --------------- 유저 프로필 리스트 ------------------
     const userList = document.querySelector(".userList");
     const userImg = document.querySelector(".userImg");
