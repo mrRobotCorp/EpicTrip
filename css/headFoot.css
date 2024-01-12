@@ -1,27 +1,15 @@
-@import "./reset.css"; 
-
-body { cursor: none; overflow-x: hidden; } 
+@import "./reset.css"; body { cursor: none; overflow-x: hidden; } 
 
 header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 5px #a9a9a95c; } 
 header .headLogo { width: 170px; margin-right: 30px; } 
 header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; } 
 
 
-
 .menuTrigger { display: none; } 
-.menuTrigger span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #222; border-radius: 3px; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-opacity 0.55s ease; } 
-#menuToggle span:first-child { transform-origin: 0% 0%; } 
-
-#menuToggle span:nth-last-child(2){ transform-origin: 0% 100%; } 
-
-
 
 
 .gnb { position: relative; width: 100%; } 
 .gnb .gnbInner { display: flex; justify-content: space-between; align-items: center; } 
-.gnb .gnbInner.active { width: 70%; padding: 50px; } 
 
 .gnb .gnbTab { display: flex; justify-content: center; align-items: center; } 
 .gnb .gnbTab li { margin-right: 20px; font-size: 18px; } 
@@ -85,44 +73,39 @@ footer p { margin-top: 10px; color: #222; }
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px) { 
-    body { background-color: pink; cursor: auto; }
-    .cursor { visibility: hidden;} 
-    .cursor_follower { visibility: hidden;}
-    
-    .gnbInner { 
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: -100%;
-        width: 300px;
-        padding: 50px;
-        padding-top: 125px;
-        
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
-        background: #fff;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
+    body { background-color: pink; cursor: auto; } 
+ .cursor { visibility: hidden; } 
+ .cursor_follower { visibility: hidden; } 
+ 
+ .menuTrigger { top: 0; right: 0; } 
+ .menuTrigger span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #929292; border-radius: 3px; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; } 
+.menuTrigger span:nth-last-child(3) { transform-origin: 0% 0%; } 
+.menuTrigger span:nth-last-child(2) { transform-origin: 0% 100%; } 
 
-    .gnb .gnbTab { flex-direction: column; }
-    .gnb .userHead { flex-direction: column; }
-    .menuTrigger { display: block; position: absolute; background: none; }
+.menuTrigger.active span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #232323; } 
+.menuTrigger.active span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
+.menuTrigger.active span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); } 
 
-    .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
-    .mainCon p { width: 360px; font-size: 18px;}
-}
 
-@media screen and (min-width: 1024px) { 
-    body { background-color: aqua; } 
+ .gnbInner { position: absolute; top: 0; right: -200%; height: 100vh; flex-direction: column; position: absolute; padding: 50px; padding-top: 125px; -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
+ background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); } 
+ .gnbInner.active { right: -100%;} 
 
-    .desktop { display: block; } 
-    header { }
+ .gnb .gnbTab { flex-direction: column; } 
+ .gnb .userHead { flex-direction: column; } 
+ .menuTrigger { display: block; position: absolute; background: none; } 
 
-    footer { } 
-}
+ .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
+ .mainCon p { width: 360px; font-size: 18px; } 
+ }
 
-@media screen and (min-width: 1440px) { 
-    body { background-color: gray; } 
-}
+@media screen and (min-width: 1024px) { body { background-color: aqua; } 
+
+ .desktop { display: block; } 
+ header { } 
+
+ footer { } 
+ }
+
+@media screen and (min-width: 1440px) { body { background-color: gray; } 
+ }
