@@ -73,11 +73,12 @@ footer p { margin-top: 10px; color: #222; }
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px) { 
-    body { background-color: pink; cursor: auto; } 
  .cursor { visibility: hidden; } 
  .cursor_follower { visibility: hidden; } 
- 
- .menuTrigger { top: 0; right: 0; } 
+    
+ header nav { display: flex; align-items: center; justify-content: center; padding: 20px 8% 20px 8%; } 
+
+ .menuTrigger { top: -10px; right: 0; } 
  .menuTrigger span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #929292; border-radius: 3px; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; } 
 .menuTrigger span:nth-last-child(3) { transform-origin: 0% 0%; } 
 .menuTrigger span:nth-last-child(2) { transform-origin: 0% 100%; } 
@@ -87,9 +88,9 @@ footer p { margin-top: 10px; color: #222; }
 .menuTrigger.active span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); } 
 
 
- .gnbInner { position: absolute; top: 0; right: -200%; height: 100vh; flex-direction: column; position: absolute; padding: 50px; padding-top: 125px; -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
+ .gnbInner { position: absolute; top: -50px; right: -650%; width: 230px; height: 100vh; flex-direction: column; position: absolute; padding: 50px; padding-top: 125px; -webkit-font-smoothing: antialiased;
  background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); } 
- .gnbInner.active { right: -100%;} 
+ .gnbInner.active { right: -300%;} 
 
  .gnb .gnbTab { flex-direction: column; } 
  .gnb .userHead { flex-direction: column; } 
