@@ -4,9 +4,7 @@ header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; b
 header .headLogo { width: 170px; margin-right: 30px; } 
 header nav { display: flex; align-items: center; padding: 20px 8% 20px 8%; } 
 
-
 .menuTrigger { display: none; } 
-
 
 .gnb { position: relative; width: 100%; } 
 .gnb .gnbInner { display: flex; justify-content: space-between; align-items: center; } 
@@ -75,8 +73,9 @@ footer p { margin-top: 10px; color: #222; }
 @media screen and (max-width: 768px) { 
  .cursor { visibility: hidden; } 
  .cursor_follower { visibility: hidden; } 
-    
- header nav { display: flex; align-items: center; justify-content: center; padding: 20px 8% 20px 8%; } 
+
+ header .headLogo { width: 180px; margin-top: 10px; } 
+ header nav { display: flex; align-items: center; justify-content: center; padding: 15px 8% 15px 8%; } 
 
  .menuTrigger { top: -10px; right: 0; } 
  .menuTrigger span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #929292; border-radius: 3px; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; } 
@@ -87,12 +86,12 @@ footer p { margin-top: 10px; color: #222; }
 .menuTrigger.active span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
 .menuTrigger.active span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); } 
 
-
- .gnbInner { position: absolute; top: -50px; right: -650%; width: 230px; height: 100vh; flex-direction: column; position: absolute; padding: 50px; padding-top: 125px; -webkit-font-smoothing: antialiased;
+.gnb .gnbInner { position: absolute; top: -50px; right: -490%; width: 250px; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center; padding: 50px; -webkit-font-smoothing: antialiased;
  background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); } 
- .gnbInner.active { right: -300%;} 
+ .gnb .gnbInner.active { right: -250%;} 
 
- .gnb .gnbTab { flex-direction: column; } 
+ .gnb .gnbTab { flex-direction: column; margin-top: 50px; } 
+ .gnb .gnbTab li { margin: 0; } 
  .gnb .userHead { flex-direction: column; } 
  .menuTrigger { display: block; position: absolute; background: none; } 
 
