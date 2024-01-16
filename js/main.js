@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 
-function bannerTxt() {
+function mobileTag() {
     let bTxt = document.querySelector(".mainCon p");
     let gnbTap = document.querySelector(".gnbTab");
 
@@ -24,8 +24,8 @@ function bannerTxt() {
 
 }
 
-if(window.innerWidth < 768) {
-    bannerTxt();       
+if(window.innerWidth < 768 ) {
+    mobileTag();       
 }
 
 
