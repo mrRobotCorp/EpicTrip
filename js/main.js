@@ -14,8 +14,13 @@ $(document).ready(function(){
 
 function bannerTxt() {
     let bTxt = document.querySelector(".mainCon p");
-    
+    let gnbTap = document.querySelector(".gnbTab");
+
     bTxt.innerHTML = `일상을 벗어나 <span class="boldTxt">특별한 여행</span>을 계획하고 싶은<br> 이들을 위한 플랫폼<br>여행에 동행을 구하거나 일정을 공유할 수 있으며, 다양한 여행 상품을 경험해보세요.`
+    gnbTap.insertAdjacentHTML('beforeend', `
+        <li><a href="./message.html" class="msgTab">메세지</a></li>
+        <li><a href="./Mypage_mymain.html" class="mypTab">마이페이지</a></li>
+    `)
 }
 
 if(window.innerWidth < 768) {

@@ -86,13 +86,15 @@ footer p { margin-top: 10px; color: #222; }
 .menuTrigger.active span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
 .menuTrigger.active span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); } 
 
-.gnb .gnbInner { position: absolute; top: -50px; right: -490%; width: 250px; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center; padding: 50px; -webkit-font-smoothing: antialiased;
+.gnb .gnbInner { position: absolute; top: -50px; right: -550%; width: 250px; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center; padding: 50px; -webkit-font-smoothing: antialiased;
  background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); } 
- .gnb .gnbInner.active { right: -250%;} 
+ .gnb .gnbInner.active { right: -280%;} 
 
- .gnb .gnbTab { flex-direction: column; margin-top: 50px; } 
- .gnb .gnbTab li { margin: 0; } 
- .gnb .userHead { flex-direction: column; } 
+ .gnb .gnbTab { flex-direction: column; margin-top: 70px; width: 100%; } 
+ .gnb .gnbTab li { margin-top: 30px; width: 100%; padding-bottom: 30px; border-bottom: 1px solid #ddd; font-size: 22px; font-family: pBold; text-align: center; }
+ .gnb .gnbTab li:last-child { border: none;}
+ .gnb .gnbTab li a { color: #333; }
+ .gnb .userHead { display: none; } 
  .menuTrigger { display: block; position: absolute; background: none; } 
 
  .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
