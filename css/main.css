@@ -165,14 +165,30 @@ to { opacity: 1; transform: none; }
  .itemAll { margin: 20px 0; padding-bottom: 30px; display: flex; flex-direction: column; } 
  .itemOne { width: 100%; height: 335px; margin: 15px 0; } 
 
+ .postImg { width: 100%;}
  .postImg img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: transform 0.3s; } 
 
- /* ------------------- 동행, 일정 ------------------- */
+ /* ------------------- 동행 ------------------- */
  .groAll, .schAll { width: 100%; margin: 20px 0; display: flex; flex-direction: column; } 
-
- .goDetail { width: 100%; margin: 10px 0; } 
+ 
+ .groAll .goDetail { width: 100%; margin: 10px 0; } 
  .schOne { width: 100%; height: 100%; position: relative; border-radius: 15px; box-shadow: 1px 1px 7px #8585856b; } 
+ 
+ .schTopInfo { width: 280px; height: 50px; padding: 5px 15px; border-radius: 13px; }
+ .schTopInfo .subTxt { font-size: 13px; }
+ .schOne .post { width: 100%; height: 180px; }
+ .goDetail .postImg { width: 100%; }
+ 
+ .goDetail .postBottom { padding: 10px 0 20px 0;}
+ .goDetail .postBottom h3 { width: 300px;}
+ .goDetail .postBottom p { width: 300px; }
 
+ .postLoc { top: 28%; padding: 7px 10px 7px 28px; font-size: 12px; border-radius: 8px; }
+ 
+ /* ------------------- 일정 ------------------- */
+
+ .schAll .schOne { width: 100%; margin: 15px 0;}
+ .schOne .schMap { width: 100%; height: 200px;}
 
 
  /* ---------- scrollTop ------------- */

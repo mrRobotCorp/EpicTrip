@@ -21,6 +21,7 @@ function bannerTxt() {
         <li><a href="./message.html" class="msgTab">메세지</a></li>
         <li><a href="./Mypage_mymain.html" class="mypTab">마이페이지</a></li>
     `)
+
 }
 
 if(window.innerWidth < 768) {
