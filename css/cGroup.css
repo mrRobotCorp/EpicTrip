@@ -83,6 +83,7 @@ to { opacity: 1; transform: none; }
  .hiddenBox .viewCnt::before { top: -2px; left: -25px; } 
  .hiddenBox .chatCnt::before { top: -2px; left: -25px; } 
  
+ .pagination { display: none;}
     .postBtn { padding: 0; background: var(--color-main); font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 50px; height: 50px; bottom: 30px; right: 25px; border-radius: 50%; text-align: center; position: fixed; z-index: 100; cursor: pointer; } 
     .postBtn:hover { transition: 0.5s ease; background-color: #efefef; } 
     .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 28px; height: 28px; top: 9px; left: 10px; background-size: cover; } 

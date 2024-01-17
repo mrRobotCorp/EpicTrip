@@ -1,3 +1,45 @@
+if(window.innerWidth < 768 ) {
+
+    let postBtn = document.querySelector(".postBtn");
+
+    postBtn.innerHTML = "";
+
+    let footer = document.querySelector("footer");
+    footer.insertAdjacentHTML('afterbegin', `
+    <div id="scrollTop">
+        <span class="blind">맨 위로 가기</span>
+        <div class="topTxt">Top</div>
+    </div>
+    `);
+
+    document.getElementById("scrollTop").onclick = function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    $(document).ready(function () {
+        const Height = $("#scrollTop").height();
+        $("#scrollTop").hide();
+
+        $(window).scroll(function () {
+            var rolling = $(this).scrollTop() >= Height;
+            if (rolling) {
+                $("#scrollTop").fadeIn(500).css({ "position": "fixed" });
+            }
+            else {
+                $("#scrollTop").fadeOut(300);
+            }
+
+        });
+
+    });
+
+}
+
+
 function initMap() {
 
 var latLng = new google.maps.LatLng(37.5115557, 127.0595261);
