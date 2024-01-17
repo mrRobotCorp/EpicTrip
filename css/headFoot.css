@@ -70,36 +70,37 @@ footer p { margin-top: 10px; color: #222; }
 
 /* --------------- responsible --------------- */
 
-@media screen and (max-width: 768px) { 
-body { cursor: auto;}
+@media screen and (max-width: 768px) {
+ ::-webkit-scrollbar { width: 12px; } 
+ body { cursor: auto; } 
  .cursor { visibility: hidden; } 
  .cursor_follower { visibility: hidden; } 
 
  header .headLogo { width: 180px; margin-top: 10px; } 
  header nav { display: flex; align-items: center; justify-content: center; padding: 15px 8% 15px 8%; } 
 
- .menuTrigger { top: -10px; right: 0; } 
+ .menuTrigger { display: block; position: relative; top: -10px; right: 0; user-select: none;} 
  .menuTrigger span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #929292; border-radius: 3px; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; } 
-.menuTrigger span:nth-last-child(3) { transform-origin: 0% 0%; } 
-.menuTrigger span:nth-last-child(2) { transform-origin: 0% 100%; } 
+.menuTrigger span:nth-child(3) { transform-origin: 0% 0%; } 
+.menuTrigger span:last-child { transform-origin: 0% 100%; } 
 
-.menuTrigger.active span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #232323; } 
-.menuTrigger.active span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
-.menuTrigger.active span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); } 
+.menuTrigger.active span:nth-child(2) { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #929292; } 
+.menuTrigger.active span:nth-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); } 
+.menuTrigger.active span:last-child { transform: rotate(-45deg) translate(0, -1px); } 
 
-.gnb .gnbInner { position: absolute; top: -50px; right: -550%; width: 250px; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center; padding: 50px; -webkit-font-smoothing: antialiased;
- background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); } 
- .gnb .gnbInner.active { right: -280%;} 
+.gnb .gnbInner { position: absolute; top: -50px; right: -300%; width: 0; height: 100vh; flex-direction: column; justify-content: flex-start; align-items: center; padding: 50px; -webkit-font-smoothing: antialiased; background: #fff; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); box-shadow: 0 6px 15px #0e0e0e59; } 
+ .gnb .gnbInner.active { width: 60vw; } 
 
  .gnb .gnbTab { flex-direction: column; margin-top: 70px; width: 100%; } 
- .gnb .gnbTab li { margin-top: 30px; width: 100%; padding-bottom: 30px; border-bottom: 1px solid #ddd; font-size: 22px; font-family: pBold; text-align: center; }
- .gnb .gnbTab li:last-child { border: none;}
- .gnb .gnbTab li a { width: 100%; color: #333; }
+ .gnb .gnbTab li { margin-top: 30px; width: 100%; padding-bottom: 30px; border-bottom: 1px solid #ddd; font-size: 22px; font-family: pBold; text-align: center; } 
+ .gnb .gnbTab li:last-child { border: none; } 
+ .gnb .gnbTab li a { width: 100%; color: #333; } 
  .gnb .userHead { display: none; } 
  .menuTrigger { display: block; position: absolute; background: none; } 
 
- .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
- .mainCon p { width: 360px; font-size: 18px; } 
+ .gnbTab li a.active { color: var(--color-main); border: none; } 
+
+ 
  }
 
 @media screen and (min-width: 1024px) { body { background-color: aqua; } 

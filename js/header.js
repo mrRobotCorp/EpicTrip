@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
         gnbMenu.classList.toggle("active");
     };
     window.onresize = function(){
-        console.log("onresize");
-        console.log(window.innerWidth);
         gnbMenu.style.transition = "none"
 
         if(window.innerWidth > 768){
             gnbMenu.classList.remove("active");
         }
     }
+
+    
 
     // --------------- 유저 프로필 리스트 ------------------
     const userList = document.querySelector(".userList");
@@ -75,6 +75,16 @@ document.addEventListener('DOMContentLoaded', function () {
         together.classList.add("active");
     }
 
+
+    // ---------------- 모바일 메뉴 --------------------
+    if(window.innerWidth < 768 ) {
+        let gnbTap = document.querySelector(".gnbTab");
+
+        gnbTap.insertAdjacentHTML('beforeend', `
+            <li><a href="./message.html" class="msgTab">메세지</a></li>
+            <li><a href="./Mypage_mymain.html" class="mypTab">마이페이지</a></li>
+        `);
+    }
 
 
 
