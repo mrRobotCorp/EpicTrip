@@ -140,7 +140,7 @@ to { opacity: 1; transform: none; }
 .noLoc { color: #666; font-size: 16px; } 
 
 /* ---------- scrollTop ------------- */
-#scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: calc(100vw * 53 / 1920); height: calc(100vw * 53 / 1920); border-radius: 50%; text-align: center; font-size: calc(100vw * 12 / 1920); bottom: calc(100vw * 50 / 1920); right: calc(100vw * 80 / 1920); position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: calc(100vw * 53 / 1920); height: calc(100vw * 53 / 1920); border-radius: 50%; text-align: center; font-size: calc(100vw * 12 / 1920); bottom: calc(100vw * 50 / 1920); right: calc(100vw * 80 / 1920); position: fixed; z-index: 100; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #efefef; } 
 #scrollTop::before { content: "\2303"; position: absolute; top: calc(100vw * 7 / 1920); left: calc(100vw * 17 / 1920); color: #171717; font-family: pLight; font-size: calc(100vw * 23 / 1920); } 
 #scrollTop .topTxt { display: block; margin-top: calc(100vw * 23 / 1920); font-size: calc(100vw * 14 / 1920); } 

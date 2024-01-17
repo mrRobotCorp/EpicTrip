@@ -16,8 +16,6 @@ function mobileTag() {
     let bTxt = document.querySelector(".mainCon p");
 
     bTxt.innerHTML = `일상을 벗어나 <span class="boldTxt">특별한 여행</span>을 계획하고 싶은<br> 이들을 위한 플랫폼<br>여행에 동행을 구하거나 일정을 공유할 수 있으며, 다양한 여행 상품을 경험해보세요.`
-
-
 }
 
 if(window.innerWidth < 768 ) {
