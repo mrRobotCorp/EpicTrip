@@ -100,6 +100,8 @@ footer p { margin-top: 10px; color: #222; }
 
  .gnbTab li a.active { color: var(--color-main); border: none; } 
 
+ footer { padding: 20px 6%;}
+
  
  }
 
