@@ -1,3 +1,14 @@
+
+
+if (window.innerWidth < 768) {
+    console.log("check");
+    let selecAll = document.querySelector(".selecAll");
+
+    selecAll.insertAdjacentHTML('afterbegin', `
+        <span class="locTitle">여행지 선택</span>
+    `);
+}
+
 // ----------- 날짜 선택 -----------------
 $(function () {
     $(".datePick").datepicker({

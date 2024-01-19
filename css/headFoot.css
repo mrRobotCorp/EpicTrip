@@ -100,7 +100,14 @@ footer p { margin-top: 10px; color: #222; }
 
  .gnbTab li a.active { color: var(--color-main); border: none; } 
 
- footer { padding: 20px 6%;}
+ .gnbBottom { padding: 10px 0 0 0; margin: 0 5.5%; margin-bottom: 10px; border-top: 1px solid #e0e0e0; } 
+ .gnbBottom a { padding: 4px 10px; margin-right: 5px; border-radius: 9px; font-size: 15px; } 
+ .gnbBottom img { width: 17px; margin-right: 5px; margin-bottom: 3px} 
+ .together img { width: 21px; margin-bottom: 2px; } 
+
+
+ footer { padding: 10px 6%;}
+ footer img { width: 150px; margin: 0 0 0 -5px; }
 
  
  }

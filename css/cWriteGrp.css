@@ -4,7 +4,7 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 200px; }
 
 .opLine { display: flex; align-items: center; } 
 .opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: calc(100vw * 45 / 1920); background: #eee; font-size: 15px; font-family: pBold; } 
-.opLine .options { width: 70%; display: flex; align-items: center; flex-wrap: wrap; }
+.opLine .options { width: 70%; display: flex; align-items: center; flex-wrap: wrap; } 
 .schFrm input[type="radio"] { display: none; } 
 .schFrm input[type="radio"] + label { padding: 7px 16px; margin-right: calc(100vw * 13 /1920); border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
@@ -62,30 +62,58 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 
 .detailWrite { padding: 25px 30px; margin: 30px 0 40px 0; border: 1px solid #ddd; border-radius: 10px; } 
 
-.imgUpAll { background: #FFF; margin: 1em auto; min-height: 300px;  } 
-.imgUpAll span { margin-left: 5px; color: #333; font-size: 20px; font-family: pBold;}
-#fileInput { display: none; }
-.uploadedBtn { display: none;  margin-left: 10px; padding: 7px 12px; border-radius: 10px; color: #444; background: #e8e8e8; font-size: 15px; font-family: pSemi; transition: all .2s; cursor: pointer;}
-.uploadedBtn.uploaded { display: inline-block;  }
-.uploadedBtn.uploaded:hover { background: #ffd4389f; }
-.wrongTxt { width: 100%; color: #777; font-size: 20px; font-family: pBold; text-align: center;}
+.imgUpAll { background: #FFF; margin: 1em auto; min-height: 300px; } 
+.imgUpAll span { margin-left: 5px; color: #333; font-size: 20px; font-family: pBold; } 
+#fileInput { display: none; } 
+.uploadedBtn { display: none; margin-left: 10px; padding: 7px 12px; border-radius: 10px; color: #444; background: #e8e8e8; font-size: 15px; font-family: pSemi; transition: all .2s; cursor: pointer; } 
+.uploadedBtn.uploaded { display: inline-block; } 
+.uploadedBtn.uploaded:hover { background: #ffd4389f; } 
+.wrongTxt { width: 100%; color: #777; font-size: 20px; font-family: pBold; text-align: center; } 
 
-.fileLabel { position: relative; padding-top: 40px; display: flex; align-items: center; justify-content: center; background: #00000016; width: 100%; height: 100%; cursor: pointer; opacity: .5; transition: all .2s;} 
+.fileLabel { position: relative; padding-top: 40px; display: flex; align-items: center; justify-content: center; background: #00000016; width: 100%; height: 100%; cursor: pointer; opacity: .5; transition: all .2s; } 
 .fileLabel::before { content: ""; position: absolute; top: 38%; left: 48%; width: 64px; height: 64px; background: url(../source/imgIco.png) center center; background-size: cover; opacity: .4; z-index: 1; } 
-.fileLabel:hover { background: #0000002b; opacity: 0.9;}
+.fileLabel:hover { background: #0000002b; opacity: 0.9; } 
 
-.imgArea { display: flex; align-items: center; margin: 25px 0;  width: 100%; height: 460px; overflow: hidden; background: #eee; border-radius: 8px; } 
+.imgArea { display: flex; align-items: center; margin: 25px 0; width: 100%; height: 460px; overflow: hidden; background: #eee; border-radius: 8px; } 
 .imgArea img { width: 100%; } 
 
-.titleBox input { margin: 10px 0 30px 0; padding: 10px 15px; width: 97%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 18px; font-family: pMedium; transition: all .2s; }
+.titleBox input { margin: 10px 0 30px 0; padding: 10px 15px; width: 97%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 18px; font-family: pMedium; transition: all .2s; } 
 .titleBox input:focus { border-color: #2ce126; } 
 
-.contextBox { padding: 15px; border: 1px solid var(--color-line);border-radius: 10px; }
-.contextBox textarea { width: 100%; height: 300px;  font-family: pRegular; font-size: 16px; line-height: 140%; resize: none;}
+.contextBox { padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; } 
+.contextBox textarea { width: 100%; height: 300px; font-family: pRegular; font-size: 16px; line-height: 140%; resize: none; } 
 .contextBox:focus-within { border-color: #2ce126; } 
 
 .submitBtn { display: block; margin: 30px auto 50px auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer; } 
 .submitBtn:hover { background: #ffd4389f; } 
 
-.txtTitle { margin: 5px 0 15px 5px; color: #333; font-size: 20px; font-family: pBold;}
-#charCount { display: inline-block; margin: 10px 0 0 10px; font-size: 13px; font-family: pMedium; color: #999;}
+.txtTitle { margin: 5px 0 15px 5px; color: #333; font-size: 20px; font-family: pBold; } 
+#charCount { display: inline-block; margin: 10px 0 0 10px; font-size: 13px; font-family: pMedium; color: #999; } 
+
+
+/* --------------- responsible --------------- */
+
+@media screen and (max-width: 768px) { section { padding: 0 5.5%; margin-top: 150px; } 
+
+ .opLine { flex-direction: column; } 
+ .locTitle { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
+
+ .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 15px; border-radius: 5px; } 
+.opLine .options { width: 100%; display: flex; align-items: center; flex-wrap: wrap; }
+
+.teamSelec { margin-top: 15px; flex-direction: column; } 
+.teamSelec .teamTxt { width: 100%; margin: 0;}
+.teamSelec .rangeAll { width: 95%; margin: 20px 0 10px 0; display: flex; align-items: center; } 
+
+.dateSelec { margin-top: 15px; flex-direction: column; } 
+.dateSelec span { width: 100%; margin: 0 0 10px 0;}
+.dateSelec .dateInput { flex-direction: column; } 
+.dateSelec .dpDiv { width: 100%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border: 1px solid #ddd; border-radius: 5px; transition: all .2s; } 
+.dateSelec .dpDiv input { background: #f7f7f7; }
+}
+ 
+ @media screen and (min-width: 1024px) { body { } 
+ }
+ 
+ @media screen and (min-width: 1440px) { body { } 
+ }
