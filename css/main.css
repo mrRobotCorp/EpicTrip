@@ -148,8 +148,8 @@ to { opacity: 1; transform: none; }
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px){
- .mainBnLogo { width: 350px; filter: drop-shadow(2px 2px 3px #00000052); } 
- .mainCon p { width: 360px; font-size: 18px; } 
+ .mainBnLogo { width: 300px; filter: drop-shadow(2px 2px 3px #00000052); } 
+ .mainCon p { width: 320px; font-size: 17px; } 
 
  .scrollDown { left: 46%; bottom: 5%; padding-top: 45px; font-size: 15px; } 
  .scrollDown span { top: -20px; left: 33%; width: 20px; height: 20px; margin-left: calc( 100vw * -12 / 1920 ); border-left: 2px solid #666; border-bottom: 2px solid #666; } 
@@ -181,9 +181,9 @@ to { opacity: 1; transform: none; }
  .schOne .post { width: 100%; height: 180px; } 
  .goDetail .postImg { width: 100%; } 
  
- .goDetail .postBottom { padding: 10px 0 20px 0; } 
- .goDetail .postBottom h3 { width: 300px; } 
- .goDetail .postBottom p { width: 300px; } 
+ .goDetail .postBottom { width: 90%; padding: 10px 0 20px 0; } 
+ .goDetail .postBottom h3 { width: 100%; } 
+ .goDetail .postBottom p { width: 100%; } 
 
  .postLoc { top: 28%; padding: 7px 10px 7px 28px; font-size: 12px; border-radius: 8px; } 
  .hiddenBox { height: 45px; padding: 20px 23px; font-size: 13px; } 
