@@ -85,7 +85,7 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .contextBox:focus-within { border-color: #2ce126; } 
 
 .submitBtn { display: block; margin: 30px auto 50px auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer; } 
-.submitBtn:hover { background: #ffd4389f; } 
+.submitBtn:hover { background: #ffd438c5; } 
 
 .txtTitle { margin: 5px 0 15px 5px; color: #333; font-size: 20px; font-family: pBold; } 
 #charCount { display: inline-block; margin: 10px 0 0 10px; font-size: 13px; font-family: pMedium; color: #999; } 
@@ -93,24 +93,46 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 
 /* --------------- responsible --------------- */
 
-@media screen and (max-width: 768px) { section { padding: 0 5.5%; margin-top: 150px; } 
-
+@media screen and (max-width: 768px) { 
+section { padding: 0 5.5%; margin-top: 150px; } 
  .opLine { flex-direction: column; } 
  .locTitle { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
 
  .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 15px; border-radius: 5px; } 
-.opLine .options { width: 100%; display: flex; align-items: center; flex-wrap: wrap; }
+.opLine .options { width: 100%; } 
+.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; border: 1px solid #eee;} 
+.schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
 
 .teamSelec { margin-top: 15px; flex-direction: column; } 
-.teamSelec .teamTxt { width: 100%; margin: 0;}
-.teamSelec .rangeAll { width: 95%; margin: 20px 0 10px 0; display: flex; align-items: center; } 
+.teamSelec .teamTxt { width: 100%; margin: 0; } 
+.teamSelec .rangeAll { width: 95%; margin: 20px 0 10px 0; } 
 
 .dateSelec { margin-top: 15px; flex-direction: column; } 
-.dateSelec span { width: 100%; margin: 0 0 10px 0;}
+.dateSelec span { width: 100%; margin: 0 0 10px 0; } 
 .dateSelec .dateInput { flex-direction: column; } 
-.dateSelec .dpDiv { width: 100%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border: 1px solid #ddd; border-radius: 5px; transition: all .2s; } 
-.dateSelec .dpDiv input { background: #f7f7f7; }
-}
+.dateSelec .dpDiv { width: 107%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
+.dateSelec .dpDiv input { background: #f7f7f7; } 
+
+.ui-datepicker { top: 1280px !important; width: 240px !important; } 
+
+/* --------------------------------------------------- */
+.detailWrite { padding: 20px; margin: 30px 0 10px 0; } 
+
+.imgUpAll { margin: 0 auto; min-height: auto; } 
+.fileLabel { padding-top: 20px; width: 100%; height: 150px; } 
+.fileLabel::before { top: 30%; left: 44%; width: 38px; height: 38px; } 
+.uploadedBtn { float: right; display: none; padding: 7px 10px; border-radius: 7px; font-size: 13px; } 
+
+.imgArea { margin: 20px 0; height: 150px; } 
+
+.txtTitle { margin: 10px 0;}
+.titleBox input { margin: 10px 0 30px 0; margin-bottom: 10px; padding: 10px 0; width: 100%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 18px; font-family: pMedium; transition: all .2s; } 
+
+
+.submitBtn { display: block; margin: 20px auto; width: 100px; padding: 8px 0; background: #ffd438c5; border-radius: 7px; font-size: 15px;} 
+
+
+ }
  
  @media screen and (min-width: 1024px) { body { } 
  }
