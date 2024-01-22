@@ -3,14 +3,14 @@ section { min-height: calc(100vh - 240px); padding: 0 12%; margin-top: 200px; }
 .selecAll { padding: 20px; border: 1px solid #ddd; border-radius: 10px; } 
 
 .opLine { display: flex; align-items: center; } 
-.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: calc(100vw * 45 / 1920);  background: #eee; font-size: 15px; font-family: pBold; } 
+.opLine span { display: flex; align-items: center; justify-content: center; width: 260px; height: 60px; margin-right: calc(100vw * 45 / 1920); background: #eee; font-size: 15px; font-family: pBold; } 
 .schFrm input[type="radio"] { display: none; } 
-.schFrm input[type="radio"] + label { padding: 7px 16px;  margin-right: calc(100vw * 13 /1920); border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
+.schFrm input[type="radio"] + label { padding: 7px 16px; margin-right: calc(100vw * 13 /1920); border-radius: 20px; font-size: 15px; font-family: pRegular; cursor: pointer; transition: all .2s; } 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; display: flex; align-items: center; } 
-.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; background: #fff; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; cursor: pointer; transition: all .25s;} 
-.dateSelec #dateClick:hover { background: #eee;}
+.dateSelec span { display: flex; align-items: center; justify-content: center; width: 260px; height: 50px; margin-right: 40px; background: #fff; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; cursor: pointer; transition: all .25s; } 
+.dateSelec #dateClick:hover { background: #eee; } 
 
 .dateSelec .dateInput { display: flex; align-items: center; justify-content: space-around; } 
 .dateSelec .dpDiv { position: relative; display: flex; align-items: center; width: 300px; height: 45px; padding-left: 60px; margin-right: 30px; border: 1px solid #ddd; border-radius: 5px; transition: all .2s; } 
@@ -77,20 +77,20 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .daySch .date { padding: 5px 15px; border-left: 1px solid var(--color-line); color: #555; font-size: 14px; } 
 
 .dayOne { margin-bottom: 50px; } 
-.dayTxt { margin: 0 0 30px 20px; display: flex; align-items: center; justify-content: space-between;} 
+.dayTxt { margin: 0 0 30px 20px; display: flex; align-items: center; justify-content: space-between; } 
 .dayOne .locAdd { margin-right: 10px; padding: 10px 15px; border-radius: 10px; background: #e8e8e8; font-size: 15px; font-family: pRegular; transition: all .2s; cursor: pointer; } 
 .locAdd:hover { background: #ffd4389f; } 
 
 .daySch .schMemo { margin: 0 calc(100vw * 10 / 1920) 20px calc(100vw * 30 / 1920); display: flex; align-items: center; justify-content: space-around; } 
-.daySch .schMemo .memoCnt { margin-right: 13px; display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; } 
+.daySch .schMemo .memoCnt { margin-right: 13px; width: 23px; height: 23px; line-height: 23px; text-align: center; background: var(--color-main); color: #fff; font-family: pRegular; font-size: 15px; border-radius: 15px; } 
 .daySch .schMemo .memoTxt { width: 78%; padding: 15px; border: 1px solid var(--color-line); border-radius: 10px; font-family: pRegular; font-size: 15px; } 
 .mNone { color: #888; } 
 
-.locDel { margin-left: 10px; width: 35px; height: 35px; line-height: 15px; color: #333; background: #e8e8e8; font-size: 17px; cursor: pointer; border-radius: 20px; transition: all .25s;}
-.locDel:hover { background: #dcdcdc; }
+.locDel { margin-left: 10px; width: 35px; height: 35px; line-height: 15px; color: #333; background: #e8e8e8; font-size: 17px; cursor: pointer; border-radius: 20px; transition: all .25s; } 
+.locDel:hover { background: #dcdcdc; } 
 
-.submitBtn { display: block; margin: 40px auto 0 auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer;}
-.submitBtn:hover { background: #ffd4389f;}
+.submitBtn { display: block; margin: 40px auto 0 auto; width: 20%; padding: 15px 0; background: #e8e8e8; border-radius: 10px; font-size: 17px; font-family: pSemi; transition: all .2s; cursor: pointer; } 
+.submitBtn:hover { background: #ffd4389f; } 
 
 /* --------------------- modal ---------------------------- */
 .modalBg { visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.599); z-index: 100; transition: all .3s ease; } 
@@ -105,7 +105,7 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 .locAll { margin: 10px 0; height: calc(100vw * 380 / 1920); overflow: auto; } 
 .locAll::-webkit-scrollbar { width: 12px; } 
 .locAll::-webkit-scrollbar-thumb { background-color: #999; border: 3px solid #fff; border-radius: 20px; } 
-.locAll::-webkit-scrollbar-track { background-color: transparent; }
+.locAll::-webkit-scrollbar-track { background-color: transparent; } 
 
 .locModal input[name="ds"] { display: none; } 
 
@@ -124,3 +124,63 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
 .cls:hover { background: #8242f024; } 
 .clsBtn { width: 17px; height: 17px; background: url(../source/closeIco.png) center center; background-size: cover; cursor: pointer; } 
 
+/* --------------- responsible --------------- */
+
+@media screen and (max-width: 768px) { section { padding: 0 5.5%; margin-top: 150px; } 
+ .opLine { flex-direction: column; } 
+ .opLine .options { width: 70%; display: flex; align-items: center; flex-wrap: wrap; } 
+ .locTitle { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
+ 
+ .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 15px; border-radius: 5px; } 
+ .opLine .options { width: 100%; } 
+ .schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; border: 1px solid #eee; } 
+ .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
+ 
+ .dateSelec { margin-top: 15px; flex-direction: column; } 
+ .dateSelec span { width: 100%; margin: 0 0 10px 0; } 
+ .dateSelec .dateInput { flex-direction: column; } 
+ .dateSelec .dpDiv { width: 107%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
+ .dateSelec .dpDiv input { background: #f7f7f7; } 
+ 
+ .ui-datepicker { top: 1280px !important; width: 240px !important; } 
+ 
+ /* --------------------------------------------------- */
+ .detailWrite { padding: 0; margin: 20px 0 10px 0; } 
+ .detailWrite .mapInfoAll { flex-direction:column-reverse; } 
+
+ .schMap { width: 100%; height: 400px; } 
+ .schInfo { width: 96%; height: 300px; padding: 20px 5px 10px 5px; margin-bottom: 20px;} 
+ 
+ .infoTitle { margin-bottom: 15px; } 
+ .infoTitle .backBtn { margin-left: 10px; width: 18px; height: 18px; background: url(../source/arrow_l.png) center center; background-size: cover; } 
+ .schInfo .schDays { width: 90%; height: 120px; margin-bottom: 15px; border-radius: 10px; font-size: 15px; font-family: pMedium; letter-spacing: 1px; } 
+ .schInfo .schLoc { margin: 0 0 15px 80px; font-size: 16px; } 
+.schInfo .schLoc::before { top: -15%; left: -7%; } 
+
+.dayOne { margin-bottom: 20px; } 
+.daySch { width: auto; padding: 0 20px;}
+.dayTxt { margin: 0 0 10px 0; } 
+
+.daySch .dNum { padding: 6px 10px; margin-right: 0; background: #e8e8e8; font-size: 14px;} 
+/* .daySch .date { padding: 5px 15px; border-left: 1px solid var(--color-line); color: #555; font-size: 14px; }  */
+
+.dayOne .locAdd { margin-right: 0; padding: 7px 9px; border-radius: 8px; background: var(--yellow); font-size: 14px; } 
+.locAdd:hover { background: #e8e8e8; } 
+
+.daySch .schMemo { margin: 0 0 20px 0; } 
+.daySch .schMemo .memoCnt { margin-right: 8px; font-size: 14px; border-radius: 50%; } 
+.daySch .schMemo .memoTxt { width: auto; padding: 10px; border-radius: 8px; font-size: 14px; } 
+
+
+
+
+ 
+ .submitBtn { display: block; margin: 20px auto; width: 100px; padding: 8px 0; background: #ffd438c5; border-radius: 7px; font-size: 15px; } 
+ 
+ }
+ 
+ @media screen and (min-width: 1024px) { body { } 
+ }
+ 
+ @media screen and (min-width: 1440px) { body { } 
+ }
