@@ -295,22 +295,31 @@ font-family: pSemi; font-size: 16px; width: 250px;}
     .menuin span { margin-left: 10px; font-size: 15px; }
 
     .mypageCon { margin-top: 40px; width: auto; }
-    .mypageName { font-size: 18px; padding: 0 0 20px 0;}
+    .mypageName { font-size: 18px; padding: 0 0 10px 0;}
 
     .mmgide { margin-top: 15px; }
     .mmImgid { display: none; }
-    .mmnow { margin: 0; }
+
+    .gione { flex-direction: column; margin: 0; }
+    .mmnow { margin: 0; width: 100%; }
     .mmnow h1 { font-size: 15px;}
-    .mmnow .mmnowbox { padding: 10px; margin: 10px 0 15px 0; font-size: 14px; }
-    .mmnow .mmnowbox .mmLine { margin: 0 15px;}
+    .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 14px; }
+    .mmnow .mmnowbox .mmLine { margin: 0; height: 45px; border-right: 1px solid #a7a7a7;}
 
     .mmyourchal { width: auto; margin-top: 10px;}
 
-    .howto img { width: 330px; margin: 0;}
-    .howto p { font-size: 13px; }
+    .howto img { width: calc( 100vw * 650 / 768); margin: 0;}
+    .howto p { color: #666; font-size: 13px; line-height: 120%; text-align: left;}
+    .sment { top: 3%; left: 7%; }
+    .fment { top: 63%; left: 0; }
+
+    .gionement { margin: 0;}
+    .gionement h1 { font-size: 18px;}
+    .gionement p:first-child { color: #888; font-size: 13px;}
+    .gionement p:last-child { font-size: 12px; }
 
     .mannerLevel { flex-wrap: wrap; }
-    .mannerLevel .mlb { width: 17%; }
+    .mannerLevel .mlb { width: 17%; margin-bottom: 7px; }
     .mlbInner { margin: 5px 0; font-size: 13px; }
 
     }

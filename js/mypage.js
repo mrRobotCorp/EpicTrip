@@ -153,17 +153,6 @@ function chIntorduce() {
 
 
 
-// ----- slider ------
-$(document).ready(function(){
-    $('.slider').slick({
-        dots: true, 
-        arrow: true,
-        infinite : false,
-        slidesToShow: 1,
-        slidesToScroll: 1, 
-    });
-});
-
 
 
 

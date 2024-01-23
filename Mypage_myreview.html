@@ -237,6 +237,18 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mypage.js"></script>
+    <script>
+        // ----- slider ------
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrow: true,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+        });
+    </script>
 
 </body>
 
