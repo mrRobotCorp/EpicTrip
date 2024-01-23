@@ -76,14 +76,14 @@ to { opacity: 1; transform: none; }
  .goDetail { width: 100%; } 
  .schOne { width: 100%; height: 100%; position: relative; border-radius: 15px; box-shadow: 1px 1px 7px #8585856b; } 
  
- .schTopInfo { width: 82%; height: 50px; padding: 5px 15px; border-radius: 13px; } 
- .schTopInfo .subTxt { font-size: 13px; } 
+ .schTopInfo { width: 82%; height: 44px; padding: 5px 15px; border-radius: 13px; font-size: 12px; } 
+ .schTopInfo .subTxt { font-size: 13px; }  
  .schOne .post { width: 100%; height: 180px; } 
  .goDetail .postImg { width: 100%; } 
  
- .goDetail .postBottom { width: 90%; padding: 10px 0 20px 0; } 
- .goDetail .postBottom h3 { width: 100%; } 
- .goDetail .postBottom p { width: 100%; } 
+ .goDetail .postBottom { width: 90%; height: 100%; padding: 5px 0 15px 0; } 
+ .goDetail .postBottom h3 { width: 98%; font-size: 16px; } 
+ .goDetail .postBottom p { width: 98%; margin-top: 7px; font-size: 13px; } 
  
  .postLoc { top: 28%; padding: 7px 10px 7px 28px; font-size: 12px; border-radius: 8px; } 
  .hiddenBox { height: 45px; padding: 20px 23px; font-size: 13px; } 
