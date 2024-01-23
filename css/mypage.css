@@ -258,7 +258,7 @@ to { opacity: 1; transform: none; }
  bottom: 20px; left: 0; width: 10px; height: 10px; background-color: #b4b4b4; box-shadow: none; } 
 
 
-/* --------------- responsible --------------- */
+/* --------------------------- responsible ---------------------------------------- */
 
 @media screen and (max-width: 768px) { section { margin: 80px 0 30px 0; padding: 0 5.5%; } 
  .myInner { flex-direction: column; } 
@@ -266,22 +266,21 @@ to { opacity: 1; transform: none; }
  .mypageGnb ul { display: flex; flex-wrap: wrap; margin-top: 10px; } 
  .mypageGnb ul li { width: 50%; margin: 5px 0; } 
  .mypageGnb ul li:first-child { width: 100%; } 
-
- .mproname { padding: 0; } 
+ 
  .menuin img { width: 25px; } 
  .menuin .mypimg { width: 50px; } 
  .menuin span { margin-left: 10px; font-size: 15px; } 
  
- /* -------------- mymain -------------- */
+ /* --------------------- mymain ------------------------ */
  .mypageCon { margin-top: 40px; width: auto; } 
  .mypageName { font-size: 18px; padding: 0 0 10px 0; } 
  
  .mmgide { margin-top: 15px; } 
  .mmImgid { display: none; } 
  
- .manners { padding: 0; margin-top: 30px; border: none; }
+ .manners { padding: 0; margin-top: 30px; border: none; } 
  .gione { flex-direction: column; margin: 0; padding-bottom: 20px; border-bottom: 1px solid var(--color-line); } 
- .gitwo { margin-top: 20px;}
+ .gitwo { margin-top: 20px; } 
  .mmnow { margin: 0; width: 100%; } 
  .mmnow h1 { font-size: 15px; } 
  .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 14px; } 
@@ -289,13 +288,13 @@ to { opacity: 1; transform: none; }
  
  .mmyourchal { width: auto; margin-top: 10px; } 
  
- .howto { margin-bottom: 20px; }
+ .howto { margin-bottom: 20px; } 
  .howto img { width: calc( 100vw * 650 / 768); margin: 0; } 
  .howto p { color: #666; font-size: 13px; line-height: 120%; text-align: left; } 
  .sment { top: 3%; left: 7%; } 
  .fment { top: 63%; left: 0; } 
  
- .gionement { margin: 0; background: #f1f1f1; padding: 13px 15px;} 
+ .gionement { margin: 0; background: #f1f1f1; padding: 13px 15px; } 
  .gionement h1 { font-size: 18px; } 
  .gionement p:first-child { color: #888; font-size: 13px; } 
  .gionement p:last-child { font-size: 12px; } 
@@ -304,7 +303,7 @@ to { opacity: 1; transform: none; }
  .mannerLevel .mlb { width: 17%; margin-bottom: 7px; } 
  .mlbInner { margin: 5px 0; font-size: 13px; } 
  
- /* -------------- mysetting -------------- */
+ /* -------------------- mysetting ---------------------- */
  .proset { width: 100%; } 
  .mpname span { font-size: 14px; } 
 
@@ -312,43 +311,60 @@ to { opacity: 1; transform: none; }
  .userimname p { padding: 5px 10px; background: var(--color-main); color: #fff; font-size: 13px; border-radius: 15px; } 
  .userimname .mpnid { margin-top: 10px; background: #fff; border: 1px solid #e0e0e0; } 
 
- .changeImg { padding: 15px; margin-bottom: 10px; }
- .imgbox { gap: 5px; }
- .imgbox label img { width: 70px; height: 70px;}
- .buttonBox { margin-top: 15px;}
- .buttonBox button { width: 55px; height: 25px; margin-right: 7px; }
+ .changeImg { padding: 15px; margin-bottom: 10px; } 
+ .imgbox { gap: 5px; } 
+ .imgbox label img { width: 70px; height: 70px; } 
+ .buttonBox { margin-top: 15px; } 
+ .buttonBox button { width: 55px; height: 25px; margin-right: 7px; } 
 
- .myintTop button { padding: 5px 10px; font-size: 13px; }
- .cmmtBox { margin-top: 10px; padding: 10px; border-radius: 8px;}
- .cmmtBox textarea { padding: 0; font-size: 13px;}
+ .myintTop button { padding: 5px 10px; font-size: 13px; } 
+ .cmmtBox { margin-top: 10px; padding: 10px; border-radius: 8px; } 
+ .cmmtBox textarea { padding: 0; font-size: 13px; } 
 
  .birgen { display: inline-block; width: 100%; margin-top: 30px; } 
  .birgen .mybirth p { margin-bottom: 10px; font-size: 16px; } 
 .birgen .mybirth span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; margin-right: 0; font-size: 13px; } 
-.birgen .mygen p { margin: 20px 0 10px 0;} 
-.birgen .mygen span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; font-size: 13px;}
+.birgen .mygen p { margin: 20px 0 10px 0; } 
+.birgen .mygen span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; font-size: 13px; } 
 
-.btns { width: 100%; display: flex; justify-content: space-between; margin-top: 30px;}
-.btns button { justify-content: space-between; height: auto; padding: 10px 12px; margin-bottom: 10px; width: auto; font-size: 13px;}
-.btns button .arrow { margin-left: 5px; width: 8px; height: 8px; border-width: 1px;}
+.btns { width: 100%; display: flex; justify-content: space-between; margin-top: 30px; } 
+.btns button { justify-content: space-between; height: auto; padding: 10px 12px; margin-bottom: 10px; width: auto; font-size: 13px; } 
+.btns button .arrow { margin-left: 5px; width: 8px; height: 8px; border-width: 1px; } 
 
 .mypaModal { width: 100%; height: 100%; z-index: 100; display:none; -webkit-box-align:center; align-items: center; -webkit-box-pack: center; justify-content: center; align-items: center; padding: 0; } 
 .myMp { width: 350px; padding: 30px; border-radius: 10px; margin: auto; border: solid 1px var(--color-line); } 
 
-.chPwd { padding: 0;}
-.chPwd input { width: 100%; padding: 10px 15px; font-size: 13px; }
-.modalname { font-size: 17px; color: #000;}
-.modlabtn { width: auto; }
-.modlabtn .mychBtn { width: auto; padding: 6px 15px; font-size: 13px; }
-.modlabtn .mychBtn:first-child { margin-right: 10px; }
+.chPwd { padding: 0; } 
+.chPwd input { width: 100%; padding: 10px 15px; font-size: 13px; } 
+.modalname { font-size: 17px; color: #000; } 
+.modlabtn { width: auto; } 
+.modlabtn .mychBtn { width: auto; padding: 6px 15px; font-size: 13px; } 
+.modlabtn .mychBtn:first-child { margin-right: 10px; } 
 
-.phoneModal { padding: 0;}
-.phoneModal .phoneInput { width: 100%;}
-.phoneInput input { width: 100%; padding: 12px; margin-right: 6px; font-size: 13px; }
-.phoneInput button { width: 40%; padding: 12px 10px; font-size: 13px; }
+.phoneModal { padding: 0; } 
+.phoneModal .phoneInput { width: 100%; } 
+.phoneInput input { width: 100%; padding: 12px; margin-right: 6px; font-size: 13px; } 
+.phoneInput button { width: 40%; padding: 12px 10px; font-size: 13px; } 
 
-.mypgerrms { width: 100%; font-size: 13px;}
-.quitInner { padding: 0;}
+.mypgerrms { width: 100%; font-size: 13px; } 
+.quitInner { padding: 0; } 
+
+/* -------------------- mybill ------------------------- */
+
+.itemAll { margin: 20px 0; padding-bottom: 30px; display: flex; flex-direction: column; } 
+.itemOne { width: 100%; height: 100%; margin: 15px auto; } 
+.itemOne .post { height: 140px; } 
+
+.postImg { width: 100%; } 
+ .postImg img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: transform 0.3s; } 
+ .postBottom { width: 90%; height: 70px; } 
+ 
+ .postBottom .infoText { font-size: 16px; } 
+ .locPay p { font-size: 13px; } 
+ 
+ /* -------------------- myreview ------------------------- */
+
+ .rvAll .buyitem { width: 90%; padding: 10px;}
 
 
 

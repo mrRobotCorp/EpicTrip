@@ -333,6 +333,14 @@
                 slidesToScroll: 1,
             });
         });
+
+        $(window).on('load resize', function () {
+            if ($(window).width() < 768) {
+                $('.slider').slick('unslick');
+            } else {
+                $('.slider').not('.slick-initialized').slick(slickOptions);
+            }
+        });
     </script>
 
 </body>
