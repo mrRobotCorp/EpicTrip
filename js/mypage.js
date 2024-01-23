@@ -20,7 +20,7 @@ function saveAndCloseImageBox() {
 
 function openchpwdmodal() {
     var modalWrap = document.querySelector(".modalWrap");
-    modalWrap.style.display = "block";
+    modalWrap.style.display = "flex";
 }
 
 
@@ -33,7 +33,7 @@ function okchanpwd() {
     var errNopwd = document.getElementById("errNopwd");
 
     if (currentPwdInput.value.trim() === "") {
-        errNopwd.style.display = "block";
+        errNopwd.style.display = "flex";
         return; // 입력이 없으면 아무 작업도 하지 않고 종료
     }
     closechpwd();
@@ -42,7 +42,7 @@ function okchanpwd() {
 
 function openchpnummodal() {
     var phoneWrap = document.querySelector(".phoneWrap");
-    phoneWrap.style.display = "block";
+    phoneWrap.style.display = "flex";
 }
 
 
@@ -53,7 +53,7 @@ function changePhoneNumber() {
     var modalWrap = document.querySelector(".phoneWrap");
 
     if (phoneInput.value.trim() === "" || codeInput.value.trim() === "") {
-        phoneErr.style.display = "block";
+        phoneErr.style.display = "flex";
         return;
     }
 
@@ -91,7 +91,7 @@ function msgCk() {
 
 function openquitmodal() {
     var quitWrap = document.querySelector(".quitWrap");
-    quitWrap.style.display = "block";
+    quitWrap.style.display = "flex";
 }
 function closequitModal() {
     var quitWrap = document.querySelector(".quitWrap");

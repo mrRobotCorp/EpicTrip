@@ -312,28 +312,46 @@ to { opacity: 1; transform: none; }
  .userimname p { padding: 5px 10px; background: var(--color-main); color: #fff; font-size: 13px; border-radius: 15px; } 
  .userimname .mpnid { margin-top: 10px; background: #fff; border: 1px solid #e0e0e0; } 
 
+ .changeImg { padding: 15px; margin-bottom: 10px; }
+ .imgbox { gap: 5px; }
+ .imgbox label img { width: 70px; height: 70px;}
+ .buttonBox { margin-top: 15px;}
+ .buttonBox button { width: 55px; height: 25px; margin-right: 7px; }
+
+ .myintTop button { padding: 5px 10px; font-size: 13px; }
  .cmmtBox { margin-top: 10px; padding: 10px; border-radius: 8px;}
  .cmmtBox textarea { padding: 0; font-size: 13px;}
 
  .birgen { display: inline-block; width: 100%; margin-top: 30px; } 
  .birgen .mybirth p { margin-bottom: 10px; font-size: 16px; } 
 .birgen .mybirth span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; margin-right: 0; font-size: 13px; } 
-.birgen .mygen p { margin: 10px 0;} 
+.birgen .mygen p { margin: 20px 0 10px 0;} 
 .birgen .mygen span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; font-size: 13px;}
 
-.btns { width: 100%; display: flex; justify-content: space-between; }
-.btns button { justify-content: space-between; height: auto; padding: 10px 12px; width: auto; font-size: 13px;}
+.btns { width: 100%; display: flex; justify-content: space-between; margin-top: 30px;}
+.btns button { justify-content: space-between; height: auto; padding: 10px 12px; margin-bottom: 10px; width: auto; font-size: 13px;}
 .btns button .arrow { margin-left: 5px; width: 8px; height: 8px; border-width: 1px;}
 
-.mypaModal { width: 100%; height: 100%; z-index: 100; display:none; -webkit-box-align:center; align-items: center; -webkit-box-pack: center; justify-content: center; box-sizing: border-box; background: rgba(25, 25, 25, 0.5); padding: 34px 0px; opacity: 1; transition: opacity 0.6s ease 0s; } 
-.myMp { width: 350px; padding: 30px; border-radius: 10px; margin: 100px auto; border: solid 1px var(--color-line); } 
+.mypaModal { width: 100%; height: 100%; z-index: 100; display:none; -webkit-box-align:center; align-items: center; -webkit-box-pack: center; justify-content: center; align-items: center; padding: 0; } 
+.myMp { width: 350px; padding: 30px; border-radius: 10px; margin: auto; border: solid 1px var(--color-line); } 
 
 .chPwd { padding: 0;}
-.chPwd input { width: 100%; padding: 10px 15px; }
+.chPwd input { width: 100%; padding: 10px 15px; font-size: 13px; }
 .modalname { font-size: 17px; color: #000;}
 .modlabtn { width: auto; }
 .modlabtn .mychBtn { width: auto; padding: 6px 15px; font-size: 13px; }
 .modlabtn .mychBtn:first-child { margin-right: 10px; }
+
+.phoneModal { padding: 0;}
+.phoneModal .phoneInput { width: 100%;}
+.phoneInput input { width: 100%; padding: 12px; margin-right: 6px; font-size: 13px; }
+.phoneInput button { width: 40%; padding: 12px 10px; font-size: 13px; }
+
+.mypgerrms { width: 100%; font-size: 13px;}
+.quitInner { padding: 0;}
+
+
+
 }
  
  @media screen and (min-width: 1024px) { body { background-color: aqua; } 
