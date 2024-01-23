@@ -69,11 +69,12 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px) {
- section { margin-top: 150px; } 
- 
+ section { margin-top: 130px; } 
+
+ .frmLine { margin: 0;}
  .frmLine div { width: 100%; justify-content: space-between; } 
- .schFrm { width: 70%; margin-right: 0; } 
- .schFrm input { width: 80%; } 
+ .schFrm { width: 70%; margin-right: 0; padding: 8px; border-radius: 8px;} 
+ .schFrm input { width: 80%; font-size: 14px; }
 
  .schAll { width: 100%; margin: 20px 0; display: flex; flex-direction: column; } 
  .goDetail { width: 100%; } 
@@ -86,15 +87,15 @@ section { min-height: calc(100vh - 240px); padding: 0 9%; margin-top: 200px; }
  
  .pagination { display: none; } 
 
- .postBtn { padding: 0; background: var(--color-main); font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 50px; height: 50px; bottom: 30px; right: 25px; border-radius: 50%; text-align: center; position: fixed; z-index: 100; cursor: pointer; } 
+ .postBtn { padding: 0; background: var(--color-main); font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 48px; height: 48px; bottom: 30px; right: 25px; border-radius: 50%; text-align: center; position: fixed; z-index: 100; cursor: pointer; } 
  .postBtn:hover { transition: 0.5s ease; background-color: #efefef; } 
- .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 28px; height: 28px; top: 9px; left: 10px; background-size: cover; } 
- 
+ .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 26px; height: 26px; top: 9px; left: 10px; background-size: cover; } 
+
  
  /* ---------- scrollTop ------------- */
- #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 50px; height: 50px; bottom: 90px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; } 
- #scrollTop::before { content: "\2303"; position: absolute; top: 7px; left: 15px; color: #171717; font-family: pLight; font-size: 25px; } 
- #scrollTop .topTxt { display: block; margin-top: 23px; font-size: 14px; } 
+ #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 48px; height: 48px; bottom: 90px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; } 
+ #scrollTop::before { content: "\2303"; position: absolute; top: 7px; left: 15px; color: #171717; font-family: pLight; font-size: 22px; } 
+ #scrollTop .topTxt { display: block; margin-top: 23px; font-size: 13px; } 
  }
  
  @media screen and (min-width: 1024px) { body { } 

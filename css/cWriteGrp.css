@@ -119,15 +119,18 @@ section { padding: 0 5.5%; margin-top: 150px; }
 .detailWrite { padding: 20px; margin: 30px 0 10px 0; } 
 
 .imgUpAll { margin: 0 auto; min-height: auto; } 
-.fileLabel { padding-top: 20px; width: 100%; height: 150px; } 
-.fileLabel::before { top: 30%; left: 44%; width: 38px; height: 38px; } 
+.imgUpAll span { font-size: 17px;}
+.fileLabel { padding-top: 22px; width: 100%; height: 150px; font-size: 13px; } 
+.fileLabel::before { top: 30%; left: 45%; width: 38px; height: 38px; } 
 .uploadedBtn { float: right; display: none; padding: 7px 10px; border-radius: 7px; font-size: 13px; } 
 
 .imgArea { margin: 20px 0; height: 150px; } 
 
-.txtTitle { margin: 10px 0;}
-.titleBox input { margin: 10px 0 30px 0; margin-bottom: 10px; padding: 10px 0; width: 100%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 18px; font-family: pMedium; transition: all .2s; } 
+.txtTitle { margin: 10px 0; font-size: 17px;}
+.titleBox input { margin: 10px 0 30px 0; margin-bottom: 10px; padding: 10px 0 10px 5px; width: 97%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 15px; font-family: pMedium; transition: all .2s; } 
 
+.contextBox { padding: 8px; overflow: hidden;}
+.contextBox textarea { font-size: 15px; }
 
 .submitBtn { display: block; margin: 20px auto; width: 100px; padding: 8px 0; background: #ffd438c5; border-radius: 7px; font-size: 15px;} 
 
