@@ -159,11 +159,10 @@ to { opacity: 1; transform: none; }
  /* ------------------ slider --------------------- */
  .slider .bn { height: 25vh; margin: 50px 0 30px 0; } 
  .bContent p { padding: 0 25px; text-shadow: 2px 2px 6px #1c1c1cd7; font-size: 20px; text-align: center; } 
-
-
  .mainSection .titleTxt { font-size: 18px;}
+
  /* -------------------- 여행 상품 ------------------------------- */
- .epicTxt::before { top: 13px; width: 108px; height: 10px; }
+ .epicTxt::before { top: 10px; width: 107px; height: 12px; }
 
  .itemAll { margin: 0; padding-bottom: 30px; display: flex; flex-direction: column; } 
  .itemOne { width: 100%; height: 100%; margin: 15px 0; } 
