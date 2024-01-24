@@ -264,12 +264,14 @@ to { opacity: 1; transform: none; }
  .myInner { flex-direction: column; } 
  .mypageGnb { width: 100%; height: auto; padding: 0; } 
  .mypageGnb ul { display: flex; flex-wrap: wrap; margin-top: 10px; } 
- .mypageGnb ul li { width: 50%; margin: 5px 0; } 
+ .mypageGnb ul li { width: 45%; margin: 5px; border-radius: 7px; } 
  .mypageGnb ul li:first-child { width: 100%; } 
  
- .menuin img { width: 25px; } 
+ .mypageGnb ul li a { padding: 5px; } 
+ .mypageGnb ul .menuin img { margin-left: 8px; width: 25px; } 
  .menuin .mypimg { width: 50px; } 
- .menuin span { margin-left: 10px; font-size: 15px; } 
+ .mypageGnb ul .menuin span { margin-left: 10px; font-size: 14px; } 
+ .nameflag span { font-size: 15px;}
  
  /* --------------------- mymain ------------------------ */
  .mypageCon { margin-top: 40px; width: auto; } 
@@ -283,7 +285,10 @@ to { opacity: 1; transform: none; }
  .gitwo { margin-top: 20px; } 
  .mmnow { margin: 0; width: 100%; } 
  .mmnow h1 { font-size: 15px; } 
- .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 14px; } 
+ .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 13px; }
+ .mmnowMycon { justify-content: center;}
+ .mmnowMycon span { font-size: 15px; } 
+ .mmnowMycon p { margin-top: 5px; color: #0000009f;}
  .mmnow .mmnowbox .mmLine { margin: 0; height: 45px; border-right: 1px solid #a7a7a7; } 
  
  .mmyourchal { width: auto; margin-top: 10px; } 
