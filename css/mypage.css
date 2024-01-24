@@ -280,9 +280,9 @@ to { opacity: 1; transform: none; }
  .mmgide { margin-top: 15px; } 
  .mmImgid { display: none; } 
  
- .manners { padding: 0; margin-top: 30px; border: none; } 
- .gione { flex-direction: column; margin: 0; padding-bottom: 20px; border-bottom: 1px solid var(--color-line); } 
- .gitwo { margin-top: 20px; } 
+ .manners { padding: 0; margin-top: 40px; border: none; } 
+ .gione { flex-direction: column; margin: 0; padding-bottom: 30px; border-bottom: 1px solid var(--color-line); } 
+ .gitwo { margin-top: 30px; } 
  .mmnow { margin: 0; width: 100%; } 
  .mmnow h1 { font-size: 15px; } 
  .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 13px; }
@@ -293,11 +293,11 @@ to { opacity: 1; transform: none; }
  
  .mmyourchal { width: auto; margin-top: 10px; } 
  
- .howto { margin-bottom: 20px; } 
+ .howto { margin-bottom: 30px; } 
  .howto img { width: calc( 100vw * 650 / 768); margin: 0; } 
- .howto p { color: #666; font-size: 12px; font-family: pRegular; line-height: 120%; text-align: left; } 
+ .howto p { width: 125px; color: #666; font-size: 12px; font-family: pRegular; line-height: 120%; text-align: left; } 
  .sment { top: 4%; left: 7%; } 
- .fment { top: 63%; left: 0; } 
+ .fment { top: 63%; left: 2%; } 
  
  .gionement { margin: 0; background: #f1f1f1; padding: 13px 15px; } 
  .gionement h1 { font-size: 18px; } 
@@ -306,7 +306,7 @@ to { opacity: 1; transform: none; }
  
  .mannerLevel { flex-wrap: wrap; } 
  .mannerLevel .mlb { width: 17%; margin-bottom: 7px; } 
- .mlbInner { margin: 5px 0; font-size: 13px; } 
+ .mlbInner { margin: 5px 0; font-size: 12px; } 
  
  /* -------------------- mysetting ---------------------- */
  .proset { width: 100%; } 
@@ -357,7 +357,7 @@ to { opacity: 1; transform: none; }
 /* -------------------- mybill ------------------------- */
 
 .itemAll { margin: 20px 0; padding-bottom: 30px; display: flex; flex-direction: column; } 
-.itemOne { width: 93%; height: 100%; margin: 15px auto; } 
+.itemOne { width: 92%; height: 100%; margin: 15px auto; } 
 .itemOne .post { height: 140px; } 
 
 .postImg { width: 100%; } 
@@ -372,17 +372,18 @@ to { opacity: 1; transform: none; }
  .rvAll .buyitem { width: 90%; padding: 5px 15px;}
  .buyitem h1 { font-size: 15px; }
  .buyitem p { font-size: 13px; }
- .redatedel span { font-size: 12px; }
+ .redatedel span { font-size: 12px; color: #999; }
  .redatedel button { font-size: 12px; }
 
  /* --------------------- mygroup ------------------------- */
- .groAll { width: 100%; margin: 20px 0 0 0; display: flex; flex-direction: column; } 
- .groAll .goDetail { width: 100%; margin: 10px 0 0 0; } 
+ .groAll, .schAll { width: 100%; margin: 20px 0 0 0; display: flex; flex-direction: column; } 
+ .groAll .goDetail { width: 93%; margin: 10px auto 0 auto; } 
 
- .schOne { width: 96%; height: 100%; margin: 0 auto; border-radius: 12px; box-shadow: 1px 1px 7px #8585856b; } 
+ .schOne { width: 96%; height: 100%; margin: 10px auto; border-radius: 12px; box-shadow: 1px 1px 7px #8585856b; } 
  .schTopInfo { left: 3%; padding: 5px 15px; font-size: 12px; } 
  .schTopInfo .schNicK { font-size: 15px;}
  .schUser div span:last-child { font-size: 13px; }
+ .schDays p:first-child { font-family: pLight; }
  .schDays p:first-child, .schTopInfo .subTxt { font-size: 12px; }
  .schOne .post { width: 100%; height: 150px; } 
  
@@ -396,6 +397,18 @@ to { opacity: 1; transform: none; }
  .hiddenBox { height: 45px; padding: 20px 23px; font-size: 13px; } 
  .hiddenBox .viewCnt::before { top: -2px; left: -25px; } 
  .hiddenBox .chatCnt::before { top: -2px; left: -25px; } 
+
+ /* --------------------- mycal ------------------------- */
+ .schAll .schOne { width: 93%; margin: 15px auto; } 
+ .schInfo { padding: 15px 20px; border-radius: 8px 8px 0 0;} 
+ .schInfo .schUser { margin-bottom: 5px;}
+ .schInfo .schUser img { width: 40px; }
+ .schInfo .schNicK { margin-left: 0; font-size: 14px; }
+ 
+ .schDays .schDate { font-size: 13px;}
+ .schDays .days { }
+ .schBottom { height: 45px; font-size: 13px; border-radius: 0 0 8px 8px; }
+ .schBottom .locIco { width: 20px; height: 20px; }
 
 }
  
