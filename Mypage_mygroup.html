@@ -612,6 +612,39 @@
                 $('.slider').not('.slick-initialized').slick(slickOptions);
             }
         });
+
+        // --------------- post more -------------------
+        if (window.innerWidth < 768) {
+            // 버튼 생성
+            let mypageCon = document.querySelector(".mypageCon");
+
+            mypageCon.insertAdjacentHTML('beforeend', `
+                <button class="morePost">더보기</button>
+                `);
+
+            // 클릭 시 더 불러오기
+            let morePost = document.querySelector(".morePost");
+
+            morePost.onclick = function () {
+                load('.slider', '3', $(".morePost"));
+            }
+
+            function load(id, cnt, btn) {
+                let plist = id + " .goDetail:not(.active)";
+                let plength = $(plist).length;
+                let postTotal;
+                if (cnt < plength) {
+                    postTotal = cnt;
+                } else {
+                    postTotal = plength;
+                    $(btn).hide();
+                }
+                $(plist + ":lt(" + postTotal + ")").addClass("active");
+            }
+            // 기본 콘텐츠 3개 노출
+            load('.slider', '3');
+        }
+
     </script>
 
 </body>

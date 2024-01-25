@@ -356,8 +356,9 @@ to { opacity: 1; transform: none; }
 
 /* -------------------- mybill ------------------------- */
 
-.itemAll { margin: 20px 0; padding-bottom: 30px; display: flex; flex-direction: column; } 
-.itemOne { width: 92%; height: 100%; margin: 15px auto; } 
+.itemAll { margin: 10px 0 0 0; padding-bottom: 0; display: flex; flex-direction: column; } 
+.itemOne { display: none; width: 92%; height: 100%; margin: 15px auto; } 
+.itemOne.active { display: block; }
 .itemOne .post { height: 140px; } 
 
 .postImg { width: 100%; } 
@@ -366,9 +367,11 @@ to { opacity: 1; transform: none; }
  
  .postBottom .infoText { font-size: 15px; } 
  .locPay p { font-size: 13px; } 
+ .morePost { display: block; margin: 20px auto 0 auto; width: 70px; padding: 6px 0; background: #e0e0e0c5; border-radius: 5px; font-size: 13px; font-family: pMedium; cursor: pointer; }
  
  /* -------------------- myreview ------------------------- */
-
+.reviewInner { display: none;}
+.reviewInner.active { display: block; }
  .rvAll .buyitem { width: 90%; padding: 5px 15px;}
  .buyitem h1 { font-size: 15px; }
  .buyitem p { font-size: 13px; }
@@ -376,8 +379,9 @@ to { opacity: 1; transform: none; }
  .redatedel button { font-size: 12px; }
 
  /* --------------------- mygroup ------------------------- */
- .groAll, .schAll { width: 100%; margin: 20px 0 0 0; display: flex; flex-direction: column; } 
- .groAll .goDetail { width: 93%; margin: 10px auto 0 auto; } 
+ .groAll, .schAll { width: 100%; margin: 10px 0 0 0; display: flex; flex-direction: column; } 
+ .groAll .goDetail { display: none; width: 93%; margin: 10px auto 0 auto; } 
+ .groAll .goDetail.active { display: block; }
 
  .schOne { width: 96%; height: 100%; margin: 10px auto; border-radius: 12px; box-shadow: 1px 1px 7px #8585856b; } 
  .schTopInfo { left: 3%; padding: 5px 15px; font-size: 12px; } 
@@ -399,7 +403,8 @@ to { opacity: 1; transform: none; }
  .hiddenBox .chatCnt::before { top: -2px; left: -25px; } 
 
  /* --------------------- mycal ------------------------- */
- .schAll .schOne { width: 93%; margin: 15px auto; } 
+ .schAll .schOne { display: none; width: 93%; margin: 15px auto; } 
+ .schAll .schOne.active { display: block; }
  .schInfo { padding: 15px 20px; border-radius: 8px 8px 0 0;} 
  .schInfo .schUser { margin-bottom: 5px;}
  .schInfo .schUser img { width: 40px; }

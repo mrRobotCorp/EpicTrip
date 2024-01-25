@@ -130,45 +130,51 @@
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
-                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem
+                                        deleniti
                                         cupiditate, at vero ipsam eos?
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
-                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
-                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem
+                                        deleniti
+                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Similique explicabo illum
                                         perspiciatis repudiandae,
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                         </div>
@@ -176,45 +182,51 @@
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
-                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem
+                                        deleniti
                                         cupiditate, at vero ipsam eos?
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                             <a href="#" class="reviewInner">
                                 <div class="buyitem">
                                     <h1>상품명</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo
+                                        illum
                                         perspiciatis repudiandae,
-                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem deleniti
-                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique explicabo illum
+                                        quas maiores dolorem beatae placeat ullam, ipsum culpa nisi deserunt rem
+                                        deleniti
+                                        cupiditate, at vero ipsam eos? Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Similique explicabo illum
                                         perspiciatis repudiandae,
                                     </p>
                                     <div class="redatedel">
                                         <span>YYYY.MM.DD |</span>
                                         <button>삭제</button>
                                     </div>
-        
+
                                 </div>
                             </a>
                         </div>
@@ -256,6 +268,38 @@
                 $('.slider').not('.slick-initialized').slick(slickOptions);
             }
         });
+
+        // --------------- post more -------------------
+        if (window.innerWidth < 768) {
+            // 버튼 생성
+            let mypageCon = document.querySelector(".mypageCon");
+
+            mypageCon.insertAdjacentHTML('beforeend', `
+                <button class="morePost">더보기</button>
+                `);
+
+            // 클릭 시 더 불러오기
+            let morePost = document.querySelector(".morePost");
+
+            morePost.onclick = function () {
+                load('.slider', '3', $(".morePost"));
+            }
+
+            function load(id, cnt, btn) {
+                let plist = id + " .reviewInner:not(.active)";
+                let plength = $(plist).length;
+                let postTotal;
+                if (cnt < plength) {
+                    postTotal = cnt;
+                } else {
+                    postTotal = plength;
+                    $(btn).hide();
+                }
+                $(plist + ":lt(" + postTotal + ")").addClass("active");
+            }
+            // 기본 콘텐츠 3개 노출
+            load('.slider', '3');
+        }
     </script>
 
 </body>
