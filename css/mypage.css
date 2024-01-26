@@ -300,14 +300,18 @@ to { opacity: 1; transform: none; }
  .fment { top: 63%; left: 2%; } 
  
  .gionement { margin: 0; background: #f1f1f1; padding: 13px 15px; } 
- .gionement h1 { font-size: 18px; } 
+ .gionement h1 { font-size: 16px; } 
  .gionement p:first-child { color: #888; font-size: 13px; } 
  .gionement p:last-child { font-size: 12px; } 
  
- .mannerLevel { flex-wrap: wrap; } 
- .mannerLevel .mlb { width: 17%; margin-bottom: 7px; } 
- .mlbInner { margin: 5px 0; font-size: 12px; } 
- 
+ .mannerLevel { flex-wrap: wrap; margin: 35px 0; } 
+ .mannerLevel .mlb { height: 98px; width: 17%; margin-bottom: 7px; } 
+ .lvimg p { color: #000000c0; font-family: pRegular; font-size: 11px; }
+ .lvhow img { width: 15px; }
+ .mlbInner { display: flex; justify-content: space-between; flex-direction: column; height: 80%; margin: 5px 0; font-size: 12px; } 
+ .lastment { margin: 20px 0; border-radius: 8px;}
+ .lastment p { padding: 15px 0; font-size: 13px; }
+
  /* -------------------- mysetting ---------------------- */
  .proset { width: 100%; } 
  .mpname span { font-size: 14px; } 
@@ -333,8 +337,8 @@ to { opacity: 1; transform: none; }
 .birgen .mygen span { display: inline-block; width: 25%; background-color: #f0f0f0; padding: 10px; font-size: 13px; } 
 
 .btns { width: 100%; display: flex; justify-content: space-between; margin-top: 30px; } 
-.btns button { justify-content: space-between; height: auto; padding: 10px 12px; margin-bottom: 10px; width: auto; font-size: 13px; } 
-.btns button .arrow { margin-left: 5px; width: 8px; height: 8px; border-width: 1px; } 
+.btns button { justify-content: space-between; height: auto; padding: 8px 10px; margin-bottom: 10px; width: auto; font-size: 12px; } 
+.btns button .arrow { margin-left: 5px; width: 6px; height: 6px; border-width: 1px; } 
 
 .mypaModal { width: 100%; height: 100%; z-index: 100; display:none; -webkit-box-align:center; align-items: center; -webkit-box-pack: center; justify-content: center; align-items: center; padding: 0; } 
 .myMp { width: 350px; padding: 30px; border-radius: 10px; margin: auto; border: solid 1px var(--color-line); } 
@@ -352,7 +356,7 @@ to { opacity: 1; transform: none; }
 .phoneInput button { width: 40%; padding: 12px 10px; font-size: 13px; } 
 
 .mypgerrms { width: 100%; font-size: 13px; } 
-.quitInner { padding: 0; } 
+.quitInner { padding: 0; font-size: 14px; } 
 
 /* -------------------- mybill ------------------------- */
 
@@ -367,7 +371,7 @@ to { opacity: 1; transform: none; }
  
  .postBottom .infoText { font-size: 15px; } 
  .locPay p { font-size: 13px; } 
- .morePost { display: block; margin: 20px auto 0 auto; width: 70px; padding: 6px 0; background: #e0e0e0c5; border-radius: 5px; font-size: 13px; font-family: pMedium; cursor: pointer; }
+ .morePost { display: block; margin: 20px auto 0 auto; width: 70px; padding: 6px 0; color: #000; background: #e0e0e0c5; border-radius: 5px; font-size: 13px; font-family: pMedium; cursor: pointer; }
  
  /* -------------------- myreview ------------------------- */
 .reviewInner { display: none;}

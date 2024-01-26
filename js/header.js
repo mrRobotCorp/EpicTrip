@@ -85,6 +85,16 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="./message.html" class="msgTab">메세지</a></li>
             <li><a href="./Mypage_mymain.html" class="mypTab">마이페이지</a></li>
         `);
+
+        let msgTab = document.querySelector(".msgTab");
+        let mypTab = document.querySelector(".mypTab");
+
+        if (loc.includes("message")) {
+            msgTab.classList.add("active");
+        }
+        if (loc.includes("Mypage")) {
+            mypTab.classList.add("active");
+        }
     }
 
 

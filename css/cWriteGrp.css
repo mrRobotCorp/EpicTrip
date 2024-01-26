@@ -96,22 +96,22 @@ border: 1px solid var(--color-main) !important; background: var(--color-main) !i
 @media screen and (max-width: 768px) { 
 section { padding: 0 5.5%; margin-top: 150px; } 
  .opLine { flex-direction: column; } 
- .locTitle { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
+ .locTitle { display: inline-block; width: 100%; height: 45px; line-height: 45px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 7px; font-size: 13px; font-family: pBold; } 
 
- .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 15px; border-radius: 5px; } 
+ .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 13px; border-radius: 5px; } 
 .opLine .options { width: 100%; } 
-.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; border: 1px solid #eee;} 
+.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; font-size: 12px; border: 1px solid #e6e6e6;} 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
 
 .teamSelec { margin-top: 15px; flex-direction: column; } 
-.teamSelec .teamTxt { width: 100%; margin: 0; } 
+.teamSelec .teamTxt { width: 100%; margin: 0; height: 45px; font-size: 13px;  border-radius: 7px;} 
 .teamSelec .rangeAll { width: 95%; margin: 20px 0 10px 0; } 
 
 .dateSelec { margin-top: 15px; flex-direction: column; } 
-.dateSelec span { width: 100%; margin: 0 0 10px 0; } 
+.dateSelec span { width: 100%; margin: 0 0 10px 0; height: 45px; font-size: 13px; border-radius: 7px; } 
 .dateSelec .dateInput { flex-direction: column; } 
-.dateSelec .dpDiv { width: 107%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
-.dateSelec .dpDiv input { background: #f7f7f7; } 
+.dateSelec .dpDiv { width: 100%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
+.dateSelec .dpDiv input { background: #f7f7f7; font-size: 12px; } 
 
 .ui-datepicker { top: 1280px !important; width: 240px !important; } 
 
@@ -120,19 +120,19 @@ section { padding: 0 5.5%; margin-top: 150px; }
 
 .imgUpAll { margin: 0 auto; min-height: auto; } 
 .imgUpAll span { font-size: 17px;}
-.fileLabel { padding-top: 22px; width: 100%; height: 150px; font-size: 13px; } 
+.fileLabel { width: 100%; font-size: 13px; } 
 .fileLabel::before { top: 30%; left: 45%; width: 38px; height: 38px; } 
 .uploadedBtn { float: right; display: none; padding: 7px 10px; border-radius: 7px; font-size: 13px; } 
 
 .imgArea { margin: 20px 0; height: 150px; } 
 
 .txtTitle { margin: 10px 0; font-size: 17px;}
-.titleBox input { margin: 10px 0 30px 0; margin-bottom: 10px; padding: 10px 0 10px 5px; width: 97%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 15px; font-family: pMedium; transition: all .2s; } 
+.titleBox input { margin: 10px 0 30px 0; margin-bottom: 10px; padding: 10px 0 10px 5px; width: 97%; border-radius: 8px; border: 1px solid var(--color-line); font-size: 13px; font-family: pMedium; transition: all .2s; } 
 
 .contextBox { padding: 8px; overflow: hidden;}
-.contextBox textarea { font-size: 15px; }
+.contextBox textarea { font-size: 12px; }
 
-.submitBtn { display: block; margin: 20px auto; width: 100px; padding: 8px 0; background: #ffd438c5; border-radius: 7px; font-size: 15px;} 
+.submitBtn { display: block; margin: 20px auto; padding: 8px 0; color: #000; background: #ffd438c5; border-radius: 7px; font-size: 12px;} 
 
 
  }

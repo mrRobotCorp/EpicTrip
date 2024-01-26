@@ -129,18 +129,18 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
 @media screen and (max-width: 768px) { section { padding: 0 5.5%; margin-top: 150px; } 
  .opLine { flex-direction: column; } 
  .opLine .options { width: 70%; display: flex; align-items: center; flex-wrap: wrap; } 
- .locTitle { display: inline-block; width: 100%; height: 50px; line-height: 50px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 5px; font-size: 15px; font-family: pBold; } 
- 
- .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 15px; border-radius: 5px; } 
- .opLine .options { width: 100%; } 
- .schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; border: 1px solid #eee; } 
- .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
- 
- .dateSelec { margin-top: 15px; flex-direction: column; } 
- .dateSelec span { width: 100%; margin: 0 0 10px 0; } 
- .dateSelec .dateInput { flex-direction: column; } 
- .dateSelec .dpDiv { width: 107%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
- .dateSelec .dpDiv input { background: #f7f7f7; } 
+ .locTitle { display: inline-block; width: 100%; height: 45px; line-height: 45px; text-align: center; border: 1px solid var(--color-line); background: #fff; border-radius: 7px; font-size: 13px; font-family: pBold; } 
+
+ .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 13px; border-radius: 5px; } 
+.opLine .options { width: 100%; } 
+.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; font-size: 12px; border: 1px solid #e6e6e6;} 
+.schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
+
+.dateSelec { margin-top: 15px; flex-direction: column; } 
+.dateSelec span { width: 100%; margin: 0 0 10px 0; height: 45px; font-size: 13px; border-radius: 7px; } 
+.dateSelec .dateInput { flex-direction: column; } 
+.dateSelec .dpDiv { width: 100%; height: 40px; padding-left: 50px; margin: 0 0 10px 0; background: #f7f7f7; border-radius: 5px; } 
+.dateSelec .dpDiv input { background: #f7f7f7; font-size: 12px; } 
  
  .ui-datepicker { top: 1280px !important; width: 240px !important; } 
  
@@ -162,8 +162,6 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
 .dayTxt { margin: 0 0 10px 0; } 
 
 .daySch .dNum { padding: 6px 10px; margin-right: 0; background: #e8e8e8; font-size: 14px;} 
-/* .daySch .date { padding: 5px 15px; border-left: 1px solid var(--color-line); color: #555; font-size: 14px; }  */
-
 .dayOne .locAdd { margin-right: 0; padding: 5px 9px; border-radius: 6px; background: var(--yellow); font-size: 14px; } 
 .locAdd:hover { background: #e8e8e8; } 
 
@@ -172,7 +170,7 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
 .daySch .schMemo .memoCnt { margin-right: 8px; font-size: 14px; border-radius: 50%; } 
 .daySch .schMemo .memoTxt { width: auto; padding: 10px; border-radius: 8px; font-size: 14px; } 
 
- .submitBtn { display: block; margin: 20px auto; width: 100px; padding: 8px 0; background: #ffd438c5; border-radius: 7px; font-size: 15px; } 
+ .submitBtn { display: block; margin: 20px auto; padding: 8px 0; color: #000; background: #ffd438c5; border-radius: 7px; font-size: 12px; } 
  
 /* -------------------- modal ---------------------- */
 .locModal { margin: 150px auto; padding: 30px 20px 20px 20px; width: 75vw; height: 440px; box-shadow: 2px 2px 7px #1818189c; } 
