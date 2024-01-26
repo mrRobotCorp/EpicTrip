@@ -137,7 +137,8 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px) {
-    section { margin: 80px 0 30px 0; padding: 0 5.5%; } 
+    section { margin: 80px 0 30px 0; padding: 0 5.5%; }
+    .chatMemList p:first-child { font-size: 16px; } 
     .memPro { margin-top: 15px; }
     .member { margin-right: 12px; }
     .member img { width: 55px; }
