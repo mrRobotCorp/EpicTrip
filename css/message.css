@@ -91,8 +91,6 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
 .roomtitle p { font-size: 15px; line-height: 130%; overflow: hidden; display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; } 
 .roomtitle span { margin-left: 10px; color: var(--color-line); } 
 .lastMsg { font-family: pLight; font-size: 15px; color: rgb(143, 143, 143); margin-top: 8px; white-space: nowrap;overflow: hidden; text-overflow: ellipsis; width: 250px; } 
-.listmsgtime { display: flex; justify-content: space-between; margin-top: 15px; } 
-.listmsgtime span { font-family: pLight; font-size: 14px; color: rgb(143, 143, 143); } 
 
 .chatroomname { position: sticky; display: flex; align-items: center; justify-content: space-between; top: 0; background-color: white; border-bottom: solid 1px var(--color-line); margin: 0 auto;padding: 23px 10px 23px 20px; display: flex; align-items: center; box-shadow: 0 2px 5px #a9a9a95c; } 
 .chatroomname span:first-child { font-size: 18px; margin-right: 10px; } 
@@ -145,25 +143,28 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .memPro { margin-top: 15px; }
     .member { margin-right: 12px; }
     .member img { width: 55px; }
-    .member span { margin-top: 0; font-size: 13px; text-align: center; }
-    .selgroupMem { padding: 7px 10px; border-radius: 8px;}
+    .member span { margin-top: 0; font-size: 12px; font-family: pRegular; text-align: center; }
 
-    .selchat button { padding: 6px 13px; width: auto; height: auto; border-radius: 6px; font-size: 13px; }
+    .selgroupMem { padding: 7px; border-radius: 8px;}
+    .selgroupMem img { width: 15px; margin-right: 0; }
+    .selgroupMem .selMbtn { font-size: 12px; }
+
+    .selchat button { padding: 6px 13px; width: auto; height: auto; border-radius: 6px; font-size: 13px; font-family: pMedium; }
     .selchat .ms { margin: 0;}
 
     .chatandlist { flex-direction: column; margin-top: 10px; }
-    .chatListInner { padding: 20px; }
+    .chatListInner { padding: 10px 20px; }
     .chatListinin { height: 280px; }
-    .chatList { width: 100%; height: 350px; margin-bottom: 20px; }
+    .chatList { width: 100%; height: 350px; margin-bottom: 20px; padding-bottom: 0;}
     .chatListInner h3 { padding: 10px 0; margin-bottom: 10px; font-size: 15px;}
 
+    .chatroom { padding: 6px;}
     .chatroom img { width: 45px; height: 45px; }
-    .roomtitle { margin-top: 0;}
+    .roomtitle { justify-content: space-between; margin-top: 0;}
+    .roomtitle p { font-size: 13px; line-height: 100%; }
     .roomtitle span { font-size: 12px; color: #afafaf;}
-
-    .listmsgtime { margin-top: 5px; }
-    .listmsgtime span { font-size: 12px; }
-
+    .roomtitle span:last-child { font-size: 11px; font-family: pLight; }
+    .lastMsg { width: 90%; font-size: 12px; }
 
     .chatBoard { width: 100%; }
 } 
