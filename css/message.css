@@ -143,9 +143,10 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .member { margin-right: 12px; }
     .member img { width: 55px; }
     .member span { margin-top: 0; font-size: 12px; font-family: pRegular; text-align: center; }
+    .memPro .groupon { font-size: 11px;}
 
     .selgroupMem { padding: 7px; border-radius: 8px;}
-    .selgroupMem img { width: 15px; margin-right: 4px; }
+    .selgroupMem .selMbtn img { width: 15px; margin-right: 4px; }
     .selgroupMem .selMbtn { font-size: 12px; }
 
     .selmModal { top: 180%; left: -230%; width: 260px; }
@@ -155,7 +156,8 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .selmModal .selecmems { margin-top: 10px; height: fit-content; }
 
     .selmModal .memsimgname span { font-size: 13px; }
-    .selmModal img { }
+    .selmModal img { margin-right: 3px; width: 30px; }
+    .selmModal .groupToggle { padding: 5px 10px; font-size: 12px;}
 
     .selchat button { padding: 6px 13px; width: auto; height: auto; border-radius: 6px; font-size: 13px; font-family: pMedium; }
     .selchat .ms { margin: 0;}
@@ -200,7 +202,14 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
 
     .sendMs { margin: 20px auto 0 auto; width: 95%; height: 40px; border-radius: 7px; }
     .sendMs .msArea { height: 20px; padding: 10px; margin: 0; border-radius: 7px; font-size: 13px;}
+    .sendBtn { width: 28px; height: 30px; }
+    .sendBtn.send { width: 28px; height: 30px; }
 
+    .memMpModal .memMp { width: 330px; }
+    .memMpModal .memMpInner { margin: 0 auto;}
+    .memMpModal .lvandN span { padding: 6px 10px; font-size: 12px; }
+    .memMpModal .profile { width: 60px; }
+    .memMpModal .level { width: 26px; }
 
 } 
 
