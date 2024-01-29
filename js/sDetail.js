@@ -83,3 +83,22 @@ if (post.clientHeight >= 580) {
     postMore.style.display = "none";
 }
 
+
+if (window.innerWidth < 768) {
+
+    if (post.clientHeight >= 400) {
+        postMore.style.display = "block";
+    
+        postMore.onclick = function () {
+            post.classList.toggle("more");
+            if (this.innerHTML == "더보기") {
+                this.innerHTML = "접기";
+            } else {
+                this.innerHTML = "더보기";
+            }
+        }
+    } else {
+        postMore.style.display = "none";
+    }
+}
+

@@ -139,7 +139,20 @@ border: none; background: var(--color-main); }
 @media screen and (max-width: 768px) {
     section { margin: 80px 0 30px 0; padding: 0 5.5%; }
     .banner { height: 200px; border-radius: 10px;}
+    .postContent { flex-direction: column; }
 
+    .pLeft { width: auto; }
+    .pLeft strong { font-size: 15px; }
+    .pLeft .titleBottom { padding: 13px 0;}
+    .titleBottom .wishBtn { width: 20px; height: 20px; }
+    .postingBtn .admBtn { margin-right: 7px; width: 35px; height: 22px; font-size: 12px; border-radius: 3px; }
+    .titleBottom .itemPrice { font-size: 18px; }
+
+    .postCon::after { width: 200%;}
+    .postText { margin: 15px 0; font-size: 12px; line-height: 130%; }
+    .postMore { padding: 8px 20px; font-size: 13px; border-width: 1px; border-radius: 8px; }
+    .postMore:hover { background: #fff; }
+    .postDV { margin: 30px 0; padding-bottom: 20px; font-size: 11px; color: #777; }
 } 
 
  @media screen and (min-width: 1024px) { body { } 
