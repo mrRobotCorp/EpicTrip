@@ -145,14 +145,51 @@ border: none; background: var(--color-main); }
     .pLeft strong { font-size: 15px; }
     .pLeft .titleBottom { padding: 13px 0;}
     .titleBottom .wishBtn { width: 20px; height: 20px; }
-    .postingBtn .admBtn { margin-right: 7px; width: 35px; height: 22px; font-size: 12px; border-radius: 3px; }
-    .titleBottom .itemPrice { font-size: 18px; }
+    .postingBtn .admBtn { margin-right: 7px; width: 35px; height: 22px; font-size: 12px; text-align: center; border-radius: 3px; }
+    .titleBottom .itemPrice, .itemPrice span { font-size: 18px; }
 
+    .postCon { max-height: 300px; }
     .postCon::after { width: 200%;}
-    .postText { margin: 15px 0; font-size: 12px; line-height: 130%; }
-    .postMore { padding: 8px 20px; font-size: 13px; border-width: 1px; border-radius: 8px; }
+    .postText { margin: 15px 0; font-size: 13px; line-height: 130%; }
+    .postMore { padding: 5px 14px; font-size: 12px; border-width: 1px; border-radius: 6px; }
     .postMore:hover { background: #fff; }
     .postDV { margin: 30px 0; padding-bottom: 20px; font-size: 11px; color: #777; }
+
+    .cmmtFrm { margin-bottom: 20px;}
+    .cmmtFrm strong { margin: 0 0 20px 0;}
+    .cmmtFrm strong::after { width: 22px; height: 22px; top: -4px; right: -28px; }
+    .cmmtBox { padding: 10px 0;}
+    .cmmtBox textarea { padding: 0 10px; height: 40px; font-size: 13px; }
+    .cmmtBox button { margin-right: 20px; width: 18px; height: 18px; }
+
+    .cmmtUserImg { margin: 0 12px 0 0; width: 40px; }
+    .cmmtUserTxt span:first-child { font-size: 13px;}
+    .cmmtUserTxt span:nth-child(2) { font-size: 12px; }
+    .cmmtUserTxt .commDel { font-size: 11px; }
+    .cmmtDate { font-size: 11px; }
+    .cmmtUserTxt .cmmtCon { padding: 5px 0; font-size: 12px; }
+
+
+    .rightWrap { width: 315px; margin: 0 auto; padding: 20px 0; }
+    .ui-datepicker .ui-datepicker-title { font-size: 15px; }
+    .ui-state-default, 
+    .ui-widget-content .ui-state-default, 
+    .ui-widget-header .ui-state-default, 
+    .ui-button, .ui-button.ui-state-disabled:hover, 
+    .ui-button.ui-state-disabled:active { width: 22px; height: 20px; font-size: 13px; line-height: 20px;}
+
+    .saleTxt, .chTxt {padding: 25px 0 10px 0; font-size: 15px; }
+    .saleInfo span { width: 50%; font-size: 13px; }
+
+    .onePrice { font-size: 15px; }
+    .cntCtrl .number { font-size: 18px;}
+    .cntCtrl .numBtn { width: 25px; height: 25px; line-height: 23px;}
+    .cntCtrl .numBtn:hover { background-color: #fff; }
+    
+    .payInfo span { padding: 20px 0 5px 0; font-size: 12px; }
+    .payInfo p { font-size: 11px; line-height: 130%;}
+    .goPay { padding: 15px 0; margin-top: 0; font-size: 15px; font-family: pSemi;}
+    .goPay a { color: #fff; }
 } 
 
  @media screen and (min-width: 1024px) { body { } 

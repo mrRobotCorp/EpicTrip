@@ -86,7 +86,7 @@ if (post.clientHeight >= 580) {
 
 if (window.innerWidth < 768) {
 
-    if (post.clientHeight >= 400) {
+    if (post.clientHeight >= 300) {
         postMore.style.display = "block";
     
         postMore.onclick = function () {
