@@ -111,7 +111,7 @@ footer p { margin-top: 10px; color: #222; }
  
  }
 
-@media screen and (min-width: 1024px) { body { background-color: aqua; } 
+@media screen and (min-width: 1024px) { body { } 
 
  .desktop { display: block; } 
  header { } 
@@ -119,5 +119,5 @@ footer p { margin-top: 10px; color: #222; }
  footer { } 
  }
 
-@media screen and (min-width: 1440px) { body { background-color: gray; } 
+@media screen and (min-width: 1440px) { body { } 
  }

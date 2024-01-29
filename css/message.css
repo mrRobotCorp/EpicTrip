@@ -223,15 +223,12 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     
     .subgb { margin: 10px 0;}
     .subgb .mybirth, .subgb .mygen { display: flex; align-items: baseline; justify-content: flex-start;} 
-    .subgb .mybirth p, .subgb .mygen p { margin: 0 8px 0 0; font-size: 13px; font-family: pMedium; }
+    .subgb .mybirth p, .subgb .mygen p { margin: 0 8px 0 0; font-size: 13px; font-family: pSemi; }
     .subgb .mybirth span { padding: 6px 10px; margin-top: 5px; background: #f1f1f1; font-size: 12px; }
 
     .subgb .mygen span {padding: 6px 10px; margin-top: 5px; background: #f1f1f1; font-size: 12px; }
 
 } 
-
- 
-
 
  @media screen and (min-width: 1024px) { body { } 
  }

@@ -25,7 +25,7 @@
     <link href="./css/sPosting.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -36,24 +36,33 @@
         <nav>
             <a href="./index.html"><img class="headLogo" src="./source/logo.png"></a>
             <div class="gnb">
-                <ul class="gnbTab">
-                    <li>
-                        <a href="./store.html" class="store">여행상점</a>
-                    </li>
-                    <li>
-                        <a href="./Community_Group.html" class="community">커뮤니티</a>
-                    </li>
-                </ul>
-                <div class="userHead">
-                    <a href="./message.html"><img class="msgImg" src="./source/msg.png"></a>
-                    <a href="./Mypage_mymain.html"><img class="userImg" src="./source/profImg2.jpg"></a>
-                    <ul class="userList">
-                        <li>유저 닉네임</li>
-                        <!-- <li><a href="./Community_Group.html">마이페이지</a></li> -->
-                        <li><a href="./adm_calendar.html">관리자 일정</a></li>
-                        <li><a href="./login.html">로그아웃</a></li>
+                <div class="gnbInner">
+                    <ul class="gnbTab">
+                        <li>
+                            <a href="./store.html" class="store">여행상점</a>
+                        </li>
+                        <li>
+                            <a href="./Community_Group.html" class="community">커뮤니티</a>
+                        </li>
                     </ul>
+                    <div class="userHead">
+                        <a href="./message.html"><img class="msgImg" src="./source/msg.png"></a>
+                        <a href="./Mypage_mymain.html"><img class="userImg" src="./source/profImg2.jpg"></a>
+                        <ul class="userList">
+                            <li>유저 닉네임</li>
+                            <li><a href="./Mypage_mymain.html">마이페이지</a></li>
+                            <li><a href="./adm_calendar.html">관리자 일정</a></li>
+                            <li><a href="./login.html">로그아웃</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+                <button class="menuTrigger">
+                    <span class="blind">메뉴보기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -267,7 +276,7 @@
                     </div>
 
                 </div>
-                <button type="submit" class="submitBtn">작성완료</button>
+                <button type="button" class="submitBtn">작성완료</button>
             </form>
         </div>
     </section>
@@ -282,212 +291,217 @@
 
 
     <script src="./js/header.js"></script>
-</body>
-<script type="text/javascript">
 
-    $(document).ready(function () {
-        var proStartDate = ""; // 시작날짜
-        var proEndDate = ""; // 마지막날짜
-        var checkedValues = []; //할인 요일
-        var selectedCountry
-        var sale = 0;
-        var title = "";
-        var context = "";
-        var price = 0;
+    <script type="text/javascript">
 
+        if (window.innerWidth < 768) {
+            let selecAll = document.querySelector(".selecAll");
 
-        // 지역 선택 로직
-        $("[name=loc]").click(function () {
-            console.log($(this).val());
-            $("#prodloc").val($(this).val())
-
-            // 나라 선택 로직
-            selectedCountry = $(this).closest(".opLine").find("#country").val();
-            $("[name=country]").val(selectedCountry)
-            console.log(selectedCountry)
-        });
-
-        // 날짜선택 로직
-        $("#dateClick").click(function () {
-            var startDate = $("#startdate").val() // 시작날짜
-            var endDate = $("#enddate").val() // 마지막 날짜
-            var startDate01 = new Date($("#startdate").val()) // date형식으로 재설정
-            var endDate01 = new Date($("#enddate").val()) // 위와 같음
-
-            var timeDiff = endDate01 - startDate01; // 마지막날짜 - 시작날짜
-
-            // 시작날짜가 마지막날짜보다 크다면 이상하기 때문에
-            if (startDate01 > endDate01) {
-                alert("다시 선택해 주세요");
-            } else {
-                console.log(startDate);
-                console.log(endDate);
-                $("#startdateS").val(startDate)
-                $("#enddateS").val(endDate)
-            }
-
-            // ---- 추가!!! ------ 선택 비활성화
-            if (startDate == "" || endDate == "") {
-                alert("날짜를 선택해주세요.");
-            } else {
-                $("#startdate").attr("disabled", true);
-                $("#enddate").attr("disabled", true);
-                $("#dateClick").addClass("clicked");
-            }
-
-        })
-
-        $(".daySelecAll").click(function () {
-            checkedValues = []; // 클릭할 때마다 배열 초기화
-
-            $(this).find("[name=saleDay]:checked").each(function () {
-                checkedValues.push($(this).val());
-            });
-
-            console.log(checkedValues);
-        });
-
-        $("#dcdayBtn").click(function () {
-            var dcday = "";
-            checkedValues.forEach(function (e) {
-                dcday = dcday + e + " ";
-            })
-            $("#dcday").val(dcday)
-
-            // ---- 추가!!! ------ 선택 비활성화
-            if (dcday == "") {
-                alert("할인 요일을 선택해주세요.");
-            } else if ($(".saleDrop").val() == null) {
-                alert("할인율을 선택해주세요.");
-            } else {
-                $(".saleDrop").attr("disabled", true);
-                $("input[name='saleDay']").attr("disabled", true);
-                $("#dcdayBtn").addClass("clicked");
-            }
-
-            // 인클루드스는 내용중에 문자가 있는지 확인해줌
-            if (dcday.includes("화")) {
-                console.log(dcday);
-                console.log("화요일이 선택되었습니다.");
-            }
-        })
-
-        //할인 퍼센트
-        $(".saleDrop").change(function () {
-            sale = $(this).val();
-            $("#dcprice").val(sale)
-            console.log("선택한 할인율: " + sale + "%");
-        });
-
-        // 제목, 텍스트 내용, 가격 출력
-        $(".submitBtn").click(function () {
-            title = $("[name=title]").val();
-            context = $("[name=context]").val();
-            price = $("[name=price]").val();
-
-            console.log(title)
-            console.log(context)
-            console.log(price)
-            alert("페이지가 이동됩니다.")
-            location.href = "Store";
-
-        })
-
-
-
-        // saleDrop
-        // 날짜 선택
-        $(".datePick").datepicker({
-            dateFormat: 'yy-mm-dd',
-            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-            showMonthAfterYear: true,
-            yearSuffix: '년'
-        });
-
-        // 업로드 이미지 노출
-        const fileInput = document.querySelector('#fileInput');
-        const fileDisplayArea = document.querySelectorAll('.imgArea');
-        const uploadedBtn = document.querySelectorAll('.uploadedBtn');
-
-        fileInput.addEventListener('change', function (e) {
-            var file = fileInput.files[0];
-            var imageType = /image.*/;
-
-            if (file.type.match(imageType)) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    fileDisplayArea[0].innerHTML = "";
-
-                    var img = new Image();
-                    img.src = reader.result;
-
-                    fileDisplayArea[0].appendChild(img);
-                }
-
-                reader.readAsDataURL(file);
-            } else {
-                fileDisplayArea[0].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
-            }
-            uploadedBtn[0].classList.add("uploaded");
-        });
-
-
-        // ------- 배경 이미지
-        const bgInput = document.querySelector('#bgInput');
-
-        bgInput.addEventListener('change', function (e) {
-            var file = bgInput.files[0];
-            var imageType = /image.*/;
-
-            if (file.type.match(imageType)) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    fileDisplayArea[1].innerHTML = "";
-
-                    var img = new Image();
-                    img.src = reader.result;
-
-                    fileDisplayArea[1].appendChild(img);
-                }
-
-                reader.readAsDataURL(file);
-            } else {
-                fileDisplayArea[1].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
-            }
-            uploadedBtn[1].classList.add("uploaded");
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const textarea = document.querySelector("textarea[name='prodcontent']");
-        const charCountSpan = document.getElementById('charCount');
-
-        function updateCharCount() {
-            const currentLength = textarea.value.length;
-            console.log(currentLength);
-
-            // 1000자를 초과하는 입력을 방지
-            if (currentLength > 1000) {
-                alert('입력 글자 수 제한을 초과했습니다.');
-                textarea.value = textarea.value.substring(0, 1000); // 1000자를 초과한 부분을 잘라냅니다.
-            }
-
-            charCountSpan.textContent = currentLength + "/1000";
+            selecAll.insertAdjacentHTML('afterbegin', `<span class="locTitle">여행지 선택</span>`);
         }
 
-        textarea.addEventListener('input', updateCharCount);
-        textarea.addEventListener('keyup', updateCharCount);
-        textarea.addEventListener('compositionend', updateCharCount); // 한글 조합이 끝난 후의 이벤트
-        updateCharCount();
+        $(document).ready(function () {
+            var proStartDate = ""; // 시작날짜
+            var proEndDate = ""; // 마지막날짜
+            var checkedValues = []; //할인 요일
+            var selectedCountry
+            var sale = 0;
+            var title = "";
+            var context = "";
+            var price = 0;
 
-    });
 
-</script>
+            // 지역 선택 로직
+            $("[name=loc]").click(function () {
+                console.log($(this).val());
+                $("#prodloc").val($(this).val())
+
+                // 나라 선택 로직
+                selectedCountry = $(this).closest(".opLine").find("#country").val();
+                $("[name=country]").val(selectedCountry)
+                console.log(selectedCountry)
+            });
+
+            // 날짜선택 로직
+            $("#dateClick").click(function () {
+                var startDate = $("#startdate").val() // 시작날짜
+                var endDate = $("#enddate").val() // 마지막 날짜
+                var startDate01 = new Date($("#startdate").val()) // date형식으로 재설정
+                var endDate01 = new Date($("#enddate").val()) // 위와 같음
+
+                var timeDiff = endDate01 - startDate01; // 마지막날짜 - 시작날짜
+
+                // 시작날짜가 마지막날짜보다 크다면 이상하기 때문에
+                if (startDate01 > endDate01) {
+                    alert("다시 선택해 주세요");
+                } else {
+                    console.log(startDate);
+                    console.log(endDate);
+                    $("#startdateS").val(startDate)
+                    $("#enddateS").val(endDate)
+                }
+
+                // ---- 추가!!! ------ 선택 비활성화
+                if (startDate == "" || endDate == "") {
+                    alert("날짜를 선택해주세요.");
+                } else {
+                    $("#startdate").attr("disabled", true);
+                    $("#enddate").attr("disabled", true);
+                    $("#dateClick").addClass("clicked");
+                }
+
+            })
+
+            $(".daySelecAll").click(function () {
+                checkedValues = []; // 클릭할 때마다 배열 초기화
+
+                $(this).find("[name=saleDay]:checked").each(function () {
+                    checkedValues.push($(this).val());
+                });
+
+                console.log(checkedValues);
+            });
+
+            $("#dcdayBtn").click(function () {
+                var dcday = "";
+                checkedValues.forEach(function (e) {
+                    dcday = dcday + e + " ";
+                })
+                $("#dcday").val(dcday)
+
+                // ---- 추가!!! ------ 선택 비활성화
+                if (dcday == "") {
+                    alert("할인 요일을 선택해주세요.");
+                } else if ($(".saleDrop").val() == null) {
+                    alert("할인율을 선택해주세요.");
+                } else {
+                    $(".saleDrop").attr("disabled", true);
+                    $("input[name='saleDay']").attr("disabled", true);
+                    $("#dcdayBtn").addClass("clicked");
+                }
+
+                // 인클루드스는 내용중에 문자가 있는지 확인해줌
+                if (dcday.includes("화")) {
+                    console.log(dcday);
+                    console.log("화요일이 선택되었습니다.");
+                }
+            })
+
+            //할인 퍼센트
+            $(".saleDrop").change(function () {
+                sale = $(this).val();
+                $("#dcprice").val(sale)
+                console.log("선택한 할인율: " + sale + "%");
+            });
+
+            // 제목, 텍스트 내용, 가격 출력
+            $(".submitBtn").click(function () {
+                title = $("[name=title]").val();
+                context = $("[name=context]").val();
+                price = $("[name=price]").val();
+
+                console.log(title);
+                console.log(context);
+                console.log(price);
+                // alert("페이지가 이동됩니다.");
+                // location.href = "Store";
+            });
+
+
+
+            // saleDrop
+            // 날짜 선택
+            $(".datePick").datepicker({
+                dateFormat: 'yy-mm-dd',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                yearSuffix: '년'
+            });
+
+            // 업로드 이미지 노출
+            const fileInput = document.querySelector('#fileInput');
+            const fileDisplayArea = document.querySelectorAll('.imgArea');
+            const uploadedBtn = document.querySelectorAll('.uploadedBtn');
+
+            fileInput.addEventListener('change', function (e) {
+                var file = fileInput.files[0];
+                var imageType = /image.*/;
+
+                if (file.type.match(imageType)) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        fileDisplayArea[0].innerHTML = "";
+
+                        var img = new Image();
+                        img.src = reader.result;
+
+                        fileDisplayArea[0].appendChild(img);
+                    }
+
+                    reader.readAsDataURL(file);
+                } else {
+                    fileDisplayArea[0].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
+                }
+                uploadedBtn[0].classList.add("uploaded");
+            });
+
+
+            // ------- 배경 이미지
+            const bgInput = document.querySelector('#bgInput');
+
+            bgInput.addEventListener('change', function (e) {
+                var file = bgInput.files[0];
+                var imageType = /image.*/;
+
+                if (file.type.match(imageType)) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        fileDisplayArea[1].innerHTML = "";
+
+                        var img = new Image();
+                        img.src = reader.result;
+
+                        fileDisplayArea[1].appendChild(img);
+                    }
+
+                    reader.readAsDataURL(file);
+                } else {
+                    fileDisplayArea[1].innerHTML = "<p class='wrongTxt'>&#128473; 잘못된 이미지 형식입니다 &#128473;</p>"
+                }
+                uploadedBtn[1].classList.add("uploaded");
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const textarea = document.querySelector("textarea[name='prodcontent']");
+            const charCountSpan = document.getElementById('charCount');
+
+            function updateCharCount() {
+                const currentLength = textarea.value.length;
+
+                // 1000자를 초과하는 입력을 방지
+                if (currentLength > 1000) {
+                    alert('입력 글자 수 제한을 초과했습니다.');
+                    textarea.value = textarea.value.substring(0, 1000); // 1000자를 초과한 부분을 잘라냅니다.
+                }
+
+                charCountSpan.textContent = currentLength + "/1000";
+            }
+
+            textarea.addEventListener('input', updateCharCount);
+            textarea.addEventListener('keyup', updateCharCount);
+            textarea.addEventListener('compositionend', updateCharCount); // 한글 조합이 끝난 후의 이벤트
+            updateCharCount();
+
+        });
+
+    </script>
+</body>
 
 </html>

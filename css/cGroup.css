@@ -69,8 +69,10 @@ to { opacity: 1; transform: none; }
  
  .frmLine { margin: 0;}
  .frmLine div { width: 100%; justify-content: space-between; } 
- .schFrm { width: 70%; margin-right: 0; padding: 8px; border-radius: 8px;} 
- .schFrm input { width: 80%; font-size: 14px; } 
+ .schFrm { width: 70%; margin-right: 0; padding: 5px 6px; border-radius: 8px;} 
+ .schFrm input { width: 80%; font-size: 13px; } 
+ .schFrm button { width: 22px; height: 22px; } 
+ .sortBtn { padding: 5px 8px; font-size: 12px;}
 
  .schAll { width: 100%; margin: 20px 0; display: flex; flex-direction: column; } 
  .goDetail { width: 100%; } 
@@ -91,15 +93,13 @@ to { opacity: 1; transform: none; }
  .hiddenBox .chatCnt::before { top: -2px; left: -25px; } 
  
  .pagination { display: none; } 
- .postBtn { padding: 0; background: var(--color-main); font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 48px; height: 48px; bottom: 30px; right: 25px; border-radius: 50%; text-align: center; position: fixed; z-index: 100; cursor: pointer; } 
+ .postBtn { padding: 0; background: var(--color-main); font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 30px; right: 25px; border-radius: 50%; text-align: center; position: fixed; z-index: 100; cursor: pointer; } 
  .postBtn:hover { transition: 0.5s ease; background-color: #efefef; } 
- .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 26px; height: 26px; top: 9px; left: 10px; background-size: cover; } 
+ .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 23px; height: 23px; top: 9px; left: 10px; background-size: cover; } 
 
-
- /* ---------- scrollTop ------------- */
- #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 48px; height: 48px; bottom: 90px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; } 
- #scrollTop::before { content: "\2303"; position: absolute; top: 7px; left: 15px; color: #171717; font-family: pLight; font-size: 22px; } 
- #scrollTop .topTxt { display: block; margin-top: 23px; font-size: 13px; } 
+ #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 83px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; } 
+ #scrollTop::before { content: "\2303"; position: absolute; top: 8px; left: 15px; color: #171717; font-family: pLight; font-size: 18px; } 
+ #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
  }
  
  @media screen and (min-width: 1024px) { body { } 
