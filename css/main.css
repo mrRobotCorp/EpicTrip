@@ -148,7 +148,7 @@ to { opacity: 1; transform: none; }
 /* --------------- responsible --------------- */
 
 @media screen and (max-width: 768px){
-.mainBanner { height: 95vh; background: url(../source/mainBn_mb.png) center center no-repeat; background-size: contain; }
+.mainBanner { height: 95vh; background: url(../source/mainBn_mb.png) center center no-repeat; background-size: cover; }
  .mainBnLogo { width: 250px; filter: drop-shadow(2px 2px 3px #00000052); } 
  .mainCon p { width: 320px; font-size: 14px; } 
 
