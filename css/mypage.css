@@ -370,7 +370,8 @@ to { opacity: 1; transform: none; }
  .postBottom { width: 90%; height: 65px; margin: 12px auto; } 
  
  .postBottom .infoText { font-size: 15px; } 
- .locPay p { font-size: 13px; } 
+ .locPay p { margin-top: 5px; font-size: 13px; } 
+ .locPay span { padding-top: 0; font-size: 16px;}
  .morePost { display: block; margin: 20px auto 0 auto; width: 70px; padding: 6px 0; color: #000; background: #e0e0e0c5; border-radius: 5px; font-size: 13px; font-family: pMedium; cursor: pointer; }
  
  /* -------------------- myreview ------------------------- */

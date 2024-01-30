@@ -149,7 +149,7 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .selgroupMem .selMbtn img { width: 15px; margin-right: 4px; }
     .selgroupMem .selMbtn { font-size: 12px; }
 
-    .selmModal { top: 180%; left: -230%; width: 260px; }
+    .selmModal { top: 180%; left: -250%; width: 260px; }
     .modalname h1 { font-size: 14px; font-family: pBold;}
     .selmModal .warnmsg { margin: 15px 0; width: 100%; border-radius: 7px; background: #eeeeeeb2; }
     .selmModal .warnmsg p { width: 100%; padding: 10px 0; color: #000000c9; font-size: 12px; font-family: pRegular; }
@@ -157,7 +157,7 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
 
     .selmModal .memsimgname span { font-size: 13px; }
     .selmModal img { margin-right: 3px; width: 30px; }
-    .selmModal .groupToggle { padding: 5px 10px; font-size: 12px;}
+    .selmModal .groupToggle { padding: 5px 10px; font-size: 12px; }
 
     .selchat button { padding: 6px 13px; width: auto; height: auto; border-radius: 6px; font-size: 13px; font-family: pMedium; }
     .selchat .ms { margin: 0;}
