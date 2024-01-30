@@ -92,7 +92,7 @@ section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 200px 0 100px
     .postImgCon { height: 200px; }
     .postImgCon img { height: 100%; border-radius: 10px; }
 
-    .postContent { flex-direction: column; margin-top: 10px; }
+    .postContent { flex-direction: column; margin-top: 0; }
     .pLeft { width: 100%; }
     .postingBtn { padding-top: 10px; }
     .postingBtn button { width: 35px; height: 22px; font-size: 12px; text-align: center; border-radius: 3px; background: #E7E7E7; }
@@ -109,11 +109,42 @@ section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 200px 0 100px
 
     .pRight { width: 100%; margin-top: 45px; }
     .wUserInner { margin: 10px auto; width: 95%; }
+    .wUserInfo { padding-top: 5px;}
     .wUserInfo img { width: 40px; }
     .wUserInfo .ngc p { font-size: 14px; }
     .wUserInfo .ag p { font-size: 13px; }
     .wUserInner button { margin-top: 0; height: 40px; font-size: 13px; font-family: pSemi; }
 
+    .jMemInner { width: 90%; margin: 20px auto 10px auto;}
+    .jMemCnt { margin-bottom: 15px; }
+    .jMemCnt p { font-size: 14px; }
+    .jMemCnt span { padding-left: 5px; font-size: 13px; }
+    .memInfo img { width: 40px; }
+    .memNg span { font-size: 13px; }
+    .memInfoWrap { margin-top: 0; }
+
+    .memMp { width: 300px; }
+    .memMpclose button { width: 16px; height: 16px; }
+    .memMpModal .memMp { width: 330px; }
+    .memMpModal .memMpInner { margin: 0 auto;}
+    .memMpModal .lvandN span { padding: 6px 10px; font-size: 12px; }
+    .memMpModal .profile { width: 60px; }
+    .memMpModal .level { width: 26px; }
+
+    .recoBtn { width: auto; padding: 4px 12px;}
+    .recoBtn .goodMem { width: 16px; height: 16px; }
+    .recoBtn .badMem { width: 16px; height: 16px; }
+
+    .myintroduce { margin-top: 5px;}
+    .myintroduce p { font-size: 13px; font-family: pMedium;}
+    .myintroduce .myintroin { padding: 10px; margin-top: 5px; background: #f1f1f1; font-size: 12px; line-height: 130%;}
+    
+    .subgb { margin: 10px 0;}
+    .subgb .mybirth, .subgb .mygen { display: flex; align-items: baseline; justify-content: flex-start;} 
+    .subgb .mybirth p, .subgb .mygen p { margin: 0 8px 0 0; font-size: 13px; font-family: pSemi; }
+    .subgb .mybirth span { padding: 6px 10px; margin-top: 5px; background: #f1f1f1; font-size: 12px; }
+
+    .subgb .mygen span {padding: 6px 10px; margin-top: 5px; background: #f1f1f1; font-size: 12px; }
 
 
 }
