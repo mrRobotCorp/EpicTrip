@@ -85,7 +85,44 @@ section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 200px 0 100px
 .memberModalBtn { cursor: pointer; } 
 
 
+/* --------------- responsible --------------- */
 
+@media screen and (max-width: 768px) { 
+    section { margin: 130px 0 40px 0; padding: 0 5.5%; }
+    .postImgCon { height: 200px; }
+    .postImgCon img { height: 100%; border-radius: 10px; }
+
+    .postContent { flex-direction: column; margin-top: 10px; }
+    .pLeft { width: 100%; }
+    .postingBtn { padding-top: 10px; }
+    .postingBtn button { width: 35px; height: 22px; font-size: 12px; text-align: center; border-radius: 3px; background: #E7E7E7; }
+    .pLeft h1 { font-size: 16px; }
+
+    .postInfo { width: 100%; margin-top: 15px; padding: 10px 0; }
+    .postInfo .lmd { font-size: 12px; }
+    .postInfo .dDetail { margin-top: 5px;}
+    .postInfo .dDetail img { width: 16px; }
+    .postInfo .dDetail span { font-size: 13px; }
+
+    .postText { margin: 15px auto 0 auto; width: 95%; font-size: 13px; }
+    .postDV { margin-top: 25px; font-size: 11px; }
+
+    .pRight { width: 100%; margin-top: 45px; }
+    .wUserInner { margin: 10px auto; width: 95%; }
+    .wUserInfo img { width: 40px; }
+    .wUserInfo .ngc p { font-size: 14px; }
+    .wUserInfo .ag p { font-size: 13px; }
+    .wUserInner button { margin-top: 0; height: 40px; font-size: 13px; font-family: pSemi; }
+
+
+
+}
+ 
+ @media screen and (min-width: 1024px) { body { } 
+ }
+ 
+ @media screen and (min-width: 1440px) { body { } 
+ }
 
 
 
