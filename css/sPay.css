@@ -115,13 +115,16 @@ label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity:
     .email p { font-size: 13px; }
 
     .itemInfo { width: 100%; }
-    .itemInfoInner { width: 85%; margin: 20px auto;}
+    .itemInfoInner { width: 88%; margin: 20px auto;}
     .itemInfoInner h1 { font-size: 18px; margin-bottom: 5px; font-family: pBold; }
-    .itemInfoInner .lBtn + label { margin-right: 5px; width: 28px; height: 28px; }
-    label[for='langKor']::before, label[for='langUs']::before { top: 9px; left: 4px; font-size: 12px; text-shadow: 0 0 6px #000; }
+    .itemInfoInner .lBtn + label { margin-right: 0; width: 28px; height: 28px; }
+    label[for='langKor']::before, label[for='langUs']::before { top: 9px; left: 4px; font-size: 12px; font-family: pSemi; text-shadow: 0 0 6px #000; }
     .itemInfoInner .ment { font-size: 12px; }
 
+    .imgWrap { width: 130px;}
+    .imgWrap img { border-radius: 7px; }
     .itemThumb { margin: 15px 0 25px 0;}
+    .itemThtext { margin-left: 12px;}
     .itemThtext .itemTitle { font-size: 15px; line-height: 130%; }
     .itemThtext p { font-size: 12px; }
     .selP, .point p { font-size: 13px; }
@@ -140,7 +143,7 @@ label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity:
     .pspt .psptIn.tot p { font-size: 18px; }
 
     .priceInfo { padding-bottom: 20px; margin-bottom: 20px; }
-    .howPay button { padding: 15px; margin: 15px 0; font-size: 13px;}
+    .howPay button { padding: 15px; margin: 15px 0; color: #000; font-size: 13px;}
 
     .itemBtn { height: 50px; margin-top: 0; font-size: 15px; font-family: pSemi;}
     

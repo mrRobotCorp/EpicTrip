@@ -123,7 +123,8 @@ section { min-height: calc(100vh - 240px); padding: 0 13%; margin: 200px 0 100px
     .memNg span { font-size: 13px; }
     .memInfoWrap { margin-top: 0; }
 
-    .memMp { width: 300px; }
+    .memMpModal { display: flex; align-items: center; justify-content: center;}
+    .memMp { width: 300px; margin: 0; }
     .memMpclose button { width: 16px; height: 16px; }
     .memMpModal .memMp { width: 330px; }
     .memMpModal .memMpInner { margin: 0 auto;}

@@ -58,7 +58,7 @@ section { min-height: calc(100vh - 240px); padding: 0 13%; margin-top: 200px; }
  .daySch .date { padding: 3px 10px; font-size: 12px; } 
  .daySch .schMemo { margin: 0 0 15px 10px; } 
  .daySch .schMemo .memoCnt { margin-right: 10px; width: 18px; height: 18px; font-size: 12px; } 
- .daySch .schMemo .memoTxt { font-size: 13px; } 
+ .daySch .schMemo .memoTxt { padding: 10px; font-size: 12px; border-radius: 6px; } 
  .daySch::-webkit-scrollbar { width: 3px; } 
 
  
