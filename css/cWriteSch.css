@@ -149,30 +149,35 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
  .detailWrite .mapInfoAll { flex-direction:column-reverse; } 
 
  .schMap { width: 100%; height: 400px; } 
- .schInfo { width: 96%; height: 300px; padding: 20px 5px 10px 5px; margin-bottom: 20px;} 
+ /* .schInfo { width: 96%; height: 300px; padding: 20px 5px 10px 5px; margin-bottom: 20px;}  */
+ .schInfo { width: 90%; height: 420px; padding: 15px; margin-top: 30px; } 
  
+ .infoTitle .backBtn { width: 13px; height: 13px; } 
  .infoTitle { margin-bottom: 15px; } 
- .infoTitle .backBtn { margin-left: 10px; width: 18px; height: 18px; background: url(../source/arrow_l.png) center center; background-size: cover; } 
- .schInfo .schDays { width: 90%; height: 120px; margin-bottom: 15px; border-radius: 10px; font-size: 15px; font-family: pMedium; letter-spacing: 1px; } 
- .schInfo .schLoc { margin: 0 0 15px 80px; font-size: 16px; } 
-.schInfo .schLoc::before { top: -15%; left: -7%; } 
+ .infoTitle span { font-size: 15px; } 
+ .infoTitle .uptBtn { margin-right: 5px; width: 18px; height: 18px; } 
+ .infoTitle .delBtn { width: 22px; height: 22px; } 
+ .schInfo .schDays { margin-bottom: 15px; font-size: 13px; font-family: pMedium; } 
+ .schInfo .schLoc { margin: 0 0 20px 20px; padding-left: 6px; width: 90%; font-size: 13px; } 
+ .schInfo .schLoc::before { width: 18px; height: 18px; } 
 
-.dayOne { margin-bottom: 20px; } 
-.daySch { width: 90%; padding: 0 10px;}
-.dayTxt { margin: 0 0 10px 0; } 
+ .dayOne { margin-bottom: 20px; } 
+ .dayTxt { margin: 0 0 15px 5px; } 
+ .daySch .dNum { padding: 4px 10px; margin-right: 5px; font-size: 12px; font-family: pLight; background-color: #eee; } 
+ .daySch .date { padding: 3px 10px; font-size: 12px; } 
+ .daySch .schMemo { margin: 0 0 15px 10px; } 
+ .daySch .schMemo .memoCnt { margin-right: 10px; width: 18px; height: 18px; line-height: 18px; font-size: 12px; } 
+ .daySch .schMemo .memoTxt { padding: 8px; font-size: 12px; border-radius: 6px; } 
+ .daySch .schMemo .locDel { width: 25px; height: 25px; font-size: 13px; text-align: center;}
+ .daySch::-webkit-scrollbar { width: 3px; }
 
-.daySch .dNum { padding: 6px 10px; margin-right: 0; background: #e8e8e8; font-size: 14px;} 
-.dayOne .locAdd { margin-right: 0; padding: 5px 9px; border-radius: 6px; background: var(--yellow); font-size: 14px; } 
+.dayOne .locAdd { margin-right: 0; padding: 5px 9px; border-radius: 6px; background: var(--yellow); font-size: 12px; } 
 .locAdd:hover { background: #e8e8e8; } 
-
-.daySch::-webkit-scrollbar { width: 5px; } 
-.daySch .schMemo { margin: 0 0 20px 0; } 
-.daySch .schMemo .memoCnt { margin-right: 8px; font-size: 14px; border-radius: 50%; } 
-.daySch .schMemo .memoTxt { width: auto; padding: 10px; border-radius: 8px; font-size: 14px; } 
 
  .submitBtn { display: block; margin: 20px auto; padding: 8px 0; color: #000; background: #ffd438c5; border-radius: 7px; font-size: 12px; } 
  
 /* -------------------- modal ---------------------- */
+.modalBg { display: flex; align-items: center; justify-content: center;}
 .locModal { margin: 150px auto; padding: 30px 20px 20px 20px; width: 75vw; height: 440px; box-shadow: 2px 2px 7px #1818189c; } 
 .locModal h4 { font-size: 18px; } 
 
