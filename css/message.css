@@ -141,7 +141,7 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .chatMemList p:first-child { font-size: 16px; } 
     .memPro { margin-top: 15px; }
     .member { margin-right: 12px; }
-    .member img { width: 55px; }
+    .member img { width: 50px; }
     .member span { margin-top: 0; font-size: 12px; font-family: pRegular; text-align: center; }
     .memPro .groupon { font-size: 11px;}
 
@@ -149,7 +149,7 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .selgroupMem .selMbtn img { width: 15px; margin-right: 4px; }
     .selgroupMem .selMbtn { font-size: 12px; }
 
-    .selmModal { top: 180%; left: -250%; width: 260px; }
+    .selmModal { top: 180%; left: -260%; width: 260px; }
     .modalname h1 { font-size: 14px; font-family: pBold;}
     .selmModal .warnmsg { margin: 15px 0; width: 100%; border-radius: 7px; background: #eeeeeeb2; }
     .selmModal .warnmsg p { width: 100%; padding: 10px 0; color: #000000c9; font-size: 12px; font-family: pRegular; }
@@ -163,13 +163,13 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
     .selchat .ms { margin: 0;}
 
     .chatandlist { flex-direction: column; margin-top: 10px; }
-    .chatListInner { padding: 10px 20px; }
+    .chatListInner { padding: 10px 10px 10px 20px; }
     .chatListinin { height: 280px; }
     .chatList { width: 100%; height: 350px; margin-bottom: 20px; padding-bottom: 0;}
-    .chatListInner h3 { padding: 10px 0; margin-bottom: 10px; font-size: 15px;}
+    .chatListInner h3 { padding: 5px 0 10px 0; margin-bottom: 10px; font-size: 15px; font-family: pSemi;}
 
-    .chatroom { padding: 6px;}
-    .chatroom img { width: 45px; height: 45px; }
+    .chatroom { padding: 6px 0; margin-bottom: 5px; }
+    .chatroom img { margin-right: 10px; width: 40px; height: 40px; }
     .roomtitle { justify-content: space-between; margin-top: 0;}
     .roomtitle p { font-size: 13px; line-height: 100%; }
     .roomtitle span { font-size: 12px; color: #afafaf;}
@@ -178,30 +178,31 @@ section { min-height: calc(100vh - 240px); margin-top: 150px; margin-bottom: 120
 
     .chatBoard { width: 100%; }
 
-    .chatroomname span:first-child { margin-right: 5px; font-size: 15px; }
+    .chatroomname { padding: 15px 20px;}
+    .chatroomname span:first-child { margin-right: 5px; font-size: 15px; font-family: pSemi;}
     .chatroomname span:last-child { font-size: 14px; }
-    .chatroomname button { padding: 5px 10px; border-radius: 6px; color: #777; background: #e5e5e5; font-size: 12px; }
+    .chatroomname button { padding: 4px 8px; margin: 0; border-radius: 6px; color: #777; background: #e5e5e5; font-size: 11px; }
     .chatroomname button:hover { background: #e5e5e5; }
 
     .chatWrap { height: auto; }
-    .chatInner { height: 550px; padding-bottom: 0; margin-bottom: 30px; }
+    .chatInner { width: 100%; height: 540px; padding-bottom: 25px; margin-right: 5px; }
     .chatInner .ment { padding: 10px 0 0 0; font-size: 12px; }
     .chatInner .ment .mentp { padding: 2px 0; font-size: 11px; font-family: pLight; }
 
     .ansarea { margin-top: 15px; padding: 10px 15px;}
-    .ansarea .ansprof img { width: 40px; }
-    .ansarea .ansInner { padding: 10px 15px; font-size: 13px; font-family: pRegular; line-height: 130%; }
+    .ansarea .ansprof img { width: 38px; }
+    .ansarea .ansInner { padding: 8px 12px; margin-top: 5px; font-size: 12px; font-family: pRegular; line-height: 130%; }
     .ansarea .ansInner span { display: inline-block; width: 185px;}
-    .ansarea .chatCom p:first-child { font-size: 13px; }
+    .ansarea .chatCom p:first-child { font-size: 12px; }
 
-    .sendDate { font-size: 11px; line-height: 110%;}
-    .mychat { gap: 0; padding: 10px 5px 0 0;}
-    .mychatInner { padding: 10px 15px; margin: 0; font-size: 13px; font-family: pRegular; line-height: 130%; }
+    .sendDate { font-size: 10px; font-family: pLight; color: #a3a3a3;line-height: 110%;}
+    .mychat { gap: 0; padding: 10px 8px 0 0;}
+    .mychatInner { padding: 8px 12px; margin: 0; font-size: 12px; font-family: pRegular; line-height: 130%; }
     .mychatInner span { display: inline-block; width: 190px; }
-    .mychatTime .sendDate { margin-right: 10px; }
+    .mychatTime .sendDate { margin-right: 8px; font-size: 10px; font-family: pLight; color: #a3a3a3;}
 
-    .sendMs { margin: 20px auto 0 auto; width: 95%; height: 40px; border-radius: 7px; }
-    .sendMs .msArea { height: 20px; padding: 10px; margin: 0; border-radius: 7px; font-size: 13px;}
+    .sendMs { margin: 20px auto 0 auto; width: 95%; height: 40px; border-radius: 7px; background: #fff; z-index: 100;}
+    .sendMs .msArea { height: 20px; padding: 10px; margin: 0; border-radius: 7px; font-size: 13px; }
     .sendBtn { width: 28px; height: 30px; }
     .sendBtn.send { width: 28px; height: 30px; }
 

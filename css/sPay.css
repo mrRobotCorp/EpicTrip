@@ -115,10 +115,10 @@ label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity:
     .email p { font-size: 13px; }
 
     .itemInfo { width: 100%; }
-    .itemInfoInner { width: 88%; margin: 20px auto;}
+    .itemInfoInner { width: 85%; margin: 20px auto;}
     .itemInfoInner h1 { font-size: 18px; margin-bottom: 5px; font-family: pBold; }
-    .itemInfoInner .lBtn + label { margin-right: 0; width: 28px; height: 28px; }
-    label[for='langKor']::before, label[for='langUs']::before { top: 9px; left: 4px; font-size: 12px; font-family: pSemi; text-shadow: 0 0 6px #000; }
+    .itemInfoInner .lBtn + label { margin-right: 0; width: 35px; height: 35px; }
+    label[for='langKor']::before, label[for='langUs']::before { top: 12px; left: 7px; font-size: 12px; font-family: pSemi; text-shadow: 0 0 12px #000; }
     .itemInfoInner .ment { font-size: 12px; }
 
     .imgWrap { width: 130px;}

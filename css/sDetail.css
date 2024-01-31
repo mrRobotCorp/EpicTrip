@@ -150,7 +150,7 @@ border: none; background: var(--color-main); }
 
     .postCon { max-height: 300px; }
     .postCon::after { width: 200%;}
-    .postText { margin: 15px 0; font-size: 13px; line-height: 130%; }
+    .postText { margin: 15px auto; width: 95%; font-size: 13px; line-height: 1.5em; }
     .postMore { padding: 5px 14px; font-size: 12px; border-width: 1px; border-radius: 6px; }
     .postMore:hover { background: #fff; }
     .postDV { margin: 30px 0; padding-bottom: 20px; font-size: 11px; color: #777; }
@@ -170,7 +170,7 @@ border: none; background: var(--color-main); }
     .cmmtUserTxt .cmmtCon { padding: 5px 0; font-size: 12px; }
 
 
-    .rightWrap { width: 315px; margin: 0 auto; padding: 20px 0; }
+    .rightWrap { width: 85%; margin: 0 auto; padding: 20px 0; }
     .ui-datepicker .ui-datepicker-title { font-size: 15px; }
     .ui-state-default, 
     .ui-widget-content .ui-state-default, 
