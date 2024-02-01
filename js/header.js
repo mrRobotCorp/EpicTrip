@@ -86,6 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="./Mypage_mymain.html" class="mypTab">마이페이지</a></li>
         `);
 
+        gnbTap.insertAdjacentHTML('afterend', `
+            <ul class="gnbTapBottom">
+                <li><a href="./adm_calendar.html">관리자 일정</a></li>
+                <li><a href="./login.html">로그아웃</a></li>
+            </ul>
+        `);
+
         let msgTab = document.querySelector(".msgTab");
         let mypTab = document.querySelector(".mypTab");
 
