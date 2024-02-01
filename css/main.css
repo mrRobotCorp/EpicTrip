@@ -217,12 +217,11 @@ to { opacity: 1; transform: none; }
  .locList ul li { padding: 12px 0 12px 18px; }
  .locList ul li::before { top: 9px; width: 18px; height: 18px; }
 
- #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 30px; right: 25px;  border-radius: 50%; text-align: center; font-size: 12px; position: fixed; cursor: pointer; z-index: 150; } 
+ #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 30px; right: 25px;  border-radius: 50%; text-align: center; font-size: 12px; position: fixed; cursor: pointer; z-index: 50; } 
  #scrollTop::before { content: "\2303"; position: absolute; top: 8px; left: 15px; color: #171717; font-family: pLight; font-size: 18px; } 
  #scrollTop:hover { background-color: #fff; } 
  #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
 
-#scrollTop {  width: 45px; height: 45px; } 
  }
 
 @media screen and (min-width: 1024px) { body { } 

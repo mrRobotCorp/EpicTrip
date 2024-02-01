@@ -103,7 +103,7 @@ to { opacity: 1; transform: none; }
  .postBtn:hover { transition: 0.5s ease; background-color: #efefef; } 
  .postBtn::before { content: ""; background: url(../source/writeIco.png) center center no-repeat; position: absolute; width: 23px; height: 23px; top: 9px; left: 10px; background-size: cover; } 
 
- #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 83px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; } 
+ #scrollTop { background: #fff; font-family: pMedium; box-shadow: 0 1px 6px #36363689; color: #171717; align-content: center; width: 45px; height: 45px; bottom: 83px; right: 25px; border-radius: 50%; text-align: center; font-size: 12px; position: fixed; z-index: 100; cursor: pointer; z-index: 50; } 
  #scrollTop::before { content: "\2303"; position: absolute; top: 8px; left: 15px; color: #171717; font-family: pLight; font-size: 18px; } 
  #scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
  }

@@ -178,11 +178,11 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
  
 /* -------------------- modal ---------------------- */
 .modalBg { display: flex; align-items: center; justify-content: center;}
-.locModal { margin: 150px auto; padding: 30px 20px 20px 20px; width: 75vw; height: 440px; box-shadow: 2px 2px 7px #1818189c; } 
-.locModal h4 { font-size: 18px; } 
+.locModal { margin: 0; padding: 30px 20px 20px 20px; width: 70vw; height: 400px; box-shadow: 2px 2px 7px #1818189c; } 
+.locModal h4 { font-size: 15px; font-family: pSemi; } 
 
 .schBox { margin: 30px 0 10px 0; border-radius: 8px; } 
-.schBox .addLocTxt { width: 90%; height: 40px; padding: 0 20px; font-size: 15px; } 
+.schBox .addLocTxt { width: 90%; height: 40px; padding: 0 20px; font-size: 13px; } 
 .schBox .locSchBtn { margin-right: 17px; width: 25px; height: 25px; } 
 
 .locAll { margin: 10px 0; height: 280px; } 
