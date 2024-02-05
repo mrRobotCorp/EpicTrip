@@ -133,7 +133,7 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
 
  .opLine span { width: 100%; height: 35px; margin: 10px 0; font-size: 13px; border-radius: 5px; } 
 .opLine .options { width: 100%; } 
-.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; font-size: 12px; border: 1px solid #e6e6e6;} 
+.schFrm input[type="radio"] + label { padding: 7px 13px; margin: 0 10px 5px 0; font-size: 12px; border: 1px solid #e6e6e6; } 
 .schFrm input[type="radio"]:checked + label { background: #41ff3b5a; border-color: #41ff3b5a; } 
 
 .dateSelec { margin-top: 15px; flex-direction: column; } 
@@ -149,8 +149,7 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
  .detailWrite .mapInfoAll { flex-direction:column-reverse; } 
 
  .schMap { width: 100%; height: 400px; } 
- /* .schInfo { width: 96%; height: 300px; padding: 20px 5px 10px 5px; margin-bottom: 20px;}  */
- .schInfo { width: 90%; height: 420px; padding: 15px; margin-top: 30px; } 
+ .schInfo { width: 90%; height: 420px; padding: 15px; margin: 30px 0 20px 0; } 
  
  .infoTitle .backBtn { width: 13px; height: 13px; } 
  .infoTitle { margin-bottom: 15px; } 
@@ -168,8 +167,8 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
  .daySch .schMemo { margin: 0 0 15px 10px; } 
  .daySch .schMemo .memoCnt { margin-right: 10px; width: 18px; height: 18px; line-height: 18px; font-size: 12px; } 
  .daySch .schMemo .memoTxt { padding: 8px; font-size: 12px; border-radius: 6px; } 
- .daySch .schMemo .locDel { width: 25px; height: 25px; font-size: 13px; text-align: center;}
- .daySch::-webkit-scrollbar { width: 3px; }
+ .daySch .schMemo .locDel { width: 25px; height: 25px; font-size: 13px; text-align: center; } 
+ .daySch::-webkit-scrollbar { width: 3px; } 
 
 .dayOne .locAdd { margin-right: 0; padding: 5px 9px; border-radius: 6px; background: var(--yellow); font-size: 12px; } 
 .locAdd:hover { background: #e8e8e8; } 
@@ -177,9 +176,11 @@ input[name="ds"]:checked + label .check::after { content: '✓'; color: #fff; ba
  .submitBtn { display: block; margin: 20px auto; padding: 8px 0; color: #000; background: #ffd438c5; border-radius: 7px; font-size: 12px; } 
  
 /* -------------------- modal ---------------------- */
-.modalBg { display: flex; align-items: center; justify-content: center;}
+.modalBg { display: flex; align-items: center; justify-content: center; } 
 .locModal { margin: 0; padding: 30px 20px 20px 20px; width: 70vw; height: 370px; box-shadow: 2px 2px 7px #1818189c; } 
 .locModal h4 { font-size: 15px; font-family: pBold; } 
+.cls { padding: 6px; top: 15px; right: 15px; border-radius: 5px; } 
+ .clsBtn { width: 15px; height: 15px; } 
 
 .schBox { margin: 30px 0 10px 0; height: 35px; border-radius: 8px; } 
 .schBox .addLocTxt { width: 90%; height: 40px; padding: 0 20px; font-size: 13px; } 
@@ -199,8 +200,7 @@ input[name="ds"]:checked + label .check::after { border-radius: 2px; font-size: 
 
 
 
-
- }
+}
  
  @media screen and (min-width: 1024px) { body { } 
  }
