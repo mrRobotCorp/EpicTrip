@@ -105,3 +105,32 @@ label[for='langUs']::before { content: 'Eng'; }
 label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity: 1; } 
 
 .lBtn:checked + label::before { opacity: 1; }
+
+
+/* --------------- responsible --------------- */
+
+@media screen and (max-width: 768px) { 
+    section { padding: 0 5.5%; margin: 70px 0 60px 0; }
+    .logInner h1 { margin-bottom: 30px; font-size: 18px; font-family: pBold; } 
+    .logInput input { padding: 8px 15px; border-radius: 5px; outline: 1px solid var(--color-line); border: 2px solid transparent; }
+    .logInput input:focus { outline-color: transparent; }
+
+    .checkbox span { font-size: 13px; }
+    input[type="checkbox"]+label { width: 12px; height: 12px; }
+    input[id="saveId"]:checked+label::after { width: 12px; height: 12px; line-height: 12px;}
+
+    .lBtn + label { width: 30px; height: 30px;}
+    label[for='langKor']::before, label[for='langUs']::before { width: 30px; height: 30px; font-size: 12px; line-height: 30px; }
+    
+    .logBtn { padding: 12px 20px; margin-bottom: 10px; border-radius: 6px; }
+    .findJion a { font-size: 13px; }
+
+    footer { display: none;}
+     }
+     
+     @media screen and (min-width: 1024px) { body { } 
+     }
+     
+     @media screen and (min-width: 1440px) { body { } 
+     }
+
