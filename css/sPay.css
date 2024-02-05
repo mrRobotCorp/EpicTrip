@@ -81,13 +81,12 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; marg
 .infoTop { display: flex; align-items: center; justify-content: space-between;}
 .infoTop span { display: flex; align-items: center;}
 
-/* .langAll { margin-top: 10px; display: flex; align-items: center;} */
 .lBtn { display: none; }
-.lBtn + label { position: relative; width: calc(100vw * 40 / 1920); height: calc(100vw * 40 / 1920); cursor: pointer; transition: all .2s; }
+.lBtn + label { position: relative; width: calc(100vw * 40 / 1920); height: calc(100vw * 40 / 1920);  cursor: pointer; transition: all .2s; }
 label[for='langKor'] { margin-right: 10px; background: url(../source/korBtn.png) center center; background-size: cover; }
 label[for='langUs'] { background: url(../source/usBtn.png) center center; background-size: cover; }
 
-label[for='langKor']::before, label[for='langUs']::before { position: absolute; top: calc(100vw * 1 / 1920); left: calc(100vw * 1 / 1920); width: calc(100vw * 38 / 1920); height: calc(100vw * 38 / 1920); background: #0000009b; line-height: calc(100vw * 38 / 1920); text-align: center; font-family: pMedium; font-size: 13px; color: #fff; border-radius: 50%; opacity: 0; transition: all .3s; }
+label[for='langKor']::before, label[for='langUs']::before { position: absolute; top: calc(100vw * 1 / 1920); left: calc(100vw * 1 / 1920); background: #0000009b; width: calc(100vw * 38 / 1920); height: calc(100vw * 38 / 1920); background: #0000009b; line-height: calc(100vw * 38 / 1920); text-align: center; font-family: pMedium; font-size: 13px; color: #fff; border-radius: 50%; opacity: 0; transition: all .3s; }
 label[for='langKor']::before { content: 'Kor'; }
 label[for='langUs']::before { content: 'Eng'; }
 label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity: 1; } 
@@ -118,8 +117,10 @@ label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity:
     .itemInfo { width: 100%; }
     .itemInfoInner { width: 85%; margin: 20px auto;}
     .itemInfoInner h1 { font-size: 18px; margin-bottom: 5px; font-family: pBold; }
+    .itemInfoInner .langAll { margin-right: -10px; }
+    .itemInfoInner .langAll label[for='langKor'] { margin-right: 6px; }
     .itemInfoInner .lBtn + label { margin-right: 0; width: 35px; height: 35px; }
-    label[for='langKor']::before, label[for='langUs']::before { top: 12px; left: 7px; font-size: 12px; font-family: pSemi; text-shadow: 0 0 12px #000; }
+    label[for='langKor']::before, label[for='langUs']::before { width: 35px; height: 35px; top: 0; left: 0; font-size: 12px; line-height: 35px; }
     .itemInfoInner .ment { font-size: 12px; }
 
     .imgWrap { width: 130px;}
@@ -146,7 +147,7 @@ label[for='langKor']:hover::before, label[for='langUs']:hover::before { opacity:
     .priceInfo { padding-bottom: 20px; margin-bottom: 20px; }
     .howPay button { padding: 15px; margin: 15px 0; color: #000; font-size: 13px;}
 
-    .itemBtn { height: 50px; margin-top: 0; font-size: 15px; font-family: pSemi;}
+    .itemBtn { height: 50px; margin-top: 0; font-size: 16px; font-family: pBold;}
     
      }
      

@@ -287,11 +287,11 @@ to { opacity: 1; transform: none; }
  .gitwo { margin-top: 30px; } 
  .mmnow { margin: 0; width: 100%; } 
  .mmnow h1 { font-size: 15px; } 
- .mmnow .mmnowbox { justify-content: space-between; padding: 10px 28px; margin: 10px 0 20px 0; font-size: 13px; } 
+ .mmnow .mmnowbox { justify-content: space-between; padding: 12px 28px; margin: 10px 0 20px 0; border: 1px solid var(--color-line); border-radius: 8px; background: #fff; font-size: 13px; } 
  .mmnowMycon { justify-content: center; } 
  .mmnowMycon span { font-size: 15px; } 
  .mmnowMycon p { margin-top: 5px; color: #0000009f; } 
- .mmnow .mmnowbox .mmLine { margin: 0; height: 45px; border-right: 1px solid #a7a7a7; } 
+ .mmnow .mmnowbox .mmLine { margin: 0; height: 45px; border-right: 1px solid #e2e2e2; } 
  
  .mmyourchal { width: auto; margin-top: 10px; } 
  
@@ -343,7 +343,7 @@ to { opacity: 1; transform: none; }
 .btns button .arrow { margin-left: 5px; width: 6px; height: 6px; border-width: 1px; } 
 
 .mypaModal { width: 100%; height: 100%; z-index: 100; display:none; -webkit-box-align:center; align-items: center; -webkit-box-pack: center; justify-content: center; align-items: center; padding: 0; } 
-.myMp { width: 350px; padding: 30px; border-radius: 10px; margin: auto; border: solid 1px var(--color-line); } 
+.myMp { width: 80vw; padding: 30px; border-radius: 10px; margin: auto; border: solid 1px var(--color-line); } 
 
 .chPwd { padding: 0; } 
 .chPwd input { width: 100%; padding: 10px 15px; font-size: 13px; } 
